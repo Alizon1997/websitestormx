@@ -17,5 +17,14 @@
         { "key": "Cache-Control", "value": "public, max-age=86400" }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/automatizzazioni-ai", "destination": "/automatizzazioni-ai/index.html" },
+    { "source": "/make-automazioni", "destination": "/make-automazioni/index.html" },
+    { "source": "/claude-code", "destination": "/claude-code/index.html" },
+    { "source": "/agenti-vocali-ai", "destination": "/agenti-vocali-ai/index.html" },
+    { "source": "/lead-generation-b2b", "destination": "/lead-generation-b2b/index.html" },
+    { "source": "/outbound-sales", "destination": "/outbound-sales/index.html" },
+    { "source": "/en", "destination": "/en/index.html" }
   ]
 }
