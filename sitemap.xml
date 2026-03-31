@@ -2,26 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
+
   <!-- Homepage -->
   <url>
     <loc>https://www.stormxdigital.com/</loc>
-    <lastmod>2025-03-31</lastmod>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/"/>
   </url>
-
-  <!-- Add more pages here as they are created -->
-  <!-- Example:
-  <url>
-    <loc>https://www.stormxdigital.com/servizi</loc>
-    <lastmod>2025-03-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  -->
 
 </urlset>
