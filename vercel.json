@@ -18,6 +18,10 @@
       ]
     }
   ],
+  "redirects": [
+    { "source": "/it", "destination": "/", "statusCode": 301 },
+    { "source": "/it/", "destination": "/", "statusCode": 301 }
+  ],
   "rewrites": [
     { "source": "/automatizzazioni-ai", "destination": "/automatizzazioni-ai/index.html" },
     { "source": "/make-automazioni", "destination": "/make-automazioni/index.html" },
