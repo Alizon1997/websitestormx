@@ -8,12 +8,12 @@ Storm X Digital S.R.L. e' un'agenzia con sede a Bisceglie (BA), Italia, fondata 
 
 ## Servizi
 
-- **Automatizzazioni AI per Business**: Workflow intelligenti basati su AI per ottimizzare processi aziendali. Integrazione con tool esistenti, riduzione costi operativi.
-- **Automazioni Make.com**: Scenari Make.com personalizzati per connettere oltre 1000 applicazioni. Marketing, vendite, CRM e operazioni automatizzate senza codice.
-- **Sviluppo con Claude Code**: Sviluppo software assistito da Claude Code di Anthropic. Applicazioni AI-native, automazioni intelligenti e soluzioni personalizzate.
-- **Agenti Vocali AI**: Assistenti telefonici AI per customer service, qualificazione lead e vendita automatizzata. Attivi 24/7 in italiano e inglese.
-- **Lead Generation B2B**: Sistema multicanale di acquisizione clienti B2B. Email, LinkedIn, WhatsApp e cold calling. Pilota 120 giorni con 60+ meeting qualificati.
-- **Sistemi Outbound Sales**: Infrastruttura completa di vendita outbound con domain warming, sequenze multicanale, team dedicato e CRM integration.
+- [Automatizzazioni AI per Business](https://www.stormxdigital.com/automatizzazioni-ai/): Workflow intelligenti basati su AI per ottimizzare processi aziendali. Riduzione costi operativi fino al 60%.
+- [Automazioni Make.com](https://www.stormxdigital.com/make-automazioni/): Scenari Make.com personalizzati per connettere oltre 1000 applicazioni. Marketing, vendite, CRM e operazioni automatizzate senza codice.
+- [Sviluppo con Claude Code](https://www.stormxdigital.com/claude-code/): Sviluppo software assistito da Claude Code di Anthropic. Applicazioni AI-native, automazioni intelligenti e soluzioni personalizzate.
+- [Agenti Vocali AI](https://www.stormxdigital.com/agenti-vocali-ai/): Assistenti telefonici AI per customer service, qualificazione lead e vendita automatizzata. Attivi 24/7 in italiano e inglese.
+- [Lead Generation B2B](https://www.stormxdigital.com/lead-generation-b2b/): Sistema multicanale di acquisizione clienti B2B. Email, LinkedIn, WhatsApp e cold calling. Pilota 120 giorni con 60+ meeting qualificati.
+- [Sistemi Outbound Sales](https://www.stormxdigital.com/outbound-sales/): Infrastruttura completa di vendita outbound con domain warming, sequenze multicanale, team dedicato e CRM integration.
 
 ## Aree Servite
 
@@ -25,4 +25,5 @@ Italia, Regno Unito, Francia, Spagna, Emirati Arabi Uniti, Unione Europea.
 - Email: stormxdigital@pec.it
 - LinkedIn: https://www.linkedin.com/company/stormxdigital
 - Sito: https://www.stormxdigital.com
+- Sito (English): https://www.stormxdigital.com/en/
 - P.IVA: 08789080721

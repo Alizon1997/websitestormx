@@ -1,16 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Homepage -->
+  <!-- Homepage (IT) -->
   <url>
     <loc>https://www.stormxdigital.com/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/"/>
+  </url>
+
+  <!-- Homepage (EN) -->
+  <url>
+    <loc>https://www.stormxdigital.com/en/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/"/>
+  </url>
+
+  <!-- Automatizzazioni AI -->
+  <url>
+    <loc>https://www.stormxdigital.com/automatizzazioni-ai/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Automazioni Make.com -->
+  <url>
+    <loc>https://www.stormxdigital.com/make-automazioni/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Claude Code -->
+  <url>
+    <loc>https://www.stormxdigital.com/claude-code/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Agenti Vocali AI -->
+  <url>
+    <loc>https://www.stormxdigital.com/agenti-vocali-ai/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Lead Generation B2B -->
+  <url>
+    <loc>https://www.stormxdigital.com/lead-generation-b2b/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Outbound Sales -->
+  <url>
+    <loc>https://www.stormxdigital.com/outbound-sales/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>
