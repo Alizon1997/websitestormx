@@ -72,4 +72,28 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Blog: Come Automatizzare il Business con AI -->
+  <url>
+    <loc>https://www.stormxdigital.com/blog/come-automatizzare-business-con-ai/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Agenti Vocali AI per Aziende -->
+  <url>
+    <loc>https://www.stormxdigital.com/blog/agenti-vocali-ai-per-aziende/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Make.com vs Zapier -->
+  <url>
+    <loc>https://www.stormxdigital.com/blog/make-com-vs-zapier-confronto/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

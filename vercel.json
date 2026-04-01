@@ -29,6 +29,9 @@
     { "source": "/agenti-vocali-ai", "destination": "/agenti-vocali-ai/index.html" },
     { "source": "/lead-generation-b2b", "destination": "/lead-generation-b2b/index.html" },
     { "source": "/outbound-sales", "destination": "/outbound-sales/index.html" },
-    { "source": "/en", "destination": "/en/index.html" }
+    { "source": "/en", "destination": "/en/index.html" },
+    { "source": "/blog/come-automatizzare-business-con-ai", "destination": "/blog/come-automatizzare-business-con-ai/index.html" },
+    { "source": "/blog/agenti-vocali-ai-per-aziende", "destination": "/blog/agenti-vocali-ai-per-aziende/index.html" },
+    { "source": "/blog/make-com-vs-zapier-confronto", "destination": "/blog/make-com-vs-zapier-confronto/index.html" }
   ]
 }

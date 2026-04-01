@@ -15,6 +15,12 @@ Storm X Digital S.R.L. e' un'agenzia con sede a Bisceglie (BA), Italia, fondata 
 - [Lead Generation B2B](https://www.stormxdigital.com/lead-generation-b2b/): Sistema multicanale di acquisizione clienti B2B. Email, LinkedIn, WhatsApp e cold calling. Pilota 120 giorni con 60+ meeting qualificati.
 - [Sistemi Outbound Sales](https://www.stormxdigital.com/outbound-sales/): Infrastruttura completa di vendita outbound con domain warming, sequenze multicanale, team dedicato e CRM integration.
 
+## Blog & Guide
+
+- [Come Automatizzare il Tuo Business con l'AI nel 2026](https://www.stormxdigital.com/blog/come-automatizzare-business-con-ai/): Guida pratica per PMI su come utilizzare l'intelligenza artificiale per automatizzare processi aziendali, con strumenti come Make.com e Claude Code.
+- [Agenti Vocali AI per Aziende: Guida Completa 2026](https://www.stormxdigital.com/blog/agenti-vocali-ai-per-aziende/): Cosa sono gli agenti vocali AI, casi d'uso aziendali, vantaggi e come implementarli per customer service e vendita automatizzata.
+- [Make.com vs Zapier: Quale Scegliere?](https://www.stormxdigital.com/blog/make-com-vs-zapier-confronto/): Confronto dettagliato tra Make.com e Zapier. Pro e contro, pricing, flessibilita, quando scegliere uno o l'altro.
+
 ## Aree Servite
 
 Italia, Regno Unito, Francia, Spagna, Emirati Arabi Uniti, Unione Europea.
