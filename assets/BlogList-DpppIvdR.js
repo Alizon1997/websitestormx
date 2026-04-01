@@ -1,1 +1,1 @@
-export default function(){return null}
+export default function(){window.location.reload();return null}
