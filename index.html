@@ -272,6 +272,11 @@
   }
   </script>
 
+  <!-- Pre-set SPA language to IT before bundle loads (URL = /it/) -->
+  <script>
+    try { localStorage.setItem('language', 'it'); } catch (e) {}
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
