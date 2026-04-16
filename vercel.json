@@ -33,6 +33,13 @@
     { "source": "/blog", "destination": "/blog/index.html" },
     { "source": "/blog/come-automatizzare-business-con-ai", "destination": "/blog/come-automatizzare-business-con-ai/index.html" },
     { "source": "/blog/agenti-vocali-ai-per-aziende", "destination": "/blog/agenti-vocali-ai-per-aziende/index.html" },
-    { "source": "/blog/make-com-vs-zapier-confronto", "destination": "/blog/make-com-vs-zapier-confronto/index.html" }
+    { "source": "/blog/make-com-vs-zapier-confronto", "destination": "/blog/make-com-vs-zapier-confronto/index.html" },
+    { "source": "/blog/lead-generation-cos-e", "destination": "/blog/lead-generation-cos-e/index.html" },
+    { "source": "/blog/agenzia-lead-generation-b2b", "destination": "/blog/agenzia-lead-generation-b2b/index.html" },
+    { "source": "/blog/outbound-vs-inbound-marketing", "destination": "/blog/outbound-vs-inbound-marketing/index.html" },
+    { "source": "/en/blog", "destination": "/en/blog/index.html" },
+    { "source": "/en/blog/what-is-lead-generation", "destination": "/en/blog/what-is-lead-generation/index.html" },
+    { "source": "/en/blog/b2b-lead-generation-agency", "destination": "/en/blog/b2b-lead-generation-agency/index.html" },
+    { "source": "/en/blog/outbound-vs-inbound-marketing", "destination": "/en/blog/outbound-vs-inbound-marketing/index.html" }
   ]
 }

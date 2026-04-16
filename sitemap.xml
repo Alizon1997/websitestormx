@@ -72,12 +72,26 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Blog Index -->
+  <!-- Blog Index (IT) -->
   <url>
     <loc>https://www.stormxdigital.com/blog/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/"/>
+  </url>
+
+  <!-- Blog Index (EN) -->
+  <url>
+    <loc>https://www.stormxdigital.com/en/blog/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/"/>
   </url>
 
   <!-- Blog: Come Automatizzare il Business con AI -->
@@ -102,6 +116,69 @@
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Lead Generation Cos'è (IT) ↔ What Is Lead Generation (EN) -->
+  <url>
+    <loc>https://www.stormxdigital.com/blog/lead-generation-cos-e/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/lead-generation-cos-e/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/what-is-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/lead-generation-cos-e/"/>
+  </url>
+
+  <url>
+    <loc>https://www.stormxdigital.com/en/blog/what-is-lead-generation/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/what-is-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/lead-generation-cos-e/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/lead-generation-cos-e/"/>
+  </url>
+
+  <!-- Blog: Agenzia Lead Generation B2B (IT) ↔ B2B Lead Generation Agency (EN) -->
+  <url>
+    <loc>https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/b2b-lead-generation-agency/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/"/>
+  </url>
+
+  <url>
+    <loc>https://www.stormxdigital.com/en/blog/b2b-lead-generation-agency/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/b2b-lead-generation-agency/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/"/>
+  </url>
+
+  <!-- Blog: Outbound vs Inbound Marketing (IT ↔ EN) -->
+  <url>
+    <loc>https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/outbound-vs-inbound-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/"/>
+  </url>
+
+  <url>
+    <loc>https://www.stormxdigital.com/en/blog/outbound-vs-inbound-marketing/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/outbound-vs-inbound-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/"/>
   </url>
 
 </urlset>

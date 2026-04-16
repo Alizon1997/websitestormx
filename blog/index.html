@@ -4,29 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1a1a1a" />
-  <title>Blog | Storm X Digital - Guide su AI, Automazione e Lead Generation</title>
+  <title>Blog | Storm X Digital - Guide su AI, Automazione e Lead Generation B2B</title>
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
   <meta name="description"
-    content="Guide pratiche su automazione aziendale con AI, agenti vocali, Make.com e lead generation B2B. Articoli e casi studio per PMI italiane." />
+    content="Guide pratiche su lead generation B2B, automazione aziendale con AI, agenti vocali e Make.com. Articoli e casi studio per PMI italiane." />
   <meta name="robots" content="index, follow" />
 
   <meta property="og:title" content="Blog | Storm X Digital" />
-  <meta property="og:description" content="Guide pratiche su automazione aziendale con AI, agenti vocali, Make.com e lead generation B2B." />
+  <meta property="og:description" content="Guide pratiche su lead generation B2B, automazione aziendale con AI, agenti vocali e Make.com." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.stormxdigital.com/blog/" />
   <meta property="og:image" content="https://www.stormxdigital.com/og-image.png" />
   <meta property="og:site_name" content="Storm X Digital" />
   <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
 
   <link rel="canonical" href="https://www.stormxdigital.com/blog/" />
+  <link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/" />
+  <link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Storm X Digital Blog",
-    "description": "Guide pratiche su automazione aziendale con AI, agenti vocali, Make.com e lead generation B2B.",
+    "description": "Guide pratiche su lead generation B2B, automazione aziendale con AI, agenti vocali e Make.com.",
     "url": "https://www.stormxdigital.com/blog/",
     "publisher": {
       "@type": "Organization",
@@ -34,6 +38,24 @@
       "url": "https://www.stormxdigital.com"
     },
     "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Outbound vs Inbound Marketing: Quale Scegliere nel B2B nel 2026",
+        "url": "https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/",
+        "datePublished": "2026-04-18"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Agenzia Lead Generation B2B: Come Sceglierla nel 2026 (Checklist Completa)",
+        "url": "https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/",
+        "datePublished": "2026-04-17"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Lead Generation: Cos'è, Significato e Come Funziona nel B2B nel 2026",
+        "url": "https://www.stormxdigital.com/blog/lead-generation-cos-e/",
+        "datePublished": "2026-04-16"
+      },
       {
         "@type": "BlogPosting",
         "headline": "Come Automatizzare il Tuo Business con l'AI nel 2026",
@@ -84,12 +106,15 @@
     .container { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
     .breadcrumb { font-size: 14px; color: rgb(var(--brand-muted)); margin-bottom: 32px; }
     .breadcrumb a { color: rgb(var(--brand-accent)); text-decoration: none; }
+    .lang-switch { font-size: 13px; color: rgb(var(--brand-muted)); margin-bottom: 24px; }
+    .lang-switch a { color: rgb(var(--brand-accent)); text-decoration: none; font-weight: 500; }
     h1 { font-size: 2.5em; line-height: 1.15; margin-bottom: 12px; }
     .subtitle { color: rgb(var(--brand-muted)); font-size: 1.1em; margin-bottom: 48px; }
     .blog-grid { display: grid; gap: 32px; }
     .blog-card { background: rgb(var(--brand-surface)); border: 1px solid rgb(var(--brand-border)); border-radius: 12px; overflow: hidden; transition: box-shadow 0.2s, transform 0.2s; text-decoration: none; color: inherit; display: block; }
     .blog-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.08); transform: translateY(-2px); }
     .blog-card img { width: 100%; height: 240px; object-fit: cover; display: block; }
+    .blog-card .cover-fallback { width: 100%; height: 220px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 60%, rgb(var(--brand-accent)) 130%); color: white; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 1.6em; text-align: center; padding: 20px 24px; line-height: 1.25; letter-spacing: -0.02em; }
     .blog-card-body { padding: 28px; }
     .blog-card-category { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: rgb(var(--brand-accent)); margin-bottom: 8px; }
     .blog-card h2 { font-size: 1.4em; margin: 0 0 12px; line-height: 1.3; }
@@ -113,7 +138,8 @@
       .header-cta { display: none; }
       .mobile-menu-btn { display: block; margin-left: auto; }
       .header-inner { position: relative; }
-      .blog-card img { height: 180px; }
+      .blog-card img, .blog-card .cover-fallback { height: 180px; }
+      .blog-card .cover-fallback { font-size: 1.3em; }
     }
   </style>
 </head>
@@ -141,16 +167,62 @@
     <nav class="breadcrumb">
       <a href="/">Home</a> &rsaquo; Blog
     </nav>
+    <div class="lang-switch">🇬🇧 Read in English: <a href="/en/blog/">English Blog</a></div>
 
     <h1>Blog</h1>
-    <p class="subtitle">Guide, confronti e casi studio su AI, automazione aziendale e lead generation per PMI italiane.</p>
+    <p class="subtitle">Guide, confronti e casi studio su lead generation B2B, automazione aziendale con AI e agenti vocali per PMI italiane.</p>
 
     <div class="blog-grid">
+
+      <a href="/blog/outbound-vs-inbound-marketing/" class="blog-card">
+        <div class="cover-fallback">Outbound vs Inbound Marketing</div>
+        <div class="blog-card-body">
+          <div class="blog-card-category">Strategia B2B</div>
+          <h2>Outbound vs Inbound Marketing: Quale Scegliere nel B2B nel 2026</h2>
+          <p>Inbound o outbound nel B2B 2026? Differenze, costi, ROI reale e il modello ibrido Allbound che genera 2,3× più pipeline.</p>
+          <div class="blog-card-meta">
+            <span>18 Aprile 2026</span>
+            <span>&middot;</span>
+            <span>Marcello Di Pierro</span>
+            <span style="margin-left:auto" class="read-more">Leggi &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/agenzia-lead-generation-b2b/" class="blog-card">
+        <div class="cover-fallback">Agenzia Lead Generation B2B</div>
+        <div class="blog-card-body">
+          <div class="blog-card-category">Lead Generation</div>
+          <h2>Agenzia Lead Generation B2B: Come Sceglierla nel 2026 (Checklist Completa)</h2>
+          <p>7 criteri di valutazione, 12 domande da fare in call e 5 red flag per scegliere l'agenzia di lead generation B2B giusta. Costi reali e checklist.</p>
+          <div class="blog-card-meta">
+            <span>17 Aprile 2026</span>
+            <span>&middot;</span>
+            <span>Marcello Di Pierro</span>
+            <span style="margin-left:auto" class="read-more">Leggi &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation-cos-e/" class="blog-card">
+        <div class="cover-fallback">Lead Generation: Cos'è</div>
+        <div class="blog-card-body">
+          <div class="blog-card-category">Lead Generation</div>
+          <h2>Lead Generation: Cos'è, Significato e Come Funziona nel B2B nel 2026</h2>
+          <p>Significato, definizione e funzionamento della lead generation B2B. Differenza MQL/SQL, canali, ROI reali, costo per lead. Guida completa.</p>
+          <div class="blog-card-meta">
+            <span>16 Aprile 2026</span>
+            <span>&middot;</span>
+            <span>Marcello Di Pierro</span>
+            <span style="margin-left:auto" class="read-more">Leggi &rarr;</span>
+          </div>
+        </div>
+      </a>
 
       <a href="/blog/come-automatizzare-business-con-ai/" class="blog-card">
         <img src="/blog/come-automatizzare-business-con-ai/cover.png" alt="Come Automatizzare il Tuo Business con l'AI nel 2026" loading="lazy">
         <div class="blog-card-body">
-          <div class="blog-card-category">AI & Automazione</div>
+          <div class="blog-card-category">AI &amp; Automazione</div>
           <h2>Come Automatizzare il Tuo Business con l'AI nel 2026</h2>
           <p>Guida pratica per automatizzare il tuo business con l'intelligenza artificiale. Scopri cosa automatizzare, quali strumenti usare e il ROI atteso per le PMI italiane.</p>
           <div class="blog-card-meta">
@@ -165,7 +237,7 @@
       <a href="/blog/agenti-vocali-ai-per-aziende/" class="blog-card">
         <img src="/blog/agenti-vocali-ai-per-aziende/cover.png" alt="Agenti Vocali AI per Aziende: Guida Completa 2026" loading="lazy">
         <div class="blog-card-body">
-          <div class="blog-card-category">AI & Automazione</div>
+          <div class="blog-card-category">AI &amp; Automazione</div>
           <h2>Agenti Vocali AI per Aziende: Guida Completa 2026</h2>
           <p>Guida completa agli agenti vocali AI per aziende. Casi d'uso, vantaggi e come implementare un assistente vocale aziendale per customer service e lead qualification.</p>
           <div class="blog-card-meta">
@@ -180,7 +252,7 @@
       <a href="/blog/make-com-vs-zapier-confronto/" class="blog-card">
         <img src="/blog/make-com-vs-zapier-confronto/cover.png" alt="Make.com vs Zapier: Quale Scegliere per la Tua Azienda?" loading="lazy">
         <div class="blog-card-body">
-          <div class="blog-card-category">AI & Automazione</div>
+          <div class="blog-card-category">AI &amp; Automazione</div>
           <h2>Make.com vs Zapier: Quale Scegliere per la Tua Azienda?</h2>
           <p>Confronto completo tra Make.com e Zapier nel 2026. Vantaggi, svantaggi, prezzi e casi d'uso a confronto per scegliere la piattaforma giusta.</p>
           <div class="blog-card-meta">
