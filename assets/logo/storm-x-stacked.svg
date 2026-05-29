@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" role="img" aria-label="Storm X Digital">
+  <title>Storm X Digital</title>
+  <!-- Riga 1: STORM serif italic, centrata -->
+  <text
+    x="300" y="220"
+    text-anchor="middle"
+    font-family="'Instrument Serif', 'Playfair Display', Georgia, 'Times New Roman', serif"
+    font-style="italic"
+    font-weight="400"
+    font-size="180"
+    fill="#0F0F0F"
+    letter-spacing="-0.005em">STORM</text>
+  <!-- Riga 2: X grande arancione centrata -->
+  <text
+    x="300" y="490"
+    text-anchor="middle"
+    font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="260"
+    fill="#FF5500"
+    letter-spacing="-0.04em">X</text>
+  <!-- Riga 3: DIGITAL micro-mono centrato -->
+  <text
+    x="300" y="640"
+    text-anchor="middle"
+    font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace"
+    font-weight="500"
+    font-size="56"
+    fill="#0F0F0F"
+    letter-spacing="0.32em">DIGITAL</text>
+</svg>

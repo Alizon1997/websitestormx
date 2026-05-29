@@ -1,206 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- Homepage (IT) -->
+  <!-- Homepage IT -->
   <url>
     <loc>https://www.stormxdigital.com/</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/"/>
   </url>
-
-  <!-- Homepage (EN) -->
+  <!-- Homepage EN -->
   <url>
     <loc>https://www.stormxdigital.com/en/</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/"/>
   </url>
 
-  <!-- Automatizzazioni AI -->
-  <url>
-    <loc>https://www.stormxdigital.com/automatizzazioni-ai/</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- Service pages IT -->
+  <url><loc>https://www.stormxdigital.com/services/outbound-sales</loc><lastmod>2026-04-23</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://www.stormxdigital.com/services/agenti-vocali-ai</loc><lastmod>2026-04-23</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.stormxdigital.com/services/automatizzazioni-ai</loc><lastmod>2026-04-23</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.stormxdigital.com/services/make-automazioni</loc><lastmod>2026-04-23</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.stormxdigital.com/services/lead-generation-b2b</loc><lastmod>2026-04-23</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.stormxdigital.com/services/claude-code</loc><lastmod>2026-04-23</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 
-  <!-- Automazioni Make.com -->
-  <url>
-    <loc>https://www.stormxdigital.com/make-automazioni/</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- Blog index IT + EN -->
+  <url><loc>https://www.stormxdigital.com/blog</loc><lastmod>2026-04-23</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.stormxdigital.com/en/blog/</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
-  <!-- Claude Code -->
-  <url>
-    <loc>https://www.stormxdigital.com/claude-code/</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Agenti Vocali AI -->
-  <url>
-    <loc>https://www.stormxdigital.com/agenti-vocali-ai/</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Lead Generation B2B -->
-  <url>
-    <loc>https://www.stormxdigital.com/lead-generation-b2b/</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Outbound Sales -->
-  <url>
-    <loc>https://www.stormxdigital.com/outbound-sales/</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Blog Index (IT) -->
-  <url>
-    <loc>https://www.stormxdigital.com/blog/</loc>
-    <lastmod>2026-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/"/>
-  </url>
-
-  <!-- Blog Index (EN) -->
-  <url>
-    <loc>https://www.stormxdigital.com/en/blog/</loc>
-    <lastmod>2026-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/"/>
-  </url>
-
-  <!-- Blog: Come Automatizzare il Business con AI -->
-  <url>
-    <loc>https://www.stormxdigital.com/blog/come-automatizzare-business-con-ai/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blog: Agenti Vocali AI per Aziende -->
-  <url>
-    <loc>https://www.stormxdigital.com/blog/agenti-vocali-ai-per-aziende/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blog: Make.com vs Zapier -->
-  <url>
-    <loc>https://www.stormxdigital.com/blog/make-com-vs-zapier-confronto/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blog: Lead Generation Cos'è (IT) ↔ What Is Lead Generation (EN) -->
-  <url>
-    <loc>https://www.stormxdigital.com/blog/lead-generation-cos-e/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  <!-- Blog articles IT -->
+  <url><loc>https://www.stormxdigital.com/blog/case-holistic-unity/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.stormxdigital.com/blog/lead-generation-cos-e/</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/lead-generation-cos-e/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/what-is-lead-generation/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/lead-generation-cos-e/"/>
   </url>
+  <url><loc>https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/</loc><lastmod>2026-04-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/b2b-lead-generation-agency/"/>
+  </url>
+  <url><loc>https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/outbound-vs-inbound-marketing/"/>
+  </url>
+  <url><loc>https://www.stormxdigital.com/blog/come-automatizzare-business-con-ai/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.stormxdigital.com/blog/agenti-vocali-ai-per-aziende/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.stormxdigital.com/blog/make-com-vs-zapier-confronto/</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
 
-  <url>
-    <loc>https://www.stormxdigital.com/en/blog/what-is-lead-generation/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/what-is-lead-generation/"/>
+  <!-- Blog articles EN -->
+  <url><loc>https://www.stormxdigital.com/en/blog/what-is-lead-generation/</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/lead-generation-cos-e/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/lead-generation-cos-e/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/what-is-lead-generation/"/>
   </url>
-
-  <!-- Blog: Agenzia Lead Generation B2B (IT) ↔ B2B Lead Generation Agency (EN) -->
-  <url>
-    <loc>https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  <url><loc>https://www.stormxdigital.com/en/blog/b2b-lead-generation-agency/</loc><lastmod>2026-04-17</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/b2b-lead-generation-agency/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/"/>
   </url>
-
-  <url>
-    <loc>https://www.stormxdigital.com/en/blog/b2b-lead-generation-agency/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/b2b-lead-generation-agency/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/agenzia-lead-generation-b2b/"/>
-  </url>
-
-  <!-- Blog: Outbound vs Inbound Marketing (IT ↔ EN) -->
-  <url>
-    <loc>https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/</loc>
-    <lastmod>2026-04-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  <url><loc>https://www.stormxdigital.com/en/blog/outbound-vs-inbound-marketing/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/outbound-vs-inbound-marketing/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/"/>
   </url>
-
-  <url>
-    <loc>https://www.stormxdigital.com/en/blog/outbound-vs-inbound-marketing/</loc>
-    <lastmod>2026-04-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/blog/outbound-vs-inbound-marketing/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/outbound-vs-inbound-marketing/"/>
-  </url>
-
-  <!-- Legal pages (IT) -->
-  <url>
-    <loc>https://www.stormxdigital.com/privacy/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://www.stormxdigital.com/cookies/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://www.stormxdigital.com/terms/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
 </urlset>

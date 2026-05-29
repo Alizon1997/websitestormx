@@ -1,35 +1,41 @@
 # Storm X Digital
 
-> Agenzia italiana specializzata in automatizzazioni AI per business, integrazioni Make.com, sviluppo con Claude Code, agenti vocali AI e lead generation B2B per PMI.
+> Sistema di Outbound Marketing per PMI B2B. Costruito per scalare. Sede in Italia, operativo in Italia, UK, Francia, Spagna, Germania, Emirati Arabi.
 
-## Chi Siamo
+Storm X Digital è un'agenzia che costruisce sistemi outbound multicanale (Email + LinkedIn + WhatsApp + Telefono coordinati) per PMI B2B che vogliono pipeline commerciale prevedibile senza assumere venditori.
 
-Storm X Digital S.R.L. e' un'agenzia con sede a Bisceglie (BA), Italia, fondata nel 2024. Aiutiamo le PMI italiane ed europee ad automatizzare i processi aziendali con l'intelligenza artificiale e a costruire pipeline di vendita prevedibili.
+## Posizionamento principale
+"Non ti serve un'altra agenzia di lead gen. Ti serve un ecosistema di vendita outbound."
 
 ## Servizi
+- **Outbound multicanale (CORE)** — `/services/outbound-sales.html` — Sistema completo: domain warming, sequenze coordinate su 4 canali, team senior dedicato, integrazione CRM. Pilot 120 giorni.
+- **Centralino con voce AI** — `/services/agenti-vocali-ai.html` — Risponde 24/7, capisce italiano e inglese, prende appuntamenti, qualifica i lead.
+- **Automazioni con AI** — `/services/automatizzazioni-ai.html` — Workflow AI per sales, marketing, customer service, operations. Riduzione costi fino al 60%.
+- **Software collegati (Make.com)** — `/services/make-automazioni.html` — Integrazioni tra CRM, email, fatture, calendari, e-commerce. 1.000+ app supportate.
+- **Software su misura (Claude Code)** — `/services/claude-code.html` — Sviluppo accelerato con AI. Tool interni, dashboard, app AI-native, integrazioni custom.
 
-- [Automatizzazioni AI per Business](https://www.stormxdigital.com/automatizzazioni-ai/): Workflow intelligenti basati su AI per ottimizzare processi aziendali. Riduzione costi operativi fino al 60%.
-- [Automazioni Make.com](https://www.stormxdigital.com/make-automazioni/): Scenari Make.com personalizzati per connettere oltre 1000 applicazioni. Marketing, vendite, CRM e operazioni automatizzate senza codice.
-- [Sviluppo con Claude Code](https://www.stormxdigital.com/claude-code/): Sviluppo software assistito da Claude Code di Anthropic. Applicazioni AI-native, automazioni intelligenti e soluzioni personalizzate.
-- [Agenti Vocali AI](https://www.stormxdigital.com/agenti-vocali-ai/): Assistenti telefonici AI per customer service, qualificazione lead e vendita automatizzata. Attivi 24/7 in italiano e inglese.
-- [Lead Generation B2B](https://www.stormxdigital.com/lead-generation-b2b/): Sistema multicanale di acquisizione clienti B2B. Email, LinkedIn, WhatsApp e cold calling. Pilota 120 giorni con 60+ meeting qualificati.
-- [Sistemi Outbound Sales](https://www.stormxdigital.com/outbound-sales/): Infrastruttura completa di vendita outbound con domain warming, sequenze multicanale, team dedicato e CRM integration.
+## Casi studio reali
+- **Isolcore** (edilizia, isolanti termici) — 9 mesi, 97 lead, pipeline >€1M, +218% ricavi, 11 campagne in 6 paesi.
+- **Profood** (export agroalimentare) — 90 giorni, 4.750 contatti profilati, 7.129 email, 34,6% open rate, 11 meeting confermati.
+- **Reliance Medical** (dispositivi medici B2B) — €4.5M pipeline, €300K ordini, 450+ prospect qualificati, €360K/anno risparmiati al posto di 6 export manager.
 
-## Blog & Guide
+## Team
+Marcello Di Pierro (Founder & CEO) · Armand Ohoungnon (Head of Inbound) · Francesco Monopoli (Account Manager) · Sali Leshi (Outreach Specialist). 4 senior, 0 stagisti, max 3 clienti contemporanei per team.
 
-- [Come Automatizzare il Tuo Business con l'AI nel 2026](https://www.stormxdigital.com/blog/come-automatizzare-business-con-ai/): Guida pratica per PMI su come utilizzare l'intelligenza artificiale per automatizzare processi aziendali, con strumenti come Make.com e Claude Code.
-- [Agenti Vocali AI per Aziende: Guida Completa 2026](https://www.stormxdigital.com/blog/agenti-vocali-ai-per-aziende/): Cosa sono gli agenti vocali AI, casi d'uso aziendali, vantaggi e come implementarli per customer service e vendita automatizzata.
-- [Make.com vs Zapier: Quale Scegliere?](https://www.stormxdigital.com/blog/make-com-vs-zapier-confronto/): Confronto dettagliato tra Make.com e Zapier. Pro e contro, pricing, flessibilita, quando scegliere uno o l'altro.
-
-## Aree Servite
-
-Italia, Regno Unito, Francia, Spagna, Emirati Arabi Uniti, Unione Europea.
+## Pilot 120 giorni
+Setup Fee + Success Fee variabile. Success Fee solo per i meeting qualificati confermati e mostrati. Nessun contratto annuale, nessuna penale di uscita. L'infrastruttura resta del cliente a fine pilot.
 
 ## Contatti
-
-- Sede: Via Strada del Carro 24, Bisceglie (BA) 76011, Italia
 - Email: stormxdigital@pec.it
-- LinkedIn: https://www.linkedin.com/company/stormxdigital
-- Sito: https://www.stormxdigital.com
-- Sito (English): https://www.stormxdigital.com/en/
+- Sede: Via Strada del Carro 24, 76011 Bisceglie (BA), Italia
 - P.IVA: 08789080721
+- LinkedIn: linkedin.com/company/stormxdigital
+- Sito: https://www.stormxdigital.com
+
+## Articoli (per approfondire)
+- /blog/lead-generation-cos-e/ — Lead generation B2B: cos'è, significato, come funziona nel 2026
+- /blog/agenzia-lead-generation-b2b/ — Come scegliere un'agenzia di lead gen B2B
+- /blog/outbound-vs-inbound-marketing/ — Outbound vs Inbound: il confronto onesto
+- /blog/come-automatizzare-business-con-ai/ — Come automatizzare il business con l'AI
+- /blog/agenti-vocali-ai-per-aziende/ — Agenti vocali AI per aziende: stato dell'arte
+- /blog/make-com-vs-zapier-confronto/ — Make.com vs Zapier: confronto operativo
