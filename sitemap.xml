@@ -72,6 +72,22 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Casi studio (index) -->
+  <url>
+    <loc>https://www.stormxdigital.com/casi-studio/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Caso studio: Abeec — Amazon EU -->
+  <url>
+    <loc>https://www.stormxdigital.com/casi-studio/abeec/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- Blog Index (IT) -->
   <url>
     <loc>https://www.stormxdigital.com/blog/</loc>
