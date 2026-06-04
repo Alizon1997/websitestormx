@@ -1,510 +1,938 @@
 <!DOCTYPE html>
-<html lang="it" class="scroll-smooth" data-theme="dark">
-
+<html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#1a1a1a" />
-  <title>Storm X Digital | Automatizzazioni AI per Business, Make.com, Lead Generation B2B</title>
-  <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
-  <meta name="description"
-    content="Automatizzazioni business con AI, Make.com e Claude Code. Agenti vocali AI, lead generation B2B e sistemi outbound multicanale. Trasformiamo le PMI italiane con l'intelligenza artificiale." />
-  <meta name="keywords"
-    content="automatizzazioni business, automazioni ai, make.com automazioni, make.com italia, claude code, ai voice agents, agenti vocali ai, automazioni ai per business, lead generation b2b, acquisizione clienti, outbound marketing, cold calling, linkedin automation, vendita b2b, business automation ai, automazioni aziendali, intelligenza artificiale per aziende" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <!-- Open Graph -->
-  <meta property="og:title" content="Storm X Digital | Automatizzazioni AI & Lead Generation B2B" />
-  <meta property="og:description"
-    content="Automatizzazioni business con AI, Make.com e Claude Code. Agenti vocali AI e sistemi outbound multicanale per PMI italiane." />
+  <meta name="theme-color" content="#F8F7F4" />
+  <title>Storm X Digital — Ecosistema di Vendita Outbound per PMI B2B</title>
+  <meta name="google-site-verification" content="wqmiYAflI3HajCYNsBMHNhrlaLVhvOp9VOV7XZF9Wgc" />
+  <meta name="description" content="Costruiamo il tuo motore outbound multicanale in 120 giorni. Email + LinkedIn + WhatsApp + telefono coordinati. Per PMI B2B che vendono in Italia e in Europa. Senza assumere venditori." />
+  <meta name="keywords" content="outbound sales italia, sistema outbound multicanale, lead generation b2b, agenzia outbound, cold email italia, prospecting multicanale, vendita b2b, pilot 120 giorni" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo/storm-x-mark.svg">
+
+  <link rel="canonical" href="https://www.stormxdigital.com/">
+  <link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/">
+  <link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css">
+
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.stormxdigital.com/" />
-  <meta property="og:image" content="https://www.stormxdigital.com/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="Storm X Digital" />
   <meta property="og:locale" content="it_IT" />
   <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:image" content="https://www.stormxdigital.com/assets/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:title" content="Storm X Digital — Ecosistema di Vendita Outbound" />
+  <meta property="og:description" content="Email + LinkedIn + WhatsApp + telefono coordinati. 120 giorni di pilot, zero contratti annuali, zero rischio assunzione." />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Storm X Digital | AI Business Automations & B2B Lead Generation" />
-  <meta name="twitter:description" content="AI business automations, Make.com, Claude Code, AI voice agents, and B2B outbound systems for SMEs. Based in Italy, serving Europe & UAE." />
-  <meta name="twitter:image" content="https://www.stormxdigital.com/og-image.png" />
+  <meta name="twitter:title" content="Storm X Digital — Ecosistema di Vendita Outbound" />
+  <meta name="twitter:description" content="Email + LinkedIn + WhatsApp + telefono coordinati. 120 giorni di pilot, zero contratti annuali, zero rischio assunzione." />
+  <meta name="twitter:image" content="https://www.stormxdigital.com/assets/images/og-image.png" />
 
-  <!-- Canonical & Hreflang -->
-  <link rel="canonical" href="https://www.stormxdigital.com/" />
-  <link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/" />
-  <link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/en/" />
-  <link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/" />
-
-  <!-- Structured Data: Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Storm X Digital",
-    "legalName": "Storm X Digital S.R.L.",
-    "url": "https://www.stormxdigital.com",
-    "logo": "https://www.stormxdigital.com/logo.png",
-    "description": "Agenzia italiana specializzata in automatizzazioni AI per business, integrazioni Make.com, sviluppo con Claude Code, agenti vocali AI e lead generation B2B.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Via Strada del Carro 24",
-      "addressLocality": "Bisceglie",
-      "addressRegion": "BA",
-      "postalCode": "76011",
-      "addressCountry": "IT"
-    },
-    "vatID": "08789080721",
-    "email": "stormxdigital@pec.it",
-    "foundingDate": "2024",
-    "areaServed": ["IT", "GB", "FR", "ES", "AE", "EU"],
-    "knowsAbout": [
-      "AI Business Automation",
-      "Make.com Integration",
-      "Claude Code Development",
-      "AI Voice Agents",
-      "B2B Lead Generation",
-      "Outbound Sales Systems",
-      "Workflow Automation",
-      "Artificial Intelligence for Business"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servizi Storm X Digital",
-      "itemListElement": [
-        {"@type": "OfferCatalog", "name": "Automatizzazioni AI per Business"},
-        {"@type": "OfferCatalog", "name": "Automazioni Make.com"},
-        {"@type": "OfferCatalog", "name": "Sviluppo con Claude Code"},
-        {"@type": "OfferCatalog", "name": "Agenti Vocali AI"},
-        {"@type": "OfferCatalog", "name": "Lead Generation B2B"},
-        {"@type": "OfferCatalog", "name": "Sistemi Outbound Sales"}
-      ]
-    },
-    "sameAs": [
-      "https://www.linkedin.com/company/stormxdigital"
-    ]
-  }
-  </script>
-
-  <!-- Structured Data: LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Storm X Digital S.R.L.",
-    "image": "https://www.stormxdigital.com/logo.png",
-    "url": "https://www.stormxdigital.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Via Strada del Carro 24",
-      "addressLocality": "Bisceglie",
-      "addressRegion": "BA",
-      "postalCode": "76011",
-      "addressCountry": "IT"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.2419,
-      "longitude": 16.5057
-    },
-    "priceRange": "€€€"
-  }
-  </script>
-
-  <!-- Structured Data: Services (6 service lines) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Automatizzazioni AI per Business",
-    "alternateName": "AI Business Automations",
-    "description": "Progettiamo e implementiamo automatizzazioni basate su intelligenza artificiale per ottimizzare i processi aziendali. Workflow intelligenti, integrazione con tool esistenti, riduzione costi operativi fino al 60%.",
-    "provider": {"@type": "Organization", "name": "Storm X Digital"},
-    "serviceType": "AI Automation",
-    "areaServed": ["IT", "GB", "FR", "ES", "AE", "EU"],
-    "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://www.stormxdigital.com/"}
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Automazioni Make.com",
-    "alternateName": "Make.com Integrations & Automations",
-    "description": "Scenari Make.com personalizzati per automatizzare marketing, vendite, CRM e operazioni. Integrazione con oltre 1000 app senza codice. Consulenza Make.com certificata.",
-    "provider": {"@type": "Organization", "name": "Storm X Digital"},
-    "serviceType": "Workflow Automation",
-    "areaServed": ["IT", "GB", "FR", "ES", "AE", "EU"],
-    "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://www.stormxdigital.com/"}
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Sviluppo con Claude Code",
-    "alternateName": "Claude Code Development",
-    "description": "Sviluppo software assistito da Claude Code di Anthropic. Applicazioni AI-native, automazioni intelligenti e soluzioni personalizzate con AI generativa per accelerare il business.",
-    "provider": {"@type": "Organization", "name": "Storm X Digital"},
-    "serviceType": "AI Software Development",
-    "areaServed": ["IT", "GB", "FR", "ES", "AE", "EU"],
-    "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://www.stormxdigital.com/"}
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Agenti Vocali AI",
-    "alternateName": "AI Voice Agents",
-    "description": "Agenti vocali basati su intelligenza artificiale per customer service, qualificazione lead e vendita telefonica automatizzata. Risposte naturali in italiano e inglese, attivi 24/7.",
-    "provider": {"@type": "Organization", "name": "Storm X Digital"},
-    "serviceType": "AI Voice Technology",
-    "areaServed": ["IT", "GB", "FR", "ES", "AE", "EU"],
-    "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://www.stormxdigital.com/"}
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Lead Generation B2B",
-    "description": "Sistema di acquisizione clienti B2B multicanale per PMI. Email outbound, LinkedIn automation, WhatsApp e cold calling. 60+ meeting qualificati in 120 giorni.",
-    "provider": {"@type": "Organization", "name": "Storm X Digital"},
-    "serviceType": "B2B Lead Generation",
-    "areaServed": ["IT", "GB", "FR", "ES", "AE", "EU"],
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/LimitedAvailability",
-      "description": "Pilot 120 giorni con Setup Fee + Success Fee variabile"
-    },
-    "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://www.stormxdigital.com/"}
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Sistemi Outbound Sales",
-    "alternateName": "Outbound Sales Systems",
-    "description": "Infrastruttura completa di vendita outbound: domain warming, sequenze multicanale, team dedicato, CRM integration. Pipeline prevedibile per PMI B2B.",
-    "provider": {"@type": "Organization", "name": "Storm X Digital"},
-    "serviceType": "Outbound Sales",
-    "areaServed": ["IT", "GB", "FR", "ES", "AE", "EU"],
-    "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://www.stormxdigital.com/"}
-  }
-  </script>
-
-  <!-- Structured Data: FAQPage (for featured snippets) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Cosa sono le automatizzazioni AI per business?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Le automatizzazioni AI per business sono workflow intelligenti che usano l'intelligenza artificiale per automatizzare processi aziendali ripetitivi: gestione lead, customer service, data entry, reporting e vendite. Storm X Digital usa strumenti come Make.com e Claude Code per creare soluzioni su misura per PMI italiane ed europee."
-        }
+        "@type": "Organization",
+        "@id": "https://www.stormxdigital.com/#organization",
+        "name": "Storm X Digital",
+        "url": "https://www.stormxdigital.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.stormxdigital.com/assets/logo/storm-x-primary.svg",
+          "width": 512,
+          "height": 512
+        },
+        "description": "Costruiamo ecosistemi di vendita outbound multicanale per PMI B2B. Email, LinkedIn, WhatsApp e telefono coordinati in un unico motore.",
+        "sameAs": []
       },
       {
-        "@type": "Question",
-        "name": "Come funzionano le automazioni Make.com?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Make.com permette di connettere oltre 1000 applicazioni senza scrivere codice. Creiamo scenari personalizzati che automatizzano marketing, vendite, CRM e operazioni. Ogni scenario viene ottimizzato per ridurre i costi operativi e aumentare la produttività aziendale."
-        }
+        "@type": "WebSite",
+        "@id": "https://www.stormxdigital.com/#website",
+        "url": "https://www.stormxdigital.com/",
+        "name": "Storm X Digital",
+        "publisher": { "@id": "https://www.stormxdigital.com/#organization" },
+        "inLanguage": "it-IT"
       },
       {
-        "@type": "Question",
-        "name": "Cos'è Claude Code e come può aiutare la mia azienda?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Claude Code è uno strumento di sviluppo AI di Anthropic che permette di creare applicazioni, automatizzazioni e soluzioni software in modo più veloce e intelligente. Lo usiamo per sviluppare tool personalizzati, integrazioni API e sistemi di automazione avanzati per le aziende."
-        }
+        "@type": "ProfessionalService",
+        "@id": "https://www.stormxdigital.com/#service",
+        "name": "Storm X Digital",
+        "url": "https://www.stormxdigital.com/",
+        "image": "https://www.stormxdigital.com/assets/images/og-image.png",
+        "description": "Ecosistemi di vendita outbound multicanale per PMI B2B: email, LinkedIn, WhatsApp, telefono coordinati. Pilot 120 giorni.",
+        "areaServed": [
+          { "@type": "Country", "name": "Italia" },
+          { "@type": "Place", "name": "Europa" }
+        ],
+        "serviceType": "Outbound Sales, Lead Generation B2B, Automazioni AI",
+        "provider": { "@id": "https://www.stormxdigital.com/#organization" }
       },
       {
-        "@type": "Question",
-        "name": "Cosa sono gli agenti vocali AI?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Gli agenti vocali AI sono assistenti telefonici basati su intelligenza artificiale che possono gestire chiamate in entrata e in uscita 24/7. Qualificano lead, rispondono a domande frequenti e fissano appuntamenti con voce naturale in italiano e inglese."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quanto costa la lead generation B2B con Storm X Digital?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Il nostro programma pilota di lead generation B2B dura 120 giorni e prevede un Setup Fee iniziale più un Success Fee variabile basato sui risultati. Include setup infrastruttura, team senior dedicato e 4 canali outbound: email, LinkedIn, WhatsApp e cold calling con obiettivo 60+ meeting qualificati."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "In quali paesi operate?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Operiamo principalmente in Italia, ma serviamo clienti in tutta Europa inclusi Regno Unito, Francia, Spagna, Emirati Arabi Uniti e l'intera Unione Europea. I nostri sistemi di automazione e lead generation funzionano in italiano, inglese e altre lingue europee."
-        }
+        "@type": "WebPage",
+        "@id": "https://www.stormxdigital.com/#webpage",
+        "url": "https://www.stormxdigital.com/",
+        "name": "Storm X Digital — Ecosistema di Vendita Outbound Multicanale per PMI B2B",
+        "isPartOf": { "@id": "https://www.stormxdigital.com/#website" },
+        "about": { "@id": "https://www.stormxdigital.com/#service" },
+        "inLanguage": "it-IT"
       }
     ]
   }
   </script>
-
-  <!-- Structured Data: WebSite -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Storm X Digital",
-    "url": "https://www.stormxdigital.com",
-    "description": "Automatizzazioni AI per business, Make.com, Claude Code, AI Voice Agents e Lead Generation B2B",
-    "inLanguage": ["it", "en"],
-    "publisher": {
-      "@type": "Organization",
-      "name": "Storm X Digital"
-    }
-  }
-  </script>
-
-  <!-- Pre-set SPA language to IT before bundle loads (URL = /it/) -->
-  <script>
-    try { localStorage.setItem('language', 'it'); } catch (e) {}
-  </script>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
-    rel="stylesheet">
-  <script>
-    tailwind.config = {
-      darkMode: ['class', '[data-theme="dark"]'],
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Plus Jakarta Sans', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
-          },
-          colors: {
-            brand: {
-              dark: 'rgb(var(--brand-dark) / <alpha-value>)',
-              surface: 'rgb(var(--brand-surface) / <alpha-value>)',
-              surfaceHighlight: 'rgb(var(--brand-surface-highlight) / <alpha-value>)',
-              border: 'rgb(var(--brand-border) / <alpha-value>)',
-              accent: 'rgb(var(--brand-accent) / <alpha-value>)',
-              accentGlow: 'rgb(var(--brand-accent-glow) / <alpha-value>)',
-              text: 'rgb(var(--brand-text) / <alpha-value>)',
-              textInverse: 'rgb(var(--brand-text-inverse) / <alpha-value>)',
-              muted: 'rgb(var(--brand-muted) / <alpha-value>)',
-              blue: '59 130 246',
-            }
-          },
-          boxShadow: {
-            'glow': '0 0 20px rgba(255, 85, 0, 0.15)',
-            'glow-lg': '0 0 40px rgba(255, 85, 0, 0.2)',
-          },
-          animation: {
-            'fade-up': 'fadeUp 0.8s ease-out forwards',
-            'fade-in-up': 'fadeInUp 0.4s ease-out forwards',
-            'fade-in-down': 'fadeInDown 0.3s ease-out forwards',
-            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            'marquee': 'marquee 30s linear infinite',
-            'slide-up': 'slideUp 0.6s ease-out both',
-          },
-          keyframes: {
-            fadeUp: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
-            fadeInUp: {
-              '0%': { opacity: '0', transform: 'translateY(12px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
-            fadeInDown: {
-              '0%': { opacity: '0', transform: 'translateY(-12px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
-            marquee: {
-              '0%': { transform: 'translateX(0)' },
-              '100%': { transform: 'translateX(-50%)' },
-            },
-            slideUp: {
-              '0%': { opacity: '0', transform: 'translateY(30px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
-          },
-          backgroundImage: {
-            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    :root {
-      /* Light Theme Variables */
-      --brand-dark: 250 250 250;
-      /* Off-white background (#FAFAFA) */
-      --brand-surface: 255 255 255;
-      /* Pure white */
-      --brand-surface-highlight: 245 245 245;
-      /* Light gray */
-      --brand-border: 230 230 230;
-      /* Light gray border */
-      --brand-accent: 255 85 0;
-      /* Orange #FF5500 (kept) */
-      --brand-accent-glow: 255 145 77;
-      /* #FF914D */
-      --brand-text: 26 26 26;
-      /* Near black (#1A1A1A) */
-      --brand-text-inverse: 255 255 255;
-      /* White */
-      --brand-muted: 107 114 128;
-      /* Gray-500 (#6B7280) */
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      background-color: rgb(var(--brand-dark));
-      color: rgb(var(--brand-text));
-      letter-spacing: -0.01em;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      letter-spacing: -0.02em;
-    }
-
-    .glass-nav {
-      background: rgba(var(--brand-dark), 0.95);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(var(--brand-border), 0.8);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    }
-
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: rgb(var(--brand-surface));
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: rgb(200 200 200);
-      border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: rgb(var(--brand-accent));
-    }
-  </style>
-
-
-  <script type="module" crossorigin fetchpriority="high" src="/assets/index-CrW6ih7c.js"></script>
-  <link rel="modulepreload" crossorigin fetchpriority="high" href="/assets/react-vendor-Dy-jHZuP.js">
-
-  <!-- DNS Prefetch & Preconnect for Performance -->
-  <link rel="dns-prefetch" href="https://connect.facebook.net">
-  <link rel="dns-prefetch" href="https://app.lemlist.com">
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
-  <link rel="preconnect" href="https://app.lemlist.com" crossorigin>
-  
-  <!-- Preload Critical Font (Inter for body text) -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1445471526062406');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1445471526062406&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-
-  <!-- Lemlist Tracking -->
-  <script async type="text/javascript" src="https://app.lemlist.com/api/visitors/tracking?k=BDhq9RkiazDZTAsrf78TQIpGU4Y1T59qj2H54KEzAXQ=&t=tea_WDB3Rjyj2RrCtS2Lm"></script>
-  <!-- End Lemlist Tracking -->
 </head>
+<body>
 
-<body class="bg-brand-dark text-brand-text">
-  <div id="root"></div>
-  <noscript>
-    <header>
-      <h1>Storm X Digital - Automatizzazioni AI per Business</h1>
-      <p>Agenzia italiana specializzata in automatizzazioni business con intelligenza artificiale, integrazioni Make.com, sviluppo con Claude Code, agenti vocali AI e lead generation B2B per PMI.</p>
-    </header>
-    <main>
-      <section>
-        <h2>I Nostri Servizi</h2>
+<!-- ============== HEADER ============== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo" aria-label="Storm X Digital — home">
+      <img class="logo--primary" src="assets/logo/storm-x-primary.svg" alt="Storm X Digital">
+      <img class="logo--stacked" src="assets/logo/storm-x-stacked.svg" alt="">
+    </a>
+    <nav class="header-nav" id="site-nav">
+      <div class="nav-dropdown">
+        <button type="button" class="nav-trigger">SERVIZI</button>
+        <div class="nav-panel">
+          <a href="services/outbound-sales" class="nav-panel-item"><span>Outbound multicanale</span><span class="idx">CORE</span></a>
+          <a href="services/agenti-vocali-ai" class="nav-panel-item"><span>Centralino con voce AI</span><span class="idx">02</span></a>
+          <a href="services/automatizzazioni-ai" class="nav-panel-item"><span>Automazioni con AI</span><span class="idx">03</span></a>
+          <a href="services/make-automazioni" class="nav-panel-item"><span>Software collegati</span><span class="idx">04</span></a>
+          <a href="services/claude-code" class="nav-panel-item"><span>Software su misura</span><span class="idx">05</span></a>
+        </div>
+      </div>
+      <a href="#workflow" class="nav-link">METODO</a>
+      <a href="#programma" class="nav-link">PILOT 120GG</a>
+      <a href="#risultati" class="nav-link">RISULTATI</a>
+      <a href="blog" class="nav-link">ARTICOLI</a>
+    </nav>
+    <div class="header-right">
+      <a href="en/index.html" class="header-lang">EN</a>
+      <a href="#prenota" class="header-cta">PRENOTA UNA CALL</a>
+      <button class="mobile-menu-btn" onclick="document.getElementById('site-nav').classList.toggle('open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-        <h3>Automatizzazioni AI per Business</h3>
-        <p>Progettiamo e implementiamo workflow intelligenti basati su intelligenza artificiale per ottimizzare i processi aziendali. Integrazione con i tool esistenti, riduzione dei costi operativi e aumento della produttività grazie all'AI. Soluzioni personalizzate per PMI italiane ed europee.</p>
+<!-- ============== HERO ============== -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-meta">
+      <span class="mono-label is-live">PILOT Q2 2026 · 1 POSTO LIBERO</span>
+    </div>
+    <h1 class="hero-h1">Il tuo prossimo <em>cliente</em> non ti sta cercando.</h1>
+    <p class="hero-sub"><strong>Costruiamo il tuo motore outbound multicanale in 120 giorni.</strong> Email + LinkedIn + WhatsApp + telefono, coordinati. <em class="guarantee">Zero rischio assunzione.</em></p>
+    <div class="hero-actions">
+      <a href="#prenota" class="btn-primary">Richiedi analisi pipeline</a>
+      <a href="#risultati" class="btn-ghost">Vedi case Isolcore</a>
+    </div>
 
-        <h3>Automazioni Make.com</h3>
-        <p>Creiamo scenari Make.com personalizzati per automatizzare marketing, vendite, CRM e operazioni aziendali. Connetti oltre 1000 applicazioni senza scrivere codice. Consulenza Make.com specializzata per aziende che vogliono scalare i propri processi.</p>
+    <!-- Trust strip — proof reale above the fold (numeri da casi clienti, non promesse) -->
+    <div class="trust-strip">
+      <div class="trust-item">
+        <div class="v">€<span data-counter="4.5" data-decimals="1">0,0</span><sup>M</sup></div>
+        <div class="l">Pipeline generata · Reliance</div>
+      </div>
+      <div class="trust-item">
+        <div class="v">+<span data-counter="218" data-suffix="%">0</span></div>
+        <div class="l">Crescita ricavi · Isolcore</div>
+      </div>
+      <div class="trust-item">
+        <div class="v"><span data-counter="14">0</span></div>
+        <div class="l">Giorni medi setup</div>
+      </div>
+      <div class="trust-item">
+        <div class="v"><span data-counter="4">0</span></div>
+        <div class="l">Senior dedicati · 0 stagisti</div>
+      </div>
+    </div>
+  </div>
 
-        <h3>Sviluppo con Claude Code</h3>
-        <p>Sviluppo software assistito da Claude Code di Anthropic. Creiamo applicazioni AI-native, automatizzazioni intelligenti e soluzioni personalizzate con AI generativa. Accelera lo sviluppo del tuo business con gli strumenti AI più avanzati.</p>
+  <div class="hero-visual">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/images/hero-frame-2.png">
+      <source src="assets/images/hero-video.mp4" type="video/mp4">
+    </video>
+    <span class="corner tl"></span><span class="corner tr"></span>
+    <span class="corner bl"></span><span class="corner br"></span>
+    <span class="live-tag">SISTEMA ATTIVO</span>
+  </div>
+</section>
 
-        <h3>Agenti Vocali AI</h3>
-        <p>Agenti vocali basati su intelligenza artificiale per customer service, qualificazione lead e vendita telefonica automatizzata. I nostri AI voice agents rispondono con voce naturale in italiano e inglese, attivi 24 ore su 24, 7 giorni su 7.</p>
+<!-- ============== LOGOS STRIP — clienti REALI ============== -->
+<div class="logos-strip">
+  <div class="logos-inner">
+    <div class="logos-label">Lavoriamo con</div>
+    <div class="logos-list">
+      <a href="#risultati" title="Isolcore — Edilizia / Isolamento Termico"><img src="assets/images/logos/isolcore.svg" alt="Isolcore"></a>
+      <a href="#risultati" title="Profood — Export Agroalimentare"><img src="assets/images/logos/profood.png" alt="Profood"></a>
+      <a href="#risultati" title="Reliance Medical — Dispositivi Medici B2B"><img src="assets/images/logos/reliance.png" alt="Reliance Medical"></a>
+      <a href="#risultati" title="Reebok — Sport Apparel"><img src="assets/images/logos/reebok.png" alt="Reebok"></a>
+      <a href="#risultati" title="Evomach — Macchinari Industriali"><img src="assets/images/logos/evomach.png" alt="Evomach"></a>
+      <a href="#risultati" title="Performanse — HR Assessment B Corp"><img src="assets/images/logos/performanse.svg" alt="Performanse"></a>
+      <a href="#risultati" title="Advinser — Consulenza Integrata"><img src="assets/images/logos/advinser.svg" alt="Advinser"></a>
+      <a href="#risultati" title="Alfa Pack — Imballaggi Flessibili Food"><img src="assets/images/logos/alfapack.png" alt="Alfa Pack"></a>
+      <a href="#risultati" title="Beaverswood — Warehouse Signage UK"><img src="assets/images/logos/beaverswood.png" alt="Beaverswood"></a>
+    </div>
+  </div>
+</div>
 
-        <h3>Lead Generation B2B</h3>
-        <p>Sistema di acquisizione clienti B2B multicanale per PMI. Email outbound, LinkedIn automation, WhatsApp e cold calling. Programma pilota di 120 giorni con team senior dedicato e obiettivo 60+ meeting qualificati. Setup infrastruttura completa.</p>
+<!-- ============== PARADIGM SHIFT — sezione protagonist outbound ============== -->
+<section class="paradigm" id="workflow">
+  <div class="paradigm-inner">
+    <div class="paradigm-content">
+      <div class="num">01 / IL CORE</div>
+      <h2>Non ti serve un'altra agenzia di lead gen. Ti serve un <em>ecosistema di vendita outbound</em>.</h2>
+      <p class="lede">Dimentica le liste di contatti freddi e lo spam. Storm X ingegnerizza la parte più frustrante del processo commerciale: <strong>il prospecting multicanale</strong>. L'idea è semplice — <strong>il lunedì mattina, il tuo team trova in agenda conversazioni con decisori che sanno già chi siete</strong>.</p>
 
-        <h3>Sistemi Outbound Sales</h3>
-        <p>Infrastruttura completa di vendita outbound: domain warming, sequenze multicanale personalizzate, team dedicato e integrazione CRM. Costruiamo una pipeline di vendita prevedibile e scalabile per PMI B2B in Italia e in Europa.</p>
-      </section>
+      <div class="paradigm-channels">
+        <div class="channel">
+          <div class="ch-num">CANALE 01</div>
+          <h4>Cold Email</h4>
+          <p>Volume e consegna in inbox. Domini dedicati e riscaldati per non finire in spam.</p>
+        </div>
+        <div class="channel">
+          <div class="ch-num">CANALE 02</div>
+          <h4>LinkedIn</h4>
+          <p>Riconoscibilità sociale e networking. Connessioni qualificate, non massive.</p>
+        </div>
+        <div class="channel">
+          <div class="ch-num">CANALE 03</div>
+          <h4>WhatsApp</h4>
+          <p>Velocità con chi è già ingaggiato. Note audio personalizzate convertono 5× il testo.</p>
+        </div>
+        <div class="channel">
+          <div class="ch-num">CANALE 04</div>
+          <h4>Telefono</h4>
+          <p>Caller senior italiano per convertire l'interesse in appuntamento. Zero stagisti.</p>
+        </div>
+      </div>
 
-      <section>
-        <h2>Domande Frequenti</h2>
+      <p class="paradigm-quote">
+        "Sincronizziamo i 4 canali in <em>un unico flusso logico</em>, non in silos separati. Fino a 12 touchpoint per lead. Un approccio ibrido e umano che non si può fermare."
+        <span class="author">— METODO STORM X · WORKFLOW MULTICANALE PROPRIETARIO</span>
+      </p>
+    </div>
 
-        <h3>Cosa sono le automatizzazioni AI per business?</h3>
-        <p>Le automatizzazioni AI per business sono workflow intelligenti che usano l'intelligenza artificiale per automatizzare processi aziendali ripetitivi: gestione lead, customer service, data entry, reporting e vendite. Storm X Digital usa strumenti come Make.com e Claude Code per creare soluzioni su misura.</p>
+    <div class="paradigm-visual">
+      <div class="channel-diagram" aria-label="Diagramma del workflow multicanale: 4 canali convergono al cliente">
+        <svg class="lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <!-- 4 linee tratteggiate: ogni nodo angolo → centro -->
+          <line class="live" x1="20" y1="20" x2="50" y2="50"></line>
+          <line x1="80" y1="20" x2="50" y2="50"></line>
+          <line x1="20" y1="80" x2="50" y2="50"></line>
+          <line class="live" x1="80" y1="80" x2="50" y2="50"></line>
+        </svg>
+        <div class="node n-email">
+          <div class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/>
+            </svg>
+          </div>
+          <div class="label">Email</div>
+        </div>
+        <div class="node n-linkedin">
+          <div class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.34 17H5.67v-7.93h2.67V17zM7 7.93a1.55 1.55 0 11.01-3.1A1.55 1.55 0 017 7.93zM18.34 17h-2.66v-3.86c0-.92-.02-2.1-1.28-2.1-1.28 0-1.48 1-1.48 2.03V17H10.27v-7.93h2.55v1.08h.04c.36-.67 1.22-1.28 2.51-1.28 2.69 0 3.18 1.77 3.18 4.07L18.34 17z"/>
+            </svg>
+          </div>
+          <div class="label">LinkedIn</div>
+        </div>
+        <div class="center">
+          <div class="diamond"><span>LEAD</span></div>
+        </div>
+        <div class="node n-whatsapp">
+          <div class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 12a9 9 0 11-3.6-7.2L21 3l-1.7 4 .3.3A8.96 8.96 0 0121 12z"/>
+              <path d="M8.5 8.5c.3 1.5 1.4 3 2.5 4 1 1 2.5 2.2 4 2.5l1-1.4-2-1-1.2.6a3 3 0 01-1.4-1.4l.6-1.2-1-2L8.5 8.5z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="label">WhatsApp</div>
+        </div>
+        <div class="node n-phone">
+          <div class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/>
+            </svg>
+          </div>
+          <div class="label">Telefono</div>
+        </div>
+      </div>
+      <span class="corner tl"></span><span class="corner tr"></span>
+      <span class="corner bl"></span><span class="corner br"></span>
+      <span class="schema-tag">SCHEMA · WORKFLOW·01</span>
+    </div>
+  </div>
+</section>
 
-        <h3>Come funzionano le automazioni Make.com?</h3>
-        <p>Make.com permette di connettere oltre 1000 applicazioni senza scrivere codice. Creiamo scenari personalizzati che automatizzano marketing, vendite, CRM e operazioni. Ogni scenario viene ottimizzato per ridurre i costi operativi e aumentare la produttività.</p>
+<!-- ============== WHATSAPP PROTOCOL — approfondimento outbound ============== -->
+<section class="whatsapp-protocol">
+  <div class="wp-inner">
+    <!-- Sx: iPhone mockup con chat WhatsApp animata -->
+    <div class="iphone-frame">
+      <div class="iphone-screen">
+        <div class="ios-status">
+          <span class="ios-time">9:41</span>
+          <div class="ios-icons">
+            <svg viewBox="0 0 16 12" aria-hidden="true"><path d="M2 9h2v3H2zm4-2h2v5H6zm4-2h2v7h-2zm4-2h2v9h-2z"/></svg>
+            <svg viewBox="0 0 16 12" aria-hidden="true"><path d="M8 2C5 2 2.5 3.5 1 5l1 1c1.5-1.5 3.5-2.5 6-2.5s4.5 1 6 2.5l1-1C12.5 3.5 11 2 8 2zm0 3c-1.5 0-3 .5-4 1.5l1 1c.7-.7 1.7-1 3-1s2.3.3 3 1l1-1C11 5.5 9.5 5 8 5zm0 3c-.7 0-1.4.3-2 .8l1 1c.3-.2.6-.3 1-.3s.7.1 1 .3l1-1c-.6-.5-1.3-.8-2-.8z"/></svg>
+            <span class="battery"><span></span></span>
+          </div>
+        </div>
+        <div class="wa-header">
+          <span class="back">‹</span>
+          <span class="avatar"><img src="assets/images/team/marcello.png" alt="Marcello"></span>
+          <div class="who">
+            <div class="name">Marcello (Storm X)</div>
+            <div class="status">online</div>
+          </div>
+          <div class="actions">📞 ⋮</div>
+        </div>
+        <div class="wa-body">
+          <div class="wa-date">mercoledì, 24 ottobre</div>
+          <div class="wa-encryption">🔒 I messaggi e le chiamate sono crittografati end-to-end. Nessuno fuori da questa chat può leggerli.</div>
 
-        <h3>Cos'è Claude Code e come può aiutare la mia azienda?</h3>
-        <p>Claude Code è uno strumento di sviluppo AI di Anthropic che permette di creare applicazioni, automatizzazioni e soluzioni software in modo più veloce e intelligente. Lo usiamo per sviluppare tool personalizzati, integrazioni API e sistemi di automazione avanzati.</p>
+          <div class="wa-typing"><span></span><span></span><span></span></div>
 
-        <h3>Cosa sono gli agenti vocali AI?</h3>
-        <p>Gli agenti vocali AI sono assistenti telefonici basati su intelligenza artificiale che gestiscono chiamate in entrata e in uscita 24/7. Qualificano lead, rispondono a domande frequenti e fissano appuntamenti con voce naturale in italiano e inglese.</p>
+          <div class="wa-bubble in" style="--delay: 1.6s;">
+            Ciao Marco, ho visto che hai aperto la mia email sul Pilot. Ha senso parlarne 5 minuti?
+            <span class="meta">9:41</span>
+          </div>
 
-        <h3>In quali paesi operate?</h3>
-        <p>Operiamo principalmente in Italia, ma serviamo clienti in tutta Europa inclusi Regno Unito, Francia, Spagna, Emirati Arabi Uniti e l'intera Unione Europea.</p>
-      </section>
+          <div class="wa-voice" style="--delay: 2.6s;">
+            <span class="play">▶</span>
+            <span class="waveform">
+              <span style="height:30%"></span><span style="height:55%"></span><span style="height:80%"></span>
+              <span style="height:65%"></span><span style="height:90%"></span><span style="height:50%"></span>
+              <span style="height:75%"></span><span style="height:85%"></span><span style="height:40%"></span>
+              <span style="height:70%"></span><span style="height:60%"></span><span style="height:45%"></span>
+              <span style="height:80%"></span><span style="height:55%"></span><span style="height:35%"></span>
+              <span style="height:65%"></span><span style="height:50%"></span><span style="height:40%"></span>
+            </span>
+            <span class="duration">0:24</span>
+            <span class="pulse"></span>
+          </div>
 
-      <footer>
-        <p>Storm X Digital S.R.L. - Via Strada del Carro 24, Bisceglie (BA) 76011, Italia - P.IVA 08789080721</p>
-        <p>Email: stormxdigital@pec.it | LinkedIn: linkedin.com/company/stormxdigital</p>
-      </footer>
-    </main>
-  </noscript>
+          <div class="wa-bubble out" style="--delay: 3.8s;">
+            Ciao, sì. Chiamami domani mattina.
+            <span class="meta">9:43 <span class="check">✓✓</span></span>
+          </div>
+        </div>
+        <div class="wa-input">
+          <span class="pill">Messaggio</span>
+          <span class="send">▶</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dx: contenuto -->
+    <div class="wp-content">
+      <div class="num">02 / IL PROTOCOLLO</div>
+      <h2>Non è spam. È business alla velocità della <em>luce</em>.</h2>
+      <p class="lede">Le email si possono ignorare. Le chiamate si possono bloccare. Ma un approccio ibrido e umano non si può fermare. Ecco come funziona davvero:</p>
+
+      <div class="wp-pillars">
+        <div class="wp-pillar">
+          <div class="ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 6v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V6l-8-4z"/></svg>
+          </div>
+          <div>
+            <h4>Anti-Spam Policy Rigorosa</h4>
+            <p>Contattiamo canali diretti (WhatsApp o mobile) <strong>solo dopo</strong> che il prospect ha mostrato segnali di interesse: apertura email, visita profilo LinkedIn. Il contesto è tutto.</p>
+          </div>
+        </div>
+        <div class="wp-pillar">
+          <div class="ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a4 4 0 00-4 4v6a4 4 0 008 0V5a4 4 0 00-4-4z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 18v3M8 21h8"/></svg>
+          </div>
+          <div>
+            <h4>Il potere della voce</h4>
+            <p>Una nota audio personalizzata o una video-pillola converte <strong>5× più</strong> di un testo standard. Umanizziamo il brand per creare fiducia istantanea — quella che le sequenze automatiche non possono replicare.</p>
+          </div>
+        </div>
+        <div class="wp-pillar">
+          <div class="ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5 21v-2a7 7 0 0114 0v2"/></svg>
+          </div>
+          <div>
+            <h4>Human Touch</h4>
+            <p>Dietro ogni conversazione c'è un senior italiano. <strong>Nessuno stagista</strong> gestisce la reputazione della tua azienda. 4 senior dedicati, 0 stagisti, max 3 clienti per team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FLOW: Il flusso completo dal dato al meeting ============== -->
+<section class="flow" id="flow">
+  <div class="flow-head">
+    <div class="num">03 / IL FLUSSO</div>
+    <div class="heading">
+      <h2>Dal primo dato al <em>meeting confermato</em>.</h2>
+      <p>Cinque fasi precise. Nessuna è automatizzata col pilota inserito. Ogni passaggio ha un senior che lo opera. Ecco esattamente cosa succede dietro le quinte.</p>
+    </div>
+  </div>
+
+  <div class="flow-timeline reveal-stagger">
+
+    <!-- STEP 01: Database aziende target -->
+    <div class="flow-step">
+      <div class="marker">01</div>
+      <div class="step-label">RICERCA</div>
+      <h3>Aziende target verificate</h3>
+      <p class="flow-desc">Database B2B premium (Apollo, ZoomInfo, Clay) filtrato sul tuo ICP esatto. Solo aziende con budget, settore e dimensione che ti interessa.</p>
+      <div class="flow-mockup mock-database">
+        <div class="table-rows">
+          <div class="row match"><span class="sect">Acme Industries</span><span class="meta">Manifattura · 50–200</span></div>
+          <div class="row match"><span class="sect">Brama Logistics</span><span class="meta">Logistica · 100–500</span></div>
+          <div class="row"><span class="sect">Costa Group</span><span class="meta">Retail · &lt;50</span></div>
+          <div class="row match"><span class="sect">Delta Forniture</span><span class="meta">B2B · 200–1k</span></div>
+          <div class="row"><span class="sect">Eloss Servizi</span><span class="meta">Consulenza · &lt;50</span></div>
+        </div>
+        <div class="counter">
+          <span>FILTRO ICP MATCH</span>
+          <span><span class="num">2.847</span> / 12.347</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 02: Decisore reale -->
+    <div class="flow-step">
+      <div class="marker">02</div>
+      <div class="step-label">DECISORE</div>
+      <h3>Il contatto giusto, dati verificati</h3>
+      <p class="flow-desc">Estraiamo la persona che firma davvero la decisione. Email lavorativa + telefono diretto + LinkedIn, tutto verificato &gt; 95%.</p>
+      <div class="flow-mockup mock-contact">
+        <div class="avatar">MR</div>
+        <div class="info">
+          <div class="name">Marco Rossi</div>
+          <div class="role">CFO · Acme Industries</div>
+          <span class="ch">m.rossi@acme.it</span>
+          <span class="ch">+39 347 ••• ••12</span>
+          <span class="ch">linkedin.com/in/mrossi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 03: 4 touchpoint personalizzati -->
+    <div class="flow-step">
+      <div class="marker">03</div>
+      <div class="step-label">PERSONALIZZAZIONE</div>
+      <h3>4 messaggi cuciti su Marco</h3>
+      <p class="flow-desc">Ogni touchpoint riferisce a contesto specifico (ruolo, settore, news azienda, tech stack). Niente template, niente "Ciao &lt;&lt;Nome&gt;&gt;".</p>
+      <div class="flow-mockup mock-touch">
+        <div class="tp">
+          <span class="ico">✉</span>
+          <div class="body">
+            <div class="from">EMAIL · GIORNO 1</div>
+            "Marco, visto che Acme ha aperto 3 nuovi plant nel Sud, ti interessa..."
+          </div>
+        </div>
+        <div class="tp">
+          <span class="ico">in</span>
+          <div class="body">
+            <div class="from">LINKEDIN · GIORNO 4</div>
+            "Ciao Marco, rispondo al tuo post sul caro-energia: noi abbiamo aiutato..."
+          </div>
+        </div>
+        <div class="tp">
+          <span class="ico">▣</span>
+          <div class="body">
+            <div class="from">WHATSAPP · GIORNO 7</div>
+            "Marco, hai aperto la mail ma niente reply. Ha senso parlarne 5 min?"
+          </div>
+        </div>
+        <div class="tp">
+          <span class="ico">☎</span>
+          <div class="body">
+            <div class="from">CHIAMATA · GIORNO 9</div>
+            "Buongiorno dott. Rossi, sono Sali di Storm X..."
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 04: Sequenza coordinata -->
+    <div class="flow-step">
+      <div class="marker">04</div>
+      <div class="step-label">SEQUENZA</div>
+      <h3>14 giorni, 5–7 touchpoint coordinati</h3>
+      <p class="flow-desc">Timing studiato per non essere fastidiosi. Se Marco risponde, ci fermiamo. Se ignora email, proviamo LinkedIn. Se ignora pure quello, WhatsApp dopo segnale di interesse.</p>
+      <div class="flow-mockup mock-sequence">
+        <div class="days">
+          <div class="day touchpoint" title="Email"></div>
+          <div class="day"></div>
+          <div class="day"></div>
+          <div class="day touchpoint" title="LinkedIn"></div>
+          <div class="day"></div>
+          <div class="day"></div>
+          <div class="day touchpoint" title="Email follow-up"></div>
+          <div class="day"></div>
+          <div class="day touchpoint" title="WhatsApp"></div>
+          <div class="day today" title="Oggi"></div>
+          <div class="day touchpoint" title="Telefonata"></div>
+          <div class="day"></div>
+          <div class="day"></div>
+          <div class="day"></div>
+        </div>
+        <div class="legend">
+          <span>TOUCHPOINT</span>
+        </div>
+        <p style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-faint); letter-spacing: 0.06em; margin-top: 8px;">
+          GIORNI 1 → 14
+        </p>
+      </div>
+    </div>
+
+    <!-- STEP 05: Meeting confermato -->
+    <div class="flow-step">
+      <div class="marker">05</div>
+      <div class="step-label">RISULTATO</div>
+      <h3>Meeting in agenda del tuo team</h3>
+      <p class="flow-desc">Marco ha detto sì. Il senior gli ha mandato il link Calendly del tuo commerciale, lui ha scelto lo slot, c'è già una conferma email. Fine flusso.</p>
+      <div class="flow-mockup mock-calendar">
+        <div class="week">
+          <span>LUN</span><span>MAR</span><span>MER</span><span>GIO</span><span>VEN</span>
+        </div>
+        <div class="slots">
+          <div class="slot empty"><span class="time">10:00</span><span class="who">libero</span></div>
+          <div class="slot confirmed"><span class="time">14:30</span><span class="who">Demo · Acme</span></div>
+          <div class="slot empty"><span class="time">16:00</span><span class="who">libero</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer riga: numeri totali -->
+  <div style="max-width: 1440px; margin: var(--s-7) auto 0; padding: var(--s-5) var(--gutter) 0; border-top: 1px solid var(--c-line); display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-5);">
+    <div>
+      <div style="font-family: var(--font-display); font-size: clamp(28px, 3vw, 44px); font-weight: 500; letter-spacing: -0.04em; line-height: 1;">2–3<span style="font-family: var(--font-mono); font-size: 0.45em; color: var(--c-accent); margin-left: 4px;">SETTIMANE</span></div>
+      <div style="font-family: var(--font-mono); font-size: var(--t-mono-xs); letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-text-faint); margin-top: 8px;">Per il primo meeting</div>
+    </div>
+    <div>
+      <div style="font-family: var(--font-display); font-size: clamp(28px, 3vw, 44px); font-weight: 500; letter-spacing: -0.04em; line-height: 1;">5–7</div>
+      <div style="font-family: var(--font-mono); font-size: var(--t-mono-xs); letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-text-faint); margin-top: 8px;">Touchpoint per lead</div>
+    </div>
+    <div>
+      <div style="font-family: var(--font-display); font-size: clamp(28px, 3vw, 44px); font-weight: 500; letter-spacing: -0.04em; line-height: 1;">96<span style="font-family: var(--font-mono); font-size: 0.45em; color: var(--c-accent); margin-left: 2px;">%</span></div>
+      <div style="font-family: var(--font-mono); font-size: var(--t-mono-xs); letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-text-faint); margin-top: 8px;">Email consegnate (no spam)</div>
+    </div>
+    <div>
+      <div style="font-family: var(--font-display); font-size: clamp(28px, 3vw, 44px); font-weight: 500; letter-spacing: -0.04em; line-height: 1;">100<span style="font-family: var(--font-mono); font-size: 0.45em; color: var(--c-accent); margin-left: 2px;">%</span></div>
+      <div style="font-family: var(--font-mono); font-size: var(--t-mono-xs); letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-text-faint); margin-top: 8px;">Operato da senior italiani</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== METODO ============== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">02 / METODO</div>
+      <h2 class="title">Tre fasi. Misurabili. Gestite da noi.</h2>
+    </div>
+
+    <div class="process reveal-stagger">
+      <div class="step">
+        <div class="step-img"><img src="assets/images/process-01.png" alt="Stretta di mano + checklist"></div>
+        <div class="step-marker"><span class="num">01</span><span>GIORNI 1–14 · SETUP</span></div>
+        <h3>Costruiamo l'infrastruttura</h3>
+        <ul>
+          <li>Definiamo chi è il tuo cliente ideale (ICP)</li>
+          <li>Configuriamo domini email dedicati, CRM, calendario</li>
+          <li>Riscaldiamo le caselle email: deliverability &gt; 95% prima di partire</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="step-img"><img src="assets/images/process-02.png" alt="Laptop + email + caffè"></div>
+        <div class="step-marker"><span class="num">02</span><span>GIORNI 15–60 · LANCIO</span></div>
+        <h3>Sincronizziamo i 4 canali</h3>
+        <ul>
+          <li>Email + LinkedIn + WhatsApp + chiamate, coordinati</li>
+          <li>5–7 touchpoint per lead, copy A/B testato</li>
+          <li>Monitoriamo ogni giorno, ottimizziamo ogni settimana</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="step-img"><img src="assets/images/process-03.png" alt="Calendario con 'DEMO CLIENTE' cerchiato in arancio"></div>
+        <div class="step-marker"><span class="num">03</span><span>GIORNI 61–120 · CROCIERA</span></div>
+        <h3>Il sistema lavora</h3>
+        <ul>
+          <li>Appuntamenti qualificati in agenda ogni settimana</li>
+          <li>Report settimanali con metriche reali</li>
+          <li>L'infrastruttura resta tua, gratis, alla fine del pilot</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PILOT 120GG ============== -->
+<section class="section" id="programma">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">03 / PILOT 120GG</div>
+      <h2 class="title">Validazione scientifica in 120 giorni. Zero vincoli annuali.</h2>
+    </div>
+
+    <div class="kpi-row reveal-stagger" style="border-top: 0; padding-top: 0;">
+      <div class="kpi"><div class="v"><span data-counter="120">0</span></div><div class="l">Giorni di pilot</div></div>
+      <div class="kpi"><div class="v"><span data-counter="4">0</span></div><div class="l">Canali coordinati</div></div>
+      <div class="kpi"><div class="v"><span data-counter="3000" data-suffix="+">0</span></div><div class="l">Lead lavorati</div></div>
+      <div class="kpi"><div class="v"><span data-counter="0">0</span></div><div class="l">Vincoli a lungo termine</div></div>
+    </div>
+
+    <p style="font-family: var(--font-mono); font-size: var(--t-mono-sm); letter-spacing: 0.04em; color: var(--c-text-faint); margin-top: var(--s-7); max-width: 70ch; line-height: 1.6;">
+      // TARIFFA FISSA + SUCCESS FEE VARIABILE IN BASE ALL'INDUSTRIA. PAGHI LA SUCCESS FEE SOLO SUI MEETING QUALIFICATI CONFERMATI. NESSUN CONTRATTO ANNUALE, NESSUNA PENALE DI USCITA. PROVI E DECIDI.
+    </p>
+  </div>
+</section>
+
+<!-- ============== RISULTATI — case studies REALI ============== -->
+<section class="section" id="risultati" style="background: var(--c-bg-1);">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">04 / RISULTATI</div>
+      <h2 class="title">Tre clienti reali. Tre settori. Tre verticali.</h2>
+    </div>
+
+    <div class="case-grid reveal-stagger">
+      <a href="#prenota" class="case-card" aria-label="Isolcore — Richiedi analisi pipeline per il tuo caso">
+        <div class="cover"><img src="assets/images/case-saas.png" alt="+1.267% APPUNTAMENTI"></div>
+        <div class="body">
+          <div class="meta"><span>EDILIZIA · ITALIA + EU + GCC</span><span>9 MESI</span></div>
+          <h3 class="headline">Isolcore — Da innovatore di nicchia a pipeline globale</h3>
+          <p class="desc">Produce i pannelli isolanti sottovuoto più performanti al mondo. Dipendeva da referral e fiere. Risultato: <strong>97 lead qualificati, pipeline &gt; €1M, 218% crescita ricavi</strong> in 9 mesi su 6 paesi.</p>
+          <div class="read">→ PARLA CON NOI</div>
+        </div>
+      </a>
+      <a href="#prenota" class="case-card" aria-label="Profood — Richiedi analisi pipeline per il tuo caso">
+        <div class="cover"><img src="assets/images/case-agency.png" alt="£218K PIPELINE IN 90 GIORNI"></div>
+        <div class="body">
+          <div class="meta"><span>AGROALIMENTARE · EU + ME + NZ</span><span>90 GIORNI</span></div>
+          <h3 class="headline">Profood — 11 meeting con buyer internazionali in 90 giorni</h3>
+          <p class="desc">Pipeline imprevedibile, crescita solo da passaparola e fiere. <strong>4.750 contatti profilati, 7.129 email inviate, 34,6% open rate, 11 meeting confermati, 59 lead attivi</strong>. Anche in stagionalità complessa.</p>
+          <div class="read">→ PARLA CON NOI</div>
+        </div>
+      </a>
+      <a href="#prenota" class="case-card" aria-label="Reliance Medical — Richiedi analisi pipeline per il tuo caso">
+        <div class="cover"><img src="assets/images/case-fintech.png" alt="32 INCONTRI CON CFO"></div>
+        <div class="body">
+          <div class="meta"><span>DISPOSITIVI MEDICI · 8 PAESI EU</span><span>SISTEMA IBRIDO AI</span></div>
+          <h3 class="headline">Reliance Medical — €4.5M di pipeline al posto di 6 export manager</h3>
+          <p class="desc">Stavano per assumere 6 export manager (€360K/anno). Invece: <strong>15.000+ prospect contattati, €4.5M pipeline, €300K ordini chiusi, 450+ prospect qualificati</strong>. Risparmio €360K/anno.</p>
+          <div class="read">→ PARLA CON NOI</div>
+        </div>
+      </a>
+    </div>
+
+    <p style="margin-top: var(--s-6); font-family: var(--font-serif); font-size: 22px; line-height: 1.4; color: var(--c-text); max-width: 60ch; font-style: italic;">
+      "In 9 mesi Storm X ha trasformato il nostro processo commerciale. Da un modello basato su passaparola a un sistema di outbound scalabile con pipeline da oltre un milione di euro."
+      <span style="display: block; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-text-faint); font-style: normal; margin-top: var(--s-3);">— NICCOLÒ Z., CEO ISOLCORE</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============== TEAM — L'Infrastruttura Umana ============== -->
+<section class="team" id="team">
+  <div class="team-head">
+    <div class="num">05 / TEAM</div>
+    <div class="heading">
+      <h2>L'infrastruttura umana.</h2>
+      <p><strong>4 senior. Zero stagisti.</strong> Un unico obiettivo: la tua pipeline. Ogni team lavora su massimo 3 clienti contemporaneamente.</p>
+    </div>
+  </div>
+
+  <div class="team-grid reveal-stagger">
+
+    <article class="team-card">
+      <div class="portrait">
+        <img src="assets/images/team/marcello.png" alt="Marcello Di Pierro, Founder & CEO">
+        <a href="#" class="linkedin-cta" aria-label="LinkedIn di Marcello Di Pierro">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.34 17H5.67v-7.93h2.67V17zM7 7.93a1.55 1.55 0 11.01-3.1A1.55 1.55 0 017 7.93zM18.34 17h-2.66v-3.86c0-.92-.02-2.1-1.28-2.1-1.28 0-1.48 1-1.48 2.03V17H10.27v-7.93h2.55v1.08h.04c.36-.67 1.22-1.28 2.51-1.28 2.69 0 3.18 1.77 3.18 4.07L18.34 17z"/>
+          </svg>
+        </a>
+      </div>
+      <h3>Marcello Di Pierro</h3>
+      <p class="role">Founder &amp; CEO</p>
+      <p class="superpower">Ha costruito macchine outbound da zero per brand come Reebok, Supreme e 40+ scale-up B2B. Filosofia: dati prima, opinioni dopo.</p>
+    </article>
+
+    <article class="team-card">
+      <div class="portrait">
+        <img src="assets/images/team/armand.png" alt="Armand Ohoungnon, Head of Inbound">
+        <a href="#" class="linkedin-cta" aria-label="LinkedIn di Armand Ohoungnon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.34 17H5.67v-7.93h2.67V17zM7 7.93a1.55 1.55 0 11.01-3.1A1.55 1.55 0 017 7.93zM18.34 17h-2.66v-3.86c0-.92-.02-2.1-1.28-2.1-1.28 0-1.48 1-1.48 2.03V17H10.27v-7.93h2.55v1.08h.04c.36-.67 1.22-1.28 2.51-1.28 2.69 0 3.18 1.77 3.18 4.07L18.34 17z"/>
+          </svg>
+        </a>
+      </div>
+      <h3>Armand Ohoungnon</h3>
+      <p class="role">Head of Inbound</p>
+      <p class="superpower">Gestisce budget media a 6 cifre senza sprechi. Ogni euro investito diventa pipeline misurabile, con campagne Meta e strategie di lead gen ad alto rendimento.</p>
+    </article>
+
+    <article class="team-card">
+      <div class="portrait">
+        <img src="assets/images/team/francesco.png" alt="Francesco Monopoli, Account Manager">
+        <a href="#" class="linkedin-cta" aria-label="LinkedIn di Francesco Monopoli">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.34 17H5.67v-7.93h2.67V17zM7 7.93a1.55 1.55 0 11.01-3.1A1.55 1.55 0 017 7.93zM18.34 17h-2.66v-3.86c0-.92-.02-2.1-1.28-2.1-1.28 0-1.48 1-1.48 2.03V17H10.27v-7.93h2.55v1.08h.04c.36-.67 1.22-1.28 2.51-1.28 2.69 0 3.18 1.77 3.18 4.07L18.34 17z"/>
+          </svg>
+        </a>
+      </div>
+      <h3>Francesco Monopoli</h3>
+      <p class="role">Account Manager</p>
+      <p class="superpower">Costruisce liste ICP con precisione chirurgica. I giusti contatti, nel momento giusto, con il messaggio giusto — trasforma elenchi freddi in opportunità calde.</p>
+    </article>
+
+    <article class="team-card">
+      <div class="portrait">
+        <img src="assets/images/team/sali.png" alt="Sali Leshi, Outreach Specialist">
+        <a href="#" class="linkedin-cta" aria-label="LinkedIn di Sali Leshi">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.34 17H5.67v-7.93h2.67V17zM7 7.93a1.55 1.55 0 11.01-3.1A1.55 1.55 0 017 7.93zM18.34 17h-2.66v-3.86c0-.92-.02-2.1-1.28-2.1-1.28 0-1.48 1-1.48 2.03V17H10.27v-7.93h2.55v1.08h.04c.36-.67 1.22-1.28 2.51-1.28 2.69 0 3.18 1.77 3.18 4.07L18.34 17z"/>
+          </svg>
+        </a>
+      </div>
+      <h3>Sali Leshi</h3>
+      <p class="role">Outreach Specialist</p>
+      <p class="superpower">Artigiano delle sequenze outbound. Trasforma dati grezzi in conversazioni qualificate usando Clay, Lemlist e un tocco umano che nessuna AI può replicare.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============== SERVIZI COMPLEMENTARI (più piccoli, dopo l'outbound protagonista) ============== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">05 / COMPLEMENTARI</div>
+      <h2 class="title">Quattro servizi che amplificano l'outbound.</h2>
+    </div>
+    <p style="color: var(--c-text-mute); font-size: var(--t-body-lg); max-width: 56ch; margin: 0 0 var(--s-6); line-height: 1.5;">
+      Quando hai bisogno di andare oltre i 4 canali standard. Tutto ingegnerizzato in casa, integrabile col sistema outbound o standalone.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="complementary-grid">
+      <a class="complementary-card" href="services/agenti-vocali-ai">
+        <div class="icon-frame"><img src="assets/images/service-voice.png" alt="Centralino con voce AI"></div>
+        <div class="num">01 / VOCE AI</div>
+        <h3>Centralino automatico 24/7</h3>
+        <p>Risponde alle chiamate, capisce italiano e inglese, prende appuntamenti. Riduce il costo operativo del call center fino al 70%.</p>
+      </a>
+      <a class="complementary-card" href="services/automatizzazioni-ai">
+        <div class="icon-frame"><img src="assets/images/service-aiauto.png" alt="Automazioni con AI"></div>
+        <div class="num">02 / AI OPS</div>
+        <h3>Automazioni con intelligenza artificiale</h3>
+        <p>Inserimento dati, report, classificazione documenti, follow-up. Quello che ti annoia, lo fa l'AI. Risparmio fino al 60%.</p>
+      </a>
+      <a class="complementary-card" href="services/make-automazioni">
+        <div class="icon-frame"><img src="assets/images/service-make.png" alt="Software collegati"></div>
+        <div class="num">03 / INTEGRAZIONI</div>
+        <h3>I tuoi software parlano tra loro</h3>
+        <p>CRM, email, fatture, calendario, gestionale. Si scambiano dati da soli, niente più copia-incolla. 1.000+ app supportate.</p>
+      </a>
+      <a class="complementary-card" href="services/claude-code">
+        <div class="icon-frame"><img src="assets/images/service-claude.png" alt="Software su misura"></div>
+        <div class="num">04 / CUSTOM</div>
+        <h3>Software fatti per te in 14 giorni</h3>
+        <p>Quando i prodotti standard non ti servono. Sviluppo accelerato con AI di ultima generazione. Codice e dati restano tuoi.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FAQ ============== -->
+<section class="section" style="background: var(--c-bg-1);">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">06 / DOMANDE</div>
+      <h2 class="title">Le domande che ci fanno prima di firmare.</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>Come funziona il modello di pagamento?</summary>
+        <p>Tariffa fissa iniziale + Success Fee variabile in base all'industria in cui operi (settori più complessi o con ticket più alti hanno Success Fee più alta, perché richiedono più lavoro di ricerca, personalizzazione e tempo di conversione). La Success Fee la paghi solo per i meeting qualificati a cui il prospect si è effettivamente presentato. Nessun contratto annuale, nessuna penale di uscita. I numeri esatti per il tuo settore li vediamo in call diagnostica.</p>
+      </details>
+      <details>
+        <summary>Cosa rimane mio dopo i 120 giorni?</summary>
+        <p>Tutto. Domini email dedicati, caselle riscaldate, sequenze multicanale, copy multilingua, liste segmentate, integrazioni CRM, dashboard. È un'infrastruttura di acquisizione di tua proprietà. Puoi continuare in autonomia, con noi a retainer ridotto, o sostituire il team.</p>
+      </details>
+      <details>
+        <summary>Quanto costa rispetto ad assumere internamente?</summary>
+        <p>Un Senior SDR interno costa €40-50K/anno + TFR + 6 mesi di training + €1.500/mese di software (Clay, Lemlist, dialer, dati). Storm X è operativo in 14 giorni invece di 6 mesi e include tool, infrastruttura e team senior. La pipeline target è 5-10× il costo del programma.</p>
+      </details>
+      <details>
+        <summary>Operate solo in Italia?</summary>
+        <p>No. Italia, UK, Francia, Spagna, Germania, Emirati Arabi. Copywriting nativo nella lingua del prospect, database segmentati per mercato. Per altri paesi serve un mese di discovery. Caso Isolcore: 11 campagne in 6 paesi simultaneamente.</p>
+      </details>
+      <details>
+        <summary>Quante persone lavorano sul mio progetto?</summary>
+        <p>4 senior specialists dedicati: lo strategist (Growth Architect, tuo unico punto di contatto), il copywriter, l'SDR/caller italiano, il data analyst. 0 stagisti. Ogni team lavora su massimo 3 clienti contemporaneamente per garantire qualità.</p>
+      </details>
+      <details>
+        <summary>A chi vi rivolgete?</summary>
+        <p>PMI B2B con prodotto/servizio validato e ticket medio &gt; €5.000–10.000. Operiamo principalmente con scale-up tech, software B2B, agenzie consulenza, dispositivi medicali, agroalimentare export. Non accettiamo tutti: lavoriamo solo con aziende che possono gestire i volumi che generiamo.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CTA FINALE · FORM ============== -->
+<section class="section section-prenota" id="prenota">
+  <div class="container" style="max-width: 920px;">
+    <div class="prenota-head">
+      <p class="mono-label" style="display: inline-flex; margin-bottom: var(--s-4);">RICHIESTA · 1 POSTO LIBERO Q2 2026</p>
+      <h2 class="prenota-title">
+        Prendiamo solo <em>una</em> azienda nuova al mese.
+      </h2>
+      <p class="prenota-lede">
+        Niente moduli da 14 campi. Quattro domande, 60 secondi. Una call di 30 minuti per capire se siamo la cosa giusta per te. Decidi tu cosa fare dopo.
+      </p>
+    </div>
+
+    <form class="prenota-form"
+          id="prenota-form"
+          action="https://formspree.io/f/xwvwkekq"
+          method="POST"
+          novalidate
+          data-lang="it">
+      <!-- Honeypot anti-spam: nascosto via CSS, se compilato scarta il submit -->
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <!-- Metadati Formspree -->
+      <input type="hidden" name="_subject" value="Nuova richiesta analisi pipeline · Storm X Digital">
+      <input type="hidden" name="_lang" value="it">
+
+      <div class="form-row">
+        <label for="f-name">
+          <span class="l-num">01 /</span> Nome e cognome
+        </label>
+        <input type="text" id="f-name" name="name" required autocomplete="name" placeholder="Marco Rossi">
+      </div>
+
+      <div class="form-row">
+        <label for="f-email">
+          <span class="l-num">02 /</span> Email lavorativa
+        </label>
+        <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="marco@acme.com">
+        <span class="hint">Niente @gmail o @yahoo: serve un'email aziendale per valutare il match.</span>
+      </div>
+
+      <div class="form-row">
+        <label for="f-company">
+          <span class="l-num">03 /</span> Azienda + sito web
+        </label>
+        <input type="text" id="f-company" name="company" required autocomplete="organization" placeholder="Acme S.r.l. · acme.com">
+      </div>
+
+      <div class="form-row">
+        <label for="f-message">
+          <span class="l-num">04 /</span> In due righe: cosa vendete e a chi?
+        </label>
+        <textarea id="f-message" name="message" rows="3" placeholder="Vendiamo [prodotto/servizio] a [buyer persona]. Cerchiamo [obiettivo in 6 mesi]."></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary btn-submit">
+          <span class="btn-label">Richiedi analisi pipeline gratis</span>
+          <span class="btn-loading">Invio in corso…</span>
+        </button>
+        <p class="form-footnote">
+          Premendo invio accetti la nostra <a href="privacy/">Privacy Policy</a>. Risposta entro 24h dal vivo, non da un bot.
+        </p>
+      </div>
+    </form>
+
+    <!-- Success state (hidden by default, swapped in by JS) -->
+    <div class="prenota-success" id="prenota-success" role="status" aria-live="polite" hidden>
+      <div class="success-mark" aria-hidden="true">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="32" cy="32" r="28"/>
+          <path d="M20 32 L28 40 L44 24"/>
+        </svg>
+      </div>
+      <h3>Richiesta ricevuta.</h3>
+      <p>Ti scriviamo entro 24 ore da <strong>armand@stormxdigital.com</strong> con un'analisi preliminare e lo slot calendario. Se hai urgenza, puoi anche scriverci direttamente.</p>
+      <p class="mono-note">// TICKET · <span id="prenota-ticket">—</span></p>
+    </div>
+
+    <!-- Error state -->
+    <div class="prenota-error" id="prenota-error" role="alert" hidden>
+      <p><strong>Qualcosa è andato storto.</strong> Puoi riprovare o scriverci direttamente a <a href="mailto:armand@stormxdigital.com">armand@stormxdigital.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">
+          <img src="assets/logo/storm-x-mono.svg" alt="Storm X Digital">
+        </span>
+        <p class="tagline">Sistema di Outbound Marketing per PMI B2B. Costruito per scalare.</p>
+      </div>
+      <div class="footer-col">
+        <h4>SERVIZI</h4>
+        <ul>
+          <li><a href="services/outbound-sales">Outbound multicanale (CORE)</a></li>
+          <li><a href="services/agenti-vocali-ai">Centralino con voce AI</a></li>
+          <li><a href="services/automatizzazioni-ai">Automazioni con AI</a></li>
+          <li><a href="services/make-automazioni">Software collegati</a></li>
+          <li><a href="services/claude-code">Software su misura</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>AZIENDA</h4>
+        <ul>
+          <li><a href="#workflow">Il workflow multicanale</a></li>
+          <li><a href="#programma">Pilot 120 giorni</a></li>
+          <li><a href="#risultati">Casi studio reali</a></li>
+          <li><a href="blog">Articoli</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONTATTI</h4>
+        <ul>
+          <li><a href="privacy/">Privacy</a></li>
+          <li><a href="cookies/">Cookie</a></li>
+          <li><a href="terms/">Termini</a></li>
+        <li><a href="#" data-action="open-cookie-prefs">Gestisci preferenze cookie</a></li>
+          <li><a href="mailto:stormxdigital@pec.it">stormxdigital@pec.it</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>STORM X DIGITAL S.R.L. · BISCEGLIE (BA) · P.IVA 08789080721</span>
+      <span class="live">SISTEMA ATTIVO</span>
+      <span id="ts">--</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="assets/cookie-consent.js"></script>
+<script src="assets/main.js"></script>
 </body>
-
 </html>

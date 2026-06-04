@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -9,42 +9,6 @@
         { "key": "X-Frame-Options", "value": "DENY" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
-    },
-    {
-      "source": "/llms.txt",
-      "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
-      ]
     }
-  ],
-  "redirects": [
-    { "source": "/it", "destination": "/", "statusCode": 301 },
-    { "source": "/it/", "destination": "/", "statusCode": 301 }
-  ],
-  "rewrites": [
-    { "source": "/blog/caso-studio-abeec", "destination": "/blog/caso-studio-abeec/index.html" },
-    { "source": "/blog/tanti-contatti-pochi-appuntamenti", "destination": "/blog/tanti-contatti-pochi-appuntamenti/index.html" },
-    { "source": "/automatizzazioni-ai", "destination": "/automatizzazioni-ai/index.html" },
-    { "source": "/make-automazioni", "destination": "/make-automazioni/index.html" },
-    { "source": "/claude-code", "destination": "/claude-code/index.html" },
-    { "source": "/agenti-vocali-ai", "destination": "/agenti-vocali-ai/index.html" },
-    { "source": "/lead-generation-b2b", "destination": "/lead-generation-b2b/index.html" },
-    { "source": "/outbound-sales", "destination": "/outbound-sales/index.html" },
-    { "source": "/en", "destination": "/en/index.html" },
-    { "source": "/privacy", "destination": "/privacy/index.html" },
-    { "source": "/cookies", "destination": "/cookies/index.html" },
-    { "source": "/terms", "destination": "/terms/index.html" },
-    { "source": "/blog", "destination": "/blog/index.html" },
-    { "source": "/blog/come-automatizzare-business-con-ai", "destination": "/blog/come-automatizzare-business-con-ai/index.html" },
-    { "source": "/blog/agenti-vocali-ai-per-aziende", "destination": "/blog/agenti-vocali-ai-per-aziende/index.html" },
-    { "source": "/blog/make-com-vs-zapier-confronto", "destination": "/blog/make-com-vs-zapier-confronto/index.html" },
-    { "source": "/blog/lead-generation-cos-e", "destination": "/blog/lead-generation-cos-e/index.html" },
-    { "source": "/blog/agenzia-lead-generation-b2b", "destination": "/blog/agenzia-lead-generation-b2b/index.html" },
-    { "source": "/blog/outbound-vs-inbound-marketing", "destination": "/blog/outbound-vs-inbound-marketing/index.html" },
-    { "source": "/en/blog", "destination": "/en/blog/index.html" },
-    { "source": "/en/blog/what-is-lead-generation", "destination": "/en/blog/what-is-lead-generation/index.html" },
-    { "source": "/en/blog/b2b-lead-generation-agency", "destination": "/en/blog/b2b-lead-generation-agency/index.html" },
-    { "source": "/en/blog/outbound-vs-inbound-marketing", "destination": "/en/blog/outbound-vs-inbound-marketing/index.html" }
   ]
 }

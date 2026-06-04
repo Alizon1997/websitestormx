@@ -1,57 +1,9 @@
-# Storm X Digital - robots.txt
-# https://www.stormxdigital.com/robots.txt
-
 User-agent: *
 Allow: /
+Disallow: /scripts/
+Disallow: /_archive/
+Disallow: /assets/images/v3/
+Disallow: /assets/images/logo-moodboard/
+Disallow: /_logo-test.html
 
-# Sitemap
 Sitemap: https://www.stormxdigital.com/sitemap.xml
-
-# AI Search Bots (explicitly allowed for AI search visibility)
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-# Traditional Search Engines
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-Crawl-delay: 1
-
-# Social Media Bots (Allow for previews)
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
