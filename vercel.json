@@ -23,8 +23,7 @@
     { "source": "/it/", "destination": "/", "statusCode": 301 }
   ],
   "rewrites": [
-    { "source": "/casi-studio", "destination": "/casi-studio/index.html" },
-    { "source": "/casi-studio/abeec", "destination": "/casi-studio/abeec/index.html" },
+    { "source": "/blog/caso-studio-abeec", "destination": "/blog/caso-studio-abeec/index.html" },
     { "source": "/blog/tanti-contatti-pochi-appuntamenti", "destination": "/blog/tanti-contatti-pochi-appuntamenti/index.html" },
     { "source": "/automatizzazioni-ai", "destination": "/automatizzazioni-ai/index.html" },
     { "source": "/make-automazioni", "destination": "/make-automazioni/index.html" },
