@@ -15,13 +15,13 @@
   <meta property="og:title" content="Abeec: da 0 a oltre €40.000/mese su Amazon EU in 3 mesi" />
   <meta property="og:description" content="Caso studio Storm X Digital: €51.500 di fatturato, 3.200 unità vendute e ROAS 6,65× su Amazon IT · DE · FR in 3 mesi, partendo da zero." />
   <meta property="og:url" content="https://www.stormxdigital.com/blog/caso-studio-abeec/" />
-  <meta property="og:image" content="https://www.stormxdigital.com/og-image.png" />
+  <meta property="og:image" content="https://www.stormxdigital.com/assets/images/og-image.png" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Abeec: da 0 a oltre €40.000/mese su Amazon EU in 3 mesi" />
   <meta name="twitter:description" content="Caso studio Storm X Digital: €51.500 di fatturato e ROAS 6,65× su Amazon IT · DE · FR in 3 mesi." />
-  <meta name="twitter:image" content="https://www.stormxdigital.com/og-image.png" />
+  <meta name="twitter:image" content="https://www.stormxdigital.com/assets/images/og-image.png" />
 
   <link rel="icon" href="/blog/caso-studio-abeec/assets/storm-x-mark.svg" />
   <link rel="stylesheet" href="/blog/caso-studio-abeec/colors_and_type.css" />
@@ -36,14 +36,14 @@
         "headline": "Abeec: da 0 a oltre €40.000/mese su Amazon EU in 3 mesi",
         "description": "Caso studio Storm X Digital: espansione di Abeec su Amazon Italia, Germania e Francia. €51.500 di fatturato, 3.200 unità vendute, ROAS 6,65× su €6.000 di spesa pubblicitaria, in 3 mesi.",
         "inLanguage": "it",
-        "image": "https://www.stormxdigital.com/og-image.png",
+        "image": "https://www.stormxdigital.com/assets/images/og-image.png",
         "datePublished": "2026-06-04",
         "dateModified": "2026-06-04",
         "author": { "@type": "Organization", "name": "Storm X Digital", "url": "https://www.stormxdigital.com/" },
         "publisher": {
           "@type": "Organization",
           "name": "Storm X Digital",
-          "logo": { "@type": "ImageObject", "url": "https://www.stormxdigital.com/logo.png" }
+          "logo": { "@type": "ImageObject", "url": "https://www.stormxdigital.com/assets/logo/storm-x-primary.svg" }
         },
         "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.stormxdigital.com/blog/caso-studio-abeec/" }
       },
@@ -61,14 +61,36 @@
 </head>
 <body>
 
-  <!-- ============ HEADER ============ -->
+  <!-- ============ GLOBAL SITE NAV (same as homepage) ============ -->
   <header class="site-header">
     <div class="header-inner">
-      <a class="header-logo" href="/" aria-label="Storm X Digital">
-        <img src="/blog/caso-studio-abeec/assets/storm-x-primary.svg" alt="Storm X Digital" />
+      <a href="/" class="header-logo" aria-label="Storm X Digital — home">
+        <img class="logo--primary" src="/assets/logo/storm-x-primary.svg" alt="Storm X Digital">
+        <img class="logo--stacked" src="/assets/logo/storm-x-stacked.svg" alt="">
       </a>
-      <div class="header-crumb">Caso studio&nbsp;&nbsp;·&nbsp;&nbsp;<b>Abeec</b>&nbsp;&nbsp;·&nbsp;&nbsp;Amazon EU</div>
-      <a class="header-cta" href="/">Prenota una call <span class="arr">→</span></a>
+      <nav class="header-nav" id="site-nav">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-trigger">SERVIZI</button>
+          <div class="nav-panel">
+            <a href="/services/outbound-sales" class="nav-panel-item"><span>Outbound multicanale</span><span class="idx">CORE</span></a>
+            <a href="/services/agenti-vocali-ai" class="nav-panel-item"><span>Centralino con voce AI</span><span class="idx">02</span></a>
+            <a href="/services/automatizzazioni-ai" class="nav-panel-item"><span>Automazioni con AI</span><span class="idx">03</span></a>
+            <a href="/services/make-automazioni" class="nav-panel-item"><span>Software collegati</span><span class="idx">04</span></a>
+            <a href="/services/claude-code" class="nav-panel-item"><span>Software su misura</span><span class="idx">05</span></a>
+          </div>
+        </div>
+        <a href="/#workflow" class="nav-link">METODO</a>
+        <a href="/#programma" class="nav-link">PILOT 120GG</a>
+        <a href="/#risultati" class="nav-link">RISULTATI</a>
+        <a href="/blog" class="nav-link active">ARTICOLI</a>
+      </nav>
+      <div class="header-right">
+        <a href="/en/" class="header-lang">EN</a>
+        <a href="/#prenota" class="header-cta">PRENOTA UNA CALL</a>
+        <button class="mobile-menu-btn" onclick="document.getElementById('site-nav').classList.toggle('open')" aria-label="Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 
