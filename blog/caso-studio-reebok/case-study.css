@@ -285,7 +285,7 @@ em.s { font-family: var(--font-serif); font-style: italic; color: var(--c-accent
 }
 .kpi-grid {
   max-width: 1320px; margin: 0 auto; padding: var(--s-4) var(--gutter) var(--s-5);
-  display: grid; grid-template-columns: repeat(5, 1fr); gap: 0;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
   border-left: 1px solid var(--c-line); border-top: 1px solid var(--c-line);
 }
 .kpi {
