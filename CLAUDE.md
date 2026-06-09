@@ -24,6 +24,11 @@ build step**. Work on branch `claude/awesome-fermi-ltopz`, open a PR, merge to d
   `assets/styles.css` (lines ~154–293); the mobile toggle is an inline `onclick`. **Every
   article/case-study page must carry this same nav** so the whole site is reachable from inside
   an article.
+- **Visitor tracking (lemlist):** the lemlist `<script src="https://app.lemlist.com/api/visitors/tracking?k=…&t=…">`
+  must be in **every** page's `<head>` — it's loaded for **all** visitors (B2B company ID),
+  **not** behind cookie consent. Google Analytics + Meta Pixel stay consent-gated in
+  `assets/cookie-consent.js`; lemlist was deliberately moved OUT of that gate. **New pages must
+  include the lemlist tag in `<head>`.**
 
 ## Publishing a design-bundle case study as a blog post
 

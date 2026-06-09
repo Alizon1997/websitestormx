@@ -12,7 +12,8 @@
     GA4_ID:        'G-XXXXXXXXXX',           // ← Sostituire con il tuo Google Analytics 4 ID
     GADS_ID:       'AW-XXXXXXXXX',           // ← Sostituire con il tuo Google Ads Conversion ID
     META_PIXEL_ID: '1445471526062406',       // ← ID Meta Pixel (estratto da www.stormxdigital.com)
-    LEMLIST_URL:   'https://app.lemlist.com/api/visitors/tracking?k=BDhq9RkiazDZTAsrf78TQIpGU4Y1T59qj2H54KEzAXQ=&t=tea_WDB3Rjyj2RrCtS2Lm',  // ← Lemlist visitor tracking (estratto da produzione)
+    // Lemlist visitor tracking: ora caricato in TUTTE le pagine nell'<head> (B2B company ID,
+    // interesse legittimo), non più dietro consenso. Vedi il tag <script> lemlist nelle pagine.
     COOKIE_NAME:   'sxd-consent',
     COOKIE_DAYS:   180,
   };
@@ -56,19 +57,6 @@
   // ============ Pixel loaders (run only when consent given) ============
   let analyticsLoaded = false;
   let marketingLoaded = false;
-  let lemlistLoaded  = false;
-
-  function loadLemlist() {
-    if (lemlistLoaded) return;
-    lemlistLoaded = true;
-    if (!CONFIG.LEMLIST_URL) return;
-    // Lemlist visitor tracking: attribuisce visite a campagne outbound
-    const s = document.createElement('script');
-    s.async = true;
-    s.type = 'text/javascript';
-    s.src = CONFIG.LEMLIST_URL;
-    document.head.appendChild(s);
-  }
 
   function loadGoogleTag() {
     if (analyticsLoaded) return;
@@ -114,7 +102,7 @@
       'analytics_storage':     analytics ? 'granted' : 'denied',
     });
 
-    if (analytics) { loadGoogleTag(); loadLemlist(); }
+    if (analytics) { loadGoogleTag(); }
     if (marketing) loadMetaPixel();
   }
 
