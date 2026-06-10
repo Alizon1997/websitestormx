@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 420" role="img" aria-label="Storm X Digital">
+  <title>Storm X Digital</title>
+  
+  <text x="20" y="310" font-family="&#39;Instrument Serif&#39;, &#39;Playfair Display&#39;, Georgia, &#39;Times New Roman&#39;, serif" font-style="italic" font-weight="400" font-size="320" fill="#F8F7F4" letter-spacing="-0.005em">STORM</text>
+  
+  <text x="1100" y="335" font-family="&#39;Inter&#39;, &#39;Helvetica Neue&#39;, Arial, sans-serif" font-weight="900" font-size="380" fill="#FF5500" letter-spacing="-0.04em">X</text>
+  
+  <text x="1380" y="265" font-family="&#39;JetBrains Mono&#39;, ui-monospace, &#39;SF Mono&#39;, Menlo, monospace" font-weight="500" font-size="74" fill="#F8F7F4" letter-spacing="0.18em">DIGITAL</text>
+</svg>

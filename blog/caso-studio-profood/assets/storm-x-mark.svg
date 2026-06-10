@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Storm X">
+  <title>Storm X</title>
+  
+  <rect width="64" height="64" fill="#0F0F0F"></rect>
+  
+  
+  <path d="M 12 12 L 18 12 L 52 46 L 52 52 L 46 52 L 12 18 Z" fill="#FF5500"></path>
+  
+  <path d="M 46 12 L 52 12 L 52 18 L 18 52 L 12 52 L 12 46 Z" fill="#FF5500"></path>
+</svg>
