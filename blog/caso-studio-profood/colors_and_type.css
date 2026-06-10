@@ -1,0 +1,233 @@
+/* ============================================================
+   STORM X DIGITAL — COLORS & TYPE TOKENS
+   Editorial inversion. Warm paper · charcoal · electric orange.
+   Source of truth for every artifact in this design system.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* ---------- COLOR — Surfaces ---------- */
+  --c-bg-0: #F8F7F4;          /* warm off-white "paper" — primary surface */
+  --c-bg-1: #FFFFFF;          /* pure white — cards, surfaces */
+  --c-bg-2: #EFEDE7;          /* elevated tinted surface */
+  --c-bg-dark: #0F0F0F;       /* full-bleed dark band (paradigm, footer) */
+
+  /* ---------- COLOR — Lines ---------- */
+  --c-line: #E0DDD5;          /* hairline border — default */
+  --c-line-strong: #B8B4AB;   /* visible border — emphasis */
+
+  /* ---------- COLOR — Text ---------- */
+  --c-text: #0F0F0F;          /* primary text (near-black) */
+  --c-text-mute: #5C5851;     /* secondary text */
+  --c-text-faint: #908A7F;    /* tertiary / labels */
+
+  /* ---------- COLOR — Accent + Semantic ---------- */
+  --c-accent: #FF5500;        /* electric orange — used SPARINGLY */
+  --c-accent-glow: rgba(255,85,0,0.18);
+  --c-live: #16A34A;          /* "active" indicator green */
+
+  /* ---------- Foreground / Background semantic aliases ---------- */
+  --fg-1: var(--c-text);
+  --fg-2: var(--c-text-mute);
+  --fg-3: var(--c-text-faint);
+  --bg-1: var(--c-bg-0);
+  --bg-2: var(--c-bg-1);
+  --bg-3: var(--c-bg-2);
+  --bg-inverse: var(--c-bg-dark);
+  --fg-inverse: var(--c-bg-0);
+  --accent: var(--c-accent);
+  --live: var(--c-live);
+  --line: var(--c-line);
+  --line-strong: var(--c-line-strong);
+
+  /* ---------- TYPE — Families ---------- */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;     /* h1, headings, hero, KPI numbers */
+  --font-serif:   'Instrument Serif', Georgia, serif;          /* italic <em> highlights, big editorial quotes */
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace; /* labels, data, nav, micro UI */
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif; /* paragraph body */
+
+  /* ---------- TYPE — Sizes (raw) ---------- */
+  --t-mono-xs: 11px;
+  --t-mono-sm: 12px;
+  --t-mono-md: 13px;
+  --t-body-sm: 14px;
+  --t-body-md: 16px;
+  --t-body-lg: 18px;
+  --t-display-sm: 28px;
+  --t-display-md: clamp(36px, 4vw, 56px);  /* @kind font */
+  --t-display-lg: clamp(56px, 7vw, 110px); /* @kind font */
+  --t-display-xl: clamp(40px, 5.4vw, 72px); /* @kind font */
+
+  /* ---------- SPACING — 8px scale ---------- */
+  --s-1: 4px; --s-2: 8px; --s-3: 16px; --s-4: 24px; --s-5: 32px;
+  --s-6: 48px; --s-7: 64px; --s-8: 96px; --s-9: 128px;
+  --gutter: clamp(16px, 4vw, 64px); /* @kind spacing */
+
+  /* ---------- BORDER / RADII ---------- */
+  /* Storm X is editorial — corners are SQUARE. Radius reserved for
+     micro-pills (mono labels, language chip), iOS surfaces, and team avatars. */
+  --r-0: 0; /* @kind radius */
+  --r-sm: 2px;
+  --r-pill: 999px;
+  --r-circle: 50%;
+
+  /* ---------- SHADOWS ---------- */
+  --shadow-card: 0 16px 40px rgba(15,15,15,0.06);
+  --shadow-pop:  0 12px 40px rgba(15,15,15,0.08);
+  --shadow-cta:  0 12px 32px var(--c-accent-glow);
+  --shadow-deep: 0 30px 80px rgba(0,0,0,0.6);
+
+  /* ---------- MOTION ---------- */
+  --ease-snap: cubic-bezier(0.2, 0.8, 0.2, 1); /* @kind other */
+  --d-fast: 120ms; /* @kind other */
+  --d-med: 240ms;  /* @kind other */
+  --d-slow: 480ms; /* @kind other */
+}
+
+/* ============================================================
+   SEMANTIC TYPE — drop-in classes for any artifact
+   ============================================================ */
+
+.t-display-xl,
+.h0 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--t-display-xl);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--c-text);
+}
+
+.t-display-lg,
+.h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--t-display-lg);
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  color: var(--c-text);
+}
+
+.t-display-md,
+.h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--t-display-md);
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+  color: var(--c-text);
+}
+
+.h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: var(--c-text);
+}
+
+.h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--c-text);
+}
+
+/* Italic editorial highlight — wrap inside any heading */
+.em-serif,
+em.em-serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--c-accent);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+/* Editorial pull quote (huge serif italic) */
+.t-quote {
+  font-family: var(--font-serif);
+  font-style: normal;
+  font-size: clamp(36px, 5vw, 84px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  color: var(--c-text);
+}
+.t-quote span { color: var(--c-accent); font-style: italic; }
+
+/* Body text */
+.p,
+.t-body {
+  font-family: var(--font-body);
+  font-size: var(--t-body-md);
+  line-height: 1.55;
+  letter-spacing: -0.005em;
+  color: var(--c-text);
+}
+.t-body-lg {
+  font-family: var(--font-body);
+  font-size: var(--t-body-lg);
+  line-height: 1.5;
+  color: var(--c-text-mute);
+}
+.t-body-sm {
+  font-family: var(--font-body);
+  font-size: var(--t-body-sm);
+  line-height: 1.45;
+  color: var(--c-text-mute);
+}
+
+/* Mono — labels, data, all-caps tags */
+.mono,
+.t-mono {
+  font-family: var(--font-mono);
+  font-size: var(--t-mono-sm);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-text-faint);
+}
+.mono-xs {
+  font-family: var(--font-mono);
+  font-size: var(--t-mono-xs);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-text-faint);
+}
+
+/* The signature mono label with a tiny square bullet */
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: var(--t-mono-xs);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-text-faint);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.mono-label::before {
+  content: '';
+  width: 8px; height: 8px;
+  border: 1px solid currentColor;
+  display: inline-block;
+}
+.mono-label.is-live { color: var(--c-live); }
+.mono-label.is-live::before {
+  background: var(--c-live);
+  border-color: var(--c-live);
+  border-radius: 50%;
+}
+.mono-label.is-accent { color: var(--c-accent); }
+
+/* Code / inline data */
+code, .t-code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--c-bg-2);
+  padding: 1px 5px;
+  color: var(--c-text);
+}
