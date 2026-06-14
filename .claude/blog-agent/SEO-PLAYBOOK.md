@@ -62,6 +62,18 @@ Study `blog.html` and any existing `/blog/*` post. The voice is:
   get published — sourcing is what builds credibility (E-E-A-T). Prefer real first-party numbers (case
   studies, Lemlist campaign stats) over generic benchmarks, and link the case study when you cite it.
 
+### Make it convert, not just rank
+Ranking is half the job; the post has to turn a stranger into a lead. Every article must:
+- Make it obvious **in the first screen who it's for and what Storm X does** — a reader landing from
+  Google should get it in seconds (same logic as a profile/landing page that converts, not just a viral hook).
+- Carry a **clear next step**: the mid-article + end CTA boxes that book a call (already in the templates).
+- Where it fits, offer a **lead magnet** (e.g. the cold-email templates, a checklist) as a reason to leave
+  an email/DM — turn attention into an owned list, not just traffic an algorithm controls. Flag to the user
+  if capture needs backend wiring.
+- Win trust with **documented, sourced proof** — real campaigns, real numbers, named source. "3 errori
+  nell'outreach" anyone can write; "ecco la campagna che ha fissato X meeting per questo cliente e cosa ho
+  cambiato" is the authority competitors can't copy.
+
 ---
 
 ## 2. Keyword research workflow (Semrush + Ubersuggest)
