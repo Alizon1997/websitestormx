@@ -118,9 +118,10 @@ PAA questions in the PR description so decisions are auditable.
 - **Article + (optional) FAQPage JSON-LD** filled in completely; `datePublished` = today.
 - **Length:** match intent. Pillar/informational guides 1,800–3,000 words (existing ones are
   10–14 min reads); narrower how-tos 1,000–1,600. Read-time minutes ≈ words ÷ 220.
-- **Cover image:** the blog.html card needs `/assets/images/blog/<slug>.(png|jpg)` (16:9). The agent
-  can't generate images → flag it as a required asset in the PR and use the placeholder fallback
-  described in `PUBLISHING-CHECKLIST.md` so nothing renders broken.
+- **Cover image:** the blog.html card needs `/assets/images/blog/<slug>.png` (16:9). Generate it
+  with **FAL.AI Recraft V3** in the brand palette (off-white `#F8F7F4`, near-black `#0F0F0F`,
+  orange `#FF5500`), convert to PNG, and point the card + the article's `og:image` at it. Full
+  procedure (and the FAL_KEY / no-hardcoded-key rule) in `PUBLISHING-CHECKLIST.md` §B.
 - **Accessibility/perf:** `alt` text on images; `loading="lazy"` on the card cover; no inline JS beyond
   the existing mobile-menu toggle.
 
