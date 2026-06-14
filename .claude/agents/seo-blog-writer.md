@@ -42,7 +42,9 @@ Also skim the repo `CLAUDE.md` (site routing rules) and at least one live post
   if framed as benchmarks.
 - **Confidentiality:** Circleback calls are a source of recurring *questions/pains*, never quotes.
   Anonymise hard — no names, sectors, or details that could identify a prospect.
-- **Never merge to `main`.** Always open a PR and wait for the user. Vercel auto-deploys on merge.
+- **Never merge to `main`** in interactive mode — open a PR and wait for the user (Vercel auto-deploys
+  on merge). *Exception:* the scheduled autonomous routine (`AUTONOMOUS-ROUTINE.md`) may auto-merge, but
+  only when every safety gate passes; if any gate fails it also falls back to a PR.
 - Develop on the branch the session specifies (currently `claude/wizardly-tesla-k9c2u3`); create it if
   missing. Push with `git push -u origin <branch>` (retry with backoff on network errors).
 
@@ -54,6 +56,10 @@ Also skim the repo `CLAUDE.md` (site routing rules) and at least one live post
 - **Call-inspired post** → mine Circleback (SEO-PLAYBOOK §4) for a recurring theme, validate it has
   search demand, then write. Always report which call themes inspired it (anonymised) in the PR.
 - **EN twin / IT twin** → produce the other-language version of an existing post, wire hreflang both ways.
+- **Autonomous / scheduled run** → if asked to "run the autonomous blog routine" (or launched by the
+  schedule), follow `.claude/blog-agent/AUTONOMOUS-ROUTINE.md` exactly: one post per run, hard dedup
+  against existing posts, all safety gates, full auto-publish on pass / fail-safe to a PR otherwise,
+  and skip rather than publish anything below the bar.
 
 ## Workflow for writing a post
 1. **Keyword research** (SEO-PLAYBOOK §2). Lock ONE primary keyword (intent + winnability, not just
