@@ -5,7 +5,7 @@ log line after every run. **Always also re-scan the live `blog/` + `en/blog/` fo
 a convenience, the filesystem is the source of truth for dedup.
 
 ## Theme rotation (round-robin — pick the next, then move the pointer)
-> ROTATION POINTER: 1  ← advance after each published post (wraps around)
+> ROTATION POINTER: 2  ← advance after each published post (wraps around)
 
 1. **Outbound / cold email** — e.g. deliverability & warming dei domini, cold email a norma GDPR in Italia, ICP B2B come si definisce.
 2. **AI voice agent** — e.g. centralino / segreteria telefonica AI per studi e cliniche, quanto costa un agente vocale AI, voice AI per qualificare i lead.
@@ -31,3 +31,4 @@ time (volume + difficulty + intent) and confirm it isn't already owned by an exi
 
 ## Run log (append one line per run: date · slug · keyword · sources · status)
 <!-- e.g. 2026-06-17 · agenti-vocali-ai-cliniche · "centralino ai cliniche" (90/mo, KD 22) · Circleback+Semrush · published -->
+2026-06-14 · cold-email-b2b · "cold email" (110/mo IT, CPC €2.20, low comp) · Semrush phrase_these+phrase_related+Circleback (domain-warming ops pattern) · published
