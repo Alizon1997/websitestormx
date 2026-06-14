@@ -56,6 +56,11 @@ Study `blog.html` and any existing `/blog/*` post. The voice is:
 - Industry-wide ranges (CPL by channel, sales-cycle lengths, etc.) are fine if presented as general
   benchmarks, consistent with how existing posts do it. Don't dress a benchmark up as proprietary data.
 - No competitor defamation. Compare on facts (price, latency, features), never invent flaws.
+- **Cite the source — always.** Every external fact or statistic must name its source in-line: a study
+  ("Gartner 2024"), a named report, or a clearly-labelled first-party source ("dai nostri dati di
+  campagna", "caso Profood: open rate 34,6%"). Marcello's rule: a fact without a named source doesn't
+  get published — sourcing is what builds credibility (E-E-A-T). Prefer real first-party numbers (case
+  studies, Lemlist campaign stats) over generic benchmarks, and link the case study when you cite it.
 
 ---
 
@@ -127,10 +132,21 @@ PAA questions in the PR description so decisions are auditable.
 
 ---
 
-## 4. Sourcing topics from Circleback prospect calls
+## 4. Sourcing topics (Circleback calls, Lemlist, email, own research)
 
-The user wants posts "inspired by" real prospect calls. These are **confidential** — treat them as a
-source of *recurring questions, objections, and pain points*, never as quotable material.
+Pull topic ideas from real signals, not just imagination. Good sources, richest first:
+- **Circleback prospect calls** (`mcp__Circleback__Search*` / `ReadMeetings` / `GetTranscriptsForMeetings`)
+  — recurring questions/objections across calls = exactly what buyers Google.
+- **Lemlist campaigns** (`mcp__lemlist__get_campaigns` / `get_campaign_sequences` / reply & call data) —
+  the angles that get replies and the questions leads actually ask are strong topic + keyword seeds, and a
+  source of real first-party stats to cite (open/reply rates).
+- **Email** (`mcp__Gmail__search_threads` / `mcp__Circleback__SearchEmails`) — recurring prospect/customer
+  questions in the inbox.
+- **Your own research** — Semrush/Ubersuggest keyword gaps, SERP analysis, and the web.
+
+All of the above are **confidential / first-party** — treat them as a source of *recurring questions,
+objections, and pain points*, never as quotable material. Always validate a candidate topic against real
+search demand (§2) before writing, and when you cite a number from them, name the source (§1).
 
 **Workflow:**
 1. `mcp__Circleback__SearchMeetings` / `SearchTranscripts` over recent calls (filter by date and, if
