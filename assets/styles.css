@@ -487,7 +487,7 @@ h1, h2, h3, h4 {
 }
 .logos-list {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   gap: var(--s-5);
   align-items: center;
 }
