@@ -39,3 +39,4 @@ Setup Fee + Success Fee variabile. Success Fee solo per i meeting qualificati co
 - /blog/come-automatizzare-business-con-ai/ — Come automatizzare il business con l'AI
 - /blog/agenti-vocali-ai-per-aziende/ — Agenti vocali AI per aziende: stato dell'arte
 - /blog/make-com-vs-zapier-confronto/ — Make.com vs Zapier: confronto operativo
+- /blog/software-su-misura-pmi/ — Software su misura per PMI: quando conviene davvero
