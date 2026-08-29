@@ -41,3 +41,4 @@ Setup Fee + Success Fee variabile. Success Fee solo per i meeting qualificati co
 - /blog/make-com-vs-zapier-confronto/ — Make.com vs Zapier: confronto operativo
 - /blog/software-su-misura-pmi/ — Software su misura per PMI: quando conviene davvero
 - /blog/trovare-clienti-esteri-b2b/ — Trovare clienti esteri B2B: fiere, distributori, export manager e outbound a confronto
+- /blog/linkedin-outreach-b2b/ — LinkedIn outreach B2B: limiti reali, sequenze separate, messaggi che funzionano
