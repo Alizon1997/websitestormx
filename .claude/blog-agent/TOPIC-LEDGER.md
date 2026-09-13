@@ -32,3 +32,4 @@ time (volume + difficulty + intent) and confirm it isn't already owned by an exi
 ## Run log (append one line per run: date · slug · keyword · sources · status)
 <!-- e.g. 2026-06-17 · agenti-vocali-ai-cliniche · "centralino ai cliniche" (90/mo, KD 22) · Circleback+Semrush · published -->
 2026-06-14 · cold-email-b2b · "cold email" (110/mo IT, CPC €2.20, low comp) · Semrush phrase_these+phrase_related+Circleback (domain-warming ops pattern) · published
+2026-09-13 · (none) · (none — keyword research not run) · n/a · skipped: keyword-research tools unavailable this run (Semrush requires OAuth re-auth, non-interactive session cannot complete it; Ubersuggest-SEO MCP server failed to connect). Per hard rule "Skip > junk", did not publish without validated search volume/difficulty. Rotation pointer left unchanged at 2 (AI voice agent) for the next run.
