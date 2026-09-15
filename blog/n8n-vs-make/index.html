@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F8F7F4" />
+  <title>n8n vs Make.com: guida pratica al confronto · Storm X Digital</title>
+  <meta name="description" content="n8n vs Make.com nel 2026: prezzi reali, self-hosting e controllo dati a confronto. Quando conviene l'uno o l'altro, con la nostra esperienza diretta sul campo." />
+  <meta name="keywords" content="n8n vs Make, n8n vs Make.com, differenza n8n e make, n8n self-hosted, make.com prezzi, automazione workflow B2B, n8n italiano" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/storm-x-mark.svg">
+  <link rel="canonical" href="https://www.stormxdigital.com/blog/n8n-vs-make/">
+  <link rel="alternate" hreflang="it" href="https://www.stormxdigital.com/blog/n8n-vs-make/">
+  <link rel="alternate" hreflang="en" href="https://www.stormxdigital.com/blog/n8n-vs-make/">
+  <link rel="alternate" hreflang="x-default" href="https://www.stormxdigital.com/blog/n8n-vs-make/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.stormxdigital.com/blog/n8n-vs-make/" />
+  <meta property="og:site_name" content="Storm X Digital" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:image" content="https://www.stormxdigital.com/assets/images/og-image.png" />
+  <meta property="og:title" content="n8n vs Make.com: guida pratica al confronto" />
+  <meta property="og:description" content="n8n vs Make.com nel 2026: prezzi reali, self-hosting e controllo dati a confronto. Quando conviene l'uno o l'altro, con la nostra esperienza diretta sul campo." />
+  <meta property="article:published_time" content="2026-09-15" />
+  <meta property="article:author" content="Storm X Digital" />
+  <meta property="article:section" content="Automazioni" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="n8n vs Make.com: guida pratica al confronto" />
+  <meta name="twitter:description" content="Prezzi reali, self-hosting e controllo dati: quando conviene n8n e quando Make.com, con la nostra esperienza diretta." />
+  <meta name="twitter:image" content="https://www.stormxdigital.com/assets/images/og-image.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "n8n vs Make.com: guida pratica al confronto",
+    "description": "n8n vs Make.com nel 2026: prezzi reali, self-hosting e controllo dati a confronto. Quando conviene l'uno o l'altro, con la nostra esperienza diretta sul campo.",
+    "image": "https://www.stormxdigital.com/assets/images/og-image.png",
+    "datePublished": "2026-09-15",
+    "dateModified": "2026-09-15",
+    "inLanguage": "it-IT",
+    "author": { "@type": "Organization", "name": "Storm X Digital", "url": "https://www.stormxdigital.com/" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Storm X Digital",
+      "logo": { "@type": "ImageObject", "url": "https://www.stormxdigital.com/assets/logo/storm-x-primary.svg" }
+    },
+    "mainEntityOfPage": "https://www.stormxdigital.com/blog/n8n-vs-make/",
+    "articleSection": "Automazioni"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "n8n è gratuito?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La Community Edition di n8n è open-source (licenza fair-code) e si può self-hostare gratuitamente su un tuo server: paghi solo l'infrastruttura (una VPS da poche decine di euro al mese è sufficiente per volumi medi). n8n Cloud, la versione gestita da n8n stessa senza dover amministrare nulla, parte da 20€/mese per 2.500 esecuzioni di workflow (piano Starter, fatturazione annuale, prezzi n8n.io a settembre 2026)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è la differenza principale tra n8n e Make.com?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Due differenze contano più di tutte le altre. Primo, il modello di prezzo: Make conta i crediti per singola azione di modulo eseguita, n8n Cloud conta le esecuzioni dell'intero workflow indipendentemente dal numero di step. Secondo, l'hosting: Make gira solo sull'infrastruttura cloud di Make, n8n si può installare ed eseguire sui tuoi server, con pieno controllo sui dati."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Si può migrare un'automazione da Make.com a n8n?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì, ma non con un pulsante 'importa'. Non esiste un convertitore automatico affidabile: bisogna ricostruire ogni scenario nodo per nodo nell'editor di n8n. Per workflow semplici (poche decine di step) è lavoro di poche ore; per scenari complessi con router e gestione errori articolata conviene pianificare la migrazione come un piccolo progetto, non come un copia-incolla."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "n8n va bene per chi non sa programmare?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il nucleo di n8n è visuale e no-code, come Make: colleghi nodi, non scrivi codice per la maggior parte dei casi. Ma appena serve una logica un po' fuori standard, n8n si aspetta che tu sappia (o qualcuno del tuo team sappia) scrivere qualche riga di JavaScript nel nodo Code. Make resta l'opzione più adatta a un team completamente non tecnico che deve gestire le automazioni in autonomia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Chi dovrebbe scegliere n8n invece di Make.com?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aziende con volumi di automazione alti (migliaia di esecuzioni al mese, dove i crediti di Make iniziano a pesare sul budget), con requisiti di controllo dati o GDPR che rendono preferibile tenere i dati in casa, o con competenze tecniche interne (o un partner) in grado di gestire un server. Se nessuna di queste tre condizioni è vera, Make.com resta il punto di partenza più semplice e sicuro."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .article-cover { width: 100%; aspect-ratio: 16/9; overflow: hidden; background: var(--c-bg-2); border-bottom: 1px solid var(--c-line); }
+    .article-cover img { width: 100%; height: 100%; object-fit: cover; }
+    .article-head { max-width: 820px; margin: 0 auto; padding: var(--s-7) var(--gutter) var(--s-5); }
+    .article-meta { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-text-faint); margin-bottom: var(--s-5); display: flex; gap: var(--s-3); align-items: center; flex-wrap: wrap; }
+    .article-meta .cat { color: var(--c-accent); }
+    .article-meta .sep { color: var(--c-line-strong); }
+    .article-h1 { font-family: var(--font-display); font-size: clamp(36px, 5vw, 64px); letter-spacing: -0.04em; line-height: 1.05; margin: 0 0 var(--s-4); color: var(--c-text); }
+    .article-h1 em { font-family: var(--font-serif); font-style: italic; color: var(--c-accent); font-weight: 400; }
+    .article-sub { font-family: var(--font-serif); font-size: 22px; line-height: 1.4; color: var(--c-text-mute); margin: 0; font-style: italic; }
+    .article-body { max-width: 760px; margin: 0 auto; padding: var(--s-5) var(--gutter) var(--s-9); }
+    .article-body h2 { font-size: 28px; letter-spacing: -0.025em; margin: var(--s-7) 0 var(--s-3); color: var(--c-text); }
+    .article-body h3 { font-size: 20px; margin: var(--s-5) 0 var(--s-2); color: var(--c-text); }
+    .article-body p { color: var(--c-text); font-size: 17px; line-height: 1.7; margin: 0 0 var(--s-4); }
+    .article-body a { color: var(--c-accent); border-bottom: 1px solid currentColor; }
+    .article-body ul, .article-body ol { font-size: 17px; line-height: 1.7; padding-left: 24px; margin: 0 0 var(--s-4); color: var(--c-text); }
+    .article-body li { margin-bottom: 8px; }
+    .article-body strong { color: var(--c-text); font-weight: 600; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: var(--s-4) 0; font-size: 14px; border: 1px solid var(--c-line); }
+    .article-body th, .article-body td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--c-line); vertical-align: top; }
+    .article-body th { background: var(--c-bg-2); font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--c-text); font-weight: 500; }
+    .article-body code { background: var(--c-bg-2); padding: 2px 6px; font-size: 14px; font-family: var(--font-mono); border: 1px solid var(--c-line); }
+    .article-body blockquote { border-left: 3px solid var(--c-accent); padding: var(--s-3) var(--s-4); margin: var(--s-5) 0; background: var(--c-bg-2); font-family: var(--font-serif); font-size: 20px; line-height: 1.5; color: var(--c-text); font-style: italic; }
+    .article-body img { max-width: 100%; height: auto; margin: var(--s-4) 0; border: 1px solid var(--c-line); }
+    .article-cta-box { background: var(--c-bg-1); border: 1px solid var(--c-accent); padding: var(--s-5); margin: var(--s-7) 0; text-align: center; }
+    .article-cta-box h3 { margin: 0 0 var(--s-2); font-size: 22px; color: var(--c-text); }
+    .article-cta-box p { font-family: var(--font-body); font-style: normal; font-size: 15px; color: var(--c-text-mute); margin: 0 0 var(--s-3); }
+    .article-related { max-width: 1100px; margin: 0 auto; padding: var(--s-7) var(--gutter); border-top: 1px solid var(--c-line); }
+    .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s-4); margin-top: var(--s-4); }
+    @media (max-width: 720px) { .related-grid { grid-template-columns: 1fr; } }
+    .breadcrumb-bar { max-width: 820px; margin: 0 auto; padding: var(--s-4) var(--gutter) 0; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-text-faint); }
+    .breadcrumb-bar a { color: var(--c-text-mute); }
+    .breadcrumb-bar a:hover { color: var(--c-accent); }
+    .breadcrumb-bar .sep { color: var(--c-text-faint); margin: 0 var(--s-2); }
+  </style>
+
+  <!-- MANDATORY: lemlist visitor tracking — loads for ALL visitors, NOT behind cookie consent. -->
+  <script type="text/javascript" src="https://app.lemlist.com/api/visitors/tracking?k=BDhq9RkiazDZTAsrf78TQIpGU4Y1T59qj2H54KEzAXQ%3D&t=tea_WDB3Rjyj2RrCtS2Lm"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-logo" aria-label="Storm X Digital — home">
+      <img class="logo--primary" src="/assets/logo/storm-x-primary.svg" alt="Storm X Digital">
+      <img class="logo--stacked" src="/assets/logo/storm-x-stacked.svg" alt="">
+    </a>
+    <nav class="header-nav" id="site-nav">
+      <div class="nav-dropdown">
+        <button type="button" class="nav-trigger">SERVIZI</button>
+        <div class="nav-panel">
+          <a href="/services/outbound-sales" class="nav-panel-item"><span>Outbound multicanale</span><span class="idx">CORE</span></a>
+          <a href="/services/agenti-vocali-ai" class="nav-panel-item"><span>Centralino con voce AI</span><span class="idx">02</span></a>
+          <a href="/services/automatizzazioni-ai" class="nav-panel-item"><span>Automazioni con AI</span><span class="idx">03</span></a>
+          <a href="/services/make-automazioni" class="nav-panel-item"><span>Software collegati</span><span class="idx">04</span></a>
+          <a href="/services/claude-code" class="nav-panel-item"><span>Software su misura</span><span class="idx">05</span></a>
+        </div>
+      </div>
+      <a href="/#workflow" class="nav-link">METODO</a>
+      <a href="/#programma" class="nav-link">PILOT 120GG</a>
+      <a href="/#risultati" class="nav-link">RISULTATI</a>
+      <a href="/blog" class="nav-link active">ARTICOLI</a>
+    </nav>
+    <div class="header-right">
+      <a href="/en/" class="header-lang">EN</a>
+      <a href="/#prenota" class="header-cta">PRENOTA UNA CALL</a>
+      <button class="mobile-menu-btn" onclick="document.getElementById('site-nav').classList.toggle('open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="breadcrumb-bar">
+  <a href="/">HOME</a><span class="sep">/</span><a href="/blog">ARTICOLI</a><span class="sep">/</span>N8N VS MAKE.COM
+</nav>
+
+<header class="article-head">
+  <p class="article-meta">
+    <span class="cat">AUTOMAZIONI</span>
+    <span class="sep">·</span>
+    <span>9 MIN</span>
+    <span class="sep">·</span>
+    <span>15 Settembre 2026</span>
+  </p>
+  <h1 class="article-h1">n8n vs Make.com: quale conviene <em>davvero</em></h1>
+  <p class="article-sub">Prezzi reali, self-hosting, controllo dei dati — e perché noi li usiamo entrambi, a seconda del workflow.</p>
+</header>
+
+<div class="article-cover">
+  <img src="/assets/images/og-image.png" alt="N8N VS MAKE.COM — GUIDA AL CONFRONTO" loading="lazy">
+</div>
+
+<article class="article-body">
+
+  <blockquote><p><strong>TL;DR</strong> — <strong>n8n vs Make.com</strong> non è una domanda con una risposta unica: risolvono lo stesso problema con filosofie opposte. Make è cloud-only, drag-and-drop, pensato per chi non vuole gestire infrastruttura, e conta i crediti per ogni singola azione eseguita. n8n è open-source, si può self-hostare gratis, e conta le esecuzioni dell'intero workflow — non ogni passaggio al suo interno. Per un team B2B senza competenze tecniche interne, Make resta il punto di partenza più sicuro. Per chi ha volumi alti, vincoli sui dati o uno sviluppatore in squadra, n8n quasi sempre conviene di più.</p></blockquote>
+
+  <p>Se stai valutando <strong>n8n vs Make.com</strong> per automatizzare i processi della tua azienda, probabilmente hai già superato la fase "mi serve uno strumento di automazione" e sei arrivato a quella più difficile: quale dei due, e perché. Sono entrambi ottimi prodotti, entrambi collegano CRM, email, fogli di calcolo, e-commerce e centinaia di altri software senza scrivere codice — ma nascono da presupposti diversi, e la scelta sbagliata si paga in bolletta o in ore di manutenzione.</p>
+
+  <p>Noi usiamo entrambi, ogni giorno, per clienti diversi e per i nostri sistemi interni. Questa guida mette a confronto le differenze che contano davvero — non le liste di feature copiate dai siti ufficiali — e ti dice quando scegliere l'uno o l'altro.</p>
+
+  <h2>Cos'è n8n e cos'è Make.com</h2>
+
+  <p><strong>Make.com</strong> (ex Integromat) è una piattaforma di automazione visiva cloud: editor drag-and-drop, oltre 3.000 app native, nessuna infrastruttura da gestire. Ne parliamo in dettaglio nel nostro confronto <a href="/blog/make-com-vs-zapier-confronto/" class="inline-link">Make.com vs Zapier</a>, dove resta la scelta consigliata per chi arriva da Zapier.</p>
+
+  <p><strong>n8n</strong> è una piattaforma di automazione open-source (licenza "fair-code": codice sorgente accessibile, con alcuni limiti d'uso commerciale sulle funzioni enterprise) nata nel 2019 e cresciuta rapidamente — oltre 200.000 stelle su GitHub a fine 2025. Si usa in due modi: <strong>self-hosted</strong>, installandolo su un tuo server (Docker, VPS) senza costi di licenza, oppure su <strong>n8n Cloud</strong>, la versione gestita da n8n stessa. L'editor è visuale, a nodi, concettualmente simile a Make — ma con un accesso molto più diretto a codice personalizzato, API dirette e pacchetti npm quando è self-hosted.</p>
+
+  <h2>Il modello di prezzo è la differenza che conta di più</h2>
+
+  <p>Qui si gioca la partita vera, ed è dove la maggior parte dei confronti online si ferma alla superficie. I due strumenti non contano l'utilizzo nello stesso modo.</p>
+
+  <p><strong>Make.com</strong> usa un sistema a crediti: ogni azione di modulo eseguita nello scenario (leggere un dato, creare un record, aggiornare una riga) consuma tipicamente 1 credito. Il piano Free include 1.000 crediti/mese con un massimo di 2 scenari attivi; si sale a 10.000 crediti/mese sui piani Core (12$/mese), Pro (21$/mese) e Teams (38$/mese), con fatturazione mensile (prezzi da make.com/pricing, settembre 2026 — verifica sempre il listino aggiornato prima di decidere).</p>
+
+  <p><strong>n8n Cloud</strong> conta invece le <strong>esecuzioni del workflow</strong>, non i singoli step al suo interno: un workflow con 20 nodi che gira una volta consuma 1 esecuzione, non 20 crediti. Il piano Starter parte da 20€/mese per 2.500 esecuzioni, il Pro da 50€/mese per 10.000 esecuzioni (fatturazione annuale, prezzi n8n.io/pricing, settembre 2026). E se scegli il self-hosting, non paghi per esecuzione: paghi la VPS, punto.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Aspetto</th>
+        <th>Make.com</th>
+        <th>n8n</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Modello di prezzo</strong></td>
+        <td>Crediti per azione/modulo</td>
+        <td>Esecuzioni per workflow (self-host: nessun limite d'uso, solo costo server)</td>
+      </tr>
+      <tr>
+        <td><strong>Hosting</strong></td>
+        <td>Solo cloud Make</td>
+        <td>Cloud n8n oppure self-hosted (VPS, Docker)</td>
+      </tr>
+      <tr>
+        <td><strong>Editor</strong></td>
+        <td>Visuale, drag-and-drop, molto no-code</td>
+        <td>Visuale a nodi, con nodo Code (JS) per logica avanzata</td>
+      </tr>
+      <tr>
+        <td><strong>App/integrazioni native</strong></td>
+        <td>3.000+</td>
+        <td>400+ native, estendibili via HTTP/webhook e community node</td>
+      </tr>
+      <tr>
+        <td><strong>Controllo dati</strong></td>
+        <td>Dati transitano sull'infrastruttura Make (regione UE o USA)</td>
+        <td>Self-hosted: dati restano sulla tua infrastruttura</td>
+      </tr>
+      <tr>
+        <td><strong>Curva di apprendimento</strong></td>
+        <td>Bassa</td>
+        <td>Medio-alta (soprattutto in self-hosting)</td>
+      </tr>
+      <tr>
+        <td><strong>Adatto a</strong></td>
+        <td>Team non tecnici, workflow standard</td>
+        <td>Team con competenze tecniche, volumi alti, requisiti dati stringenti</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>La conseguenza pratica: per un'automazione semplice a basso volume la differenza di costo è trascurabile. Ma su un workflow con 15-20 step che gira migliaia di volte al mese — tipico di un sistema di lead scoring o di sincronizzazione CRM/fatturazione — Make può arrivare a contare decine di migliaia di crediti per quello che su n8n resta un numero di esecuzioni molto più basso. È il motivo per cui, superata una certa soglia di volume, la matematica inizia a spostarsi verso n8n.</p>
+
+  <h2>Self-hosting: il vantaggio che Make non offre</h2>
+
+  <p>Make.com è cloud-only per scelta di prodotto: non lo installi da nessuna parte, giri sempre sulla loro infrastruttura. n8n invece nasce open-source, e questo cambia le regole del gioco su due fronti.</p>
+
+  <p><strong>Costo a scala.</strong> Su una VPS da poche decine di euro al mese puoi far girare centinaia di migliaia di esecuzioni senza pagare nulla in più oltre all'affitto del server. Lo abbiamo sperimentato in prima persona: alcune delle nostre automazioni interne ad alto volume (gestione fatture, sincronizzazione dati tra CRM e strumenti di outreach) sono passate da Make a n8n self-hosted proprio perché, superata una certa soglia di operazioni mensili, il conto crediti iniziava a pesare più della semplicità d'uso che Make offre.</p>
+
+  <p><strong>Controllo e residenza dei dati.</strong> Se il tuo settore ha vincoli GDPR stringenti, o vuoi semplicemente sapere dove fisicamente risiedono i dati che passano nei tuoi flussi, il self-hosting toglie il dubbio: i dati non lasciano mai la tua infrastruttura (o quella del data center che scegli tu). Con Make, invece, per quanto la piattaforma sia conforme al GDPR e offra una regione UE, i dati transitano comunque sull'infrastruttura Make.</p>
+
+  <p>Il prezzo di questo controllo è la manutenzione: qualcuno deve aggiornare il server, gestire i backup, monitorare che il servizio resti su. Non è un lavoro enorme — un paio d'ore al mese, una volta impostato bene — ma è un lavoro che con Make semplicemente non esiste. Se non hai né uno sviluppatore interno né un partner tecnico, questo può ribaltare la scelta anche se i numeri sul credito dicono n8n.</p>
+
+  <h2>Curva di apprendimento: chi dovrebbe usare cosa</h2>
+
+  <p>L'editor di n8n assomiglia a quello di Make — nodi collegati da frecce, non un linguaggio di programmazione da imparare. Il nucleo resta no-code. Ma appena un flusso richiede una logica un po' fuori standard (una trasformazione dati particolare, una condizione complessa), n8n si aspetta che qualcuno in squadra sappia scrivere qualche riga di JavaScript nel nodo Code. Make copre gli stessi casi con funzioni integrate nell'interfaccia, senza mai uscire dal drag-and-drop.</p>
+
+  <p>Per un team marketing o operations senza background tecnico che deve costruire e mantenere le automazioni in autonomia, questa differenza pesa più del prezzo. Non è un caso se, nel nostro <a href="/services/make-automazioni" class="inline-link">servizio di software collegati</a>, continuiamo a consigliare Make.com come punto di partenza per la maggior parte delle PMI: la barriera d'ingresso più bassa vale più del risparmio sui crediti, finché il volume resta contenuto.</p>
+
+  <h2>Agenti AI e automazioni intelligenti</h2>
+
+  <p>Entrambi gli strumenti hanno investito pesantemente su moduli AI nel 2025-2026 — trascrizione, generazione testo, classificazione. Ma sull'orchestrazione di agenti AI (un LLM che decide autonomamente quali step eseguire, richiama altri strumenti, mantiene memoria di conversazione) n8n ha un vantaggio strutturale: nodi agente dedicati e supporto nativo a framework come LangChain, che lo rendono la base tecnica più flessibile per costruire automazioni che non seguono un percorso fisso ma "ragionano" sui dati in ingresso.</p>
+
+  <p>Se il tuo obiettivo è arrivare a questo livello di sofisticazione — automazioni che si adattano, non solo eseguono — vale la pena guardare anche alle nostre pagine su <a href="/services/automatizzazioni-ai" class="inline-link">automazioni con AI</a> e su <a href="/services/claude-code" class="inline-link">software su misura</a>: un'infrastruttura self-hosted come n8n, unita a codice custom, è spesso il punto di partenza più solido per questo tipo di progetti rispetto a un tool cloud chiuso.</p>
+
+  <div class="article-cta-box">
+    <h3>Non sai da dove partire tra n8n e Make.com?</h3>
+    <p>In una call di 30 minuti guardiamo i tuoi processi, il volume reale di automazioni e ti diciamo onestamente quale strumento conviene — senza venderti quello che ci fa comodo vendere.</p>
+    <a href="/#prenota" class="btn-primary">Prenota la call gratis</a>
+  </div>
+
+  <h2>Quando scegliere Make.com</h2>
+  <ul>
+    <li><strong>Team senza competenze tecniche interne</strong> che deve gestire le automazioni in autonomia</li>
+    <li><strong>Volumi contenuti</strong> (poche migliaia di operazioni al mese): il costo resta basso e prevedibile</li>
+    <li><strong>Bisogno di un'app di nicchia</strong> già integrata nativamente, senza dover costruire un connettore HTTP</li>
+    <li><strong>Zero voglia di gestire infrastruttura:</strong> vuoi accendere il computer e lavorare, non amministrare un server</li>
+  </ul>
+
+  <h2>Quando scegliere n8n</h2>
+  <ul>
+    <li><strong>Volumi alti</strong> dove i crediti Make iniziano a pesare sul budget mensile</li>
+    <li><strong>Vincoli su dove risiedono i dati</strong> (GDPR, settori regolamentati, clienti enterprise che lo richiedono)</li>
+    <li><strong>Hai uno sviluppatore in squadra</strong> (o un partner tecnico) in grado di gestire un server e scrivere codice quando serve</li>
+    <li><strong>Vuoi costruire agenti AI</strong> con logica condizionale complessa, non solo flussi lineari</li>
+  </ul>
+
+  <h2>Perché Storm X Digital usa entrambi</h2>
+
+  <p>Non è una risposta comoda, ma è quella onesta: nella nostra esperienza con automazioni per PMI B2B italiane ed europee, non esiste "il migliore" in assoluto. Make.com resta il consiglio di default per la maggior parte dei clienti che ci chiedono di <a href="/blog/integrare-crm-fatturazione-automatica/" class="inline-link">collegare CRM e fatturazione</a> o automatizzare flussi di lead: si implementa più in fretta, si mantiene senza competenze tecniche, e per i volumi tipici di una PMI il conto crediti non diventa mai un problema.</p>
+
+  <p>n8n entra in gioco quando un'automazione cresce oltre quella soglia — volume alto, logica complessa, necessità di tenere i dati in casa — o quando il progetto è di natura più tecnica fin dall'inizio, vicino al territorio del <a href="/blog/come-automatizzare-business-con-ai/" class="inline-link">software su misura</a> più che dell'automazione plug-and-play. La domanda giusta non è "n8n o Make", ma "quanto pesano volume, controllo dati e competenze tecniche nel mio caso specifico" — e quella risposta cambia da azienda ad azienda.</p>
+
+  <h2>FAQ: n8n vs Make.com</h2>
+
+  <h3>n8n è gratuito?</h3>
+  <p>La Community Edition di n8n è open-source e si può self-hostare gratuitamente su un tuo server: paghi solo l'infrastruttura (una VPS da poche decine di euro al mese è sufficiente per volumi medi). n8n Cloud, la versione gestita senza dover amministrare nulla, parte da 20€/mese per 2.500 esecuzioni di workflow (piano Starter, fatturazione annuale, prezzi n8n.io a settembre 2026).</p>
+
+  <h3>Qual è la differenza principale tra n8n e Make.com?</h3>
+  <p>Due differenze contano più di tutte le altre. Primo, il modello di prezzo: Make conta i crediti per singola azione di modulo eseguita, n8n Cloud conta le esecuzioni dell'intero workflow indipendentemente dal numero di step. Secondo, l'hosting: Make gira solo sull'infrastruttura cloud di Make, n8n si può installare ed eseguire sui tuoi server, con pieno controllo sui dati.</p>
+
+  <h3>Si può migrare un'automazione da Make.com a n8n?</h3>
+  <p>Sì, ma non con un pulsante "importa". Non esiste un convertitore automatico affidabile: bisogna ricostruire ogni scenario nodo per nodo nell'editor di n8n. Per workflow semplici è lavoro di poche ore; per scenari complessi con router e gestione errori articolata conviene pianificare la migrazione come un piccolo progetto, non come un copia-incolla.</p>
+
+  <h3>n8n va bene per chi non sa programmare?</h3>
+  <p>Il nucleo di n8n è visuale e no-code, come Make: colleghi nodi, non scrivi codice per la maggior parte dei casi. Ma appena serve una logica un po' fuori standard, n8n si aspetta che tu (o qualcuno del tuo team) sappia scrivere qualche riga di JavaScript nel nodo Code. Make resta l'opzione più adatta a un team completamente non tecnico che deve gestire le automazioni in autonomia.</p>
+
+  <h3>Chi dovrebbe scegliere n8n invece di Make.com?</h3>
+  <p>Aziende con volumi di automazione alti, con requisiti di controllo dati o GDPR che rendono preferibile tenere i dati in casa, o con competenze tecniche interne (o un partner) in grado di gestire un server. Se nessuna di queste tre condizioni è vera, Make.com resta il punto di partenza più semplice e sicuro.</p>
+
+  <hr>
+  <p style="font-size:14px;color:var(--c-text-mute)"><em>Approfondisci: <a href="/blog/make-com-vs-zapier-confronto/">Make.com vs Zapier: il confronto operativo</a> — se stai ancora valutando le due piattaforme cloud più diffuse. Oppure <a href="/blog/integrare-crm-fatturazione-automatica/">Integrare CRM e fatturazione: la guida senza sviluppatori</a> per i primi flussi da automatizzare.</em></p>
+
+  <nav class="services-nav">
+    <a href="/services/outbound-sales">Outbound Sales</a>
+    <a href="/services/agenti-vocali-ai">Agenti Vocali AI</a>
+    <a href="/services/automatizzazioni-ai">Automatizzazioni AI</a>
+    <a href="/services/make-automazioni">Automazioni Make.com</a>
+    <a href="/services/claude-code">Claude Code</a>
+    <a href="/services/lead-generation-b2b">Lead Generation B2B</a>
+  </nav>
+
+  <div class="article-cta-box">
+    <h3>Vuoi vedere come si applica al tuo caso?</h3>
+    <p>Una call di 30 minuti gratis. Niente vendita, solo diagnosi sul tuo stack di automazione.</p>
+    <a href="/#prenota" class="btn-primary">Prenota la call gratis</a>
+  </div>
+
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">
+          <img src="/assets/logo/storm-x-mono.svg" alt="Storm X Digital">
+        </span>
+        <p class="tagline">Sistema di Outbound Marketing per PMI B2B. Costruito per scalare.</p>
+      </div>
+      <div class="footer-col"><h4>SERVIZI</h4><ul>
+        <li><a href="/services/outbound-sales">Outbound multicanale (CORE)</a></li>
+        <li><a href="/services/agenti-vocali-ai">Centralino con voce AI</a></li>
+        <li><a href="/services/automatizzazioni-ai">Automazioni con AI</a></li>
+        <li><a href="/services/make-automazioni">Software collegati</a></li>
+        <li><a href="/services/claude-code">Software su misura</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>AZIENDA</h4><ul>
+        <li><a href="/#workflow">Il workflow multicanale</a></li>
+        <li><a href="/#programma">Pilot 120 giorni</a></li>
+        <li><a href="/#risultati">Casi studio reali</a></li>
+        <li><a href="/blog">Articoli</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>CONTATTI</h4><ul>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/cookies/">Cookie</a></li>
+        <li><a href="/terms/">Termini</a></li>
+        <li><a href="#" data-action="open-cookie-prefs">Gestisci preferenze cookie</a></li>
+        <li><a href="mailto:stormxdigital@pec.it">stormxdigital@pec.it</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-meta">
+      <span>STORM X DIGITAL S.R.L. · BISCEGLIE (BA) · P.IVA 08789080721</span>
+      <span class="live">SISTEMA ATTIVO</span>
+      <span id="ts">--</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/cookie-consent.js"></script>
+<script src="/assets/main.js"></script>
+</body>
+</html>
