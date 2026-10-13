@@ -1,0 +1,1 @@
+Fonts served locally: Inter, Space Grotesk, Instrument Serif, JetBrains Mono. Source: Google Fonts CSS, fetched 12 October 2026. These font families use the SIL Open Font License. The CSS retains the original character ranges.

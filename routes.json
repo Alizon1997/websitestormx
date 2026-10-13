@@ -1,0 +1,1196 @@
+{
+  "version": 3,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin"
+      },
+      "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": ".*\\.vercel\\.app"
+        }
+      ],
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow"
+      },
+      "continue": true
+    },
+    {
+      "src": "/richieste/?",
+      "status": 302,
+      "headers": {
+        "Location": "https://stormx-digital-home.genialtrout3.chatgpt.site/richieste",
+        "Cache-Control": "no-store"
+      }
+    },
+    {
+      "src": "/statistiche/?",
+      "status": 302,
+      "headers": {
+        "Location": "https://stormx-digital-home.genialtrout3.chatgpt.site/statistiche",
+        "Cache-Control": "no-store"
+      }
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/casi-studio/reliance-medical/",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/reliance-medical"
+      }
+    },
+    {
+      "src": "/casi-studio/reliance-medical",
+      "dest": "/casi-studio/reliance-medical.html"
+    },
+    {
+      "src": "/casi-studio/isolcore/",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/isolcore"
+      }
+    },
+    {
+      "src": "/casi-studio/isolcore",
+      "dest": "/casi-studio/isolcore.html"
+    },
+    {
+      "src": "/casi-studio/profood/",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/profood"
+      }
+    },
+    {
+      "src": "/casi-studio/profood",
+      "dest": "/casi-studio/profood.html"
+    },
+    {
+      "src": "/casi-studio/brands-cosmos/",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/brands-cosmos"
+      }
+    },
+    {
+      "src": "/casi-studio/brands-cosmos",
+      "dest": "/casi-studio/brands-cosmos.html"
+    },
+    {
+      "src": "/casi-studio/",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio"
+      }
+    },
+    {
+      "src": "/casi-studio",
+      "dest": "/casi-studio.html"
+    },
+    {
+      "src": "/collaborazione/",
+      "status": 308,
+      "headers": {
+        "Location": "/collaborazione"
+      }
+    },
+    {
+      "src": "/collaborazione",
+      "dest": "/collaborazione.html"
+    },
+    {
+      "src": "/services/agenti-vocali-ai/",
+      "status": 308,
+      "headers": {
+        "Location": "/services/agenti-vocali-ai"
+      }
+    },
+    {
+      "src": "/services/agenti-vocali-ai",
+      "dest": "/services/agenti-vocali-ai.html"
+    },
+    {
+      "src": "/services/automatizzazioni-ai/",
+      "status": 308,
+      "headers": {
+        "Location": "/services/automatizzazioni-ai"
+      }
+    },
+    {
+      "src": "/services/automatizzazioni-ai",
+      "dest": "/services/automatizzazioni-ai.html"
+    },
+    {
+      "src": "/services/make-automazioni/",
+      "status": 308,
+      "headers": {
+        "Location": "/services/make-automazioni"
+      }
+    },
+    {
+      "src": "/services/make-automazioni",
+      "dest": "/services/make-automazioni.html"
+    },
+    {
+      "src": "/services/claude-code/",
+      "status": 308,
+      "headers": {
+        "Location": "/services/claude-code"
+      }
+    },
+    {
+      "src": "/services/claude-code",
+      "dest": "/services/claude-code.html"
+    },
+    {
+      "src": "/privacy/",
+      "status": 308,
+      "headers": {
+        "Location": "/privacy"
+      }
+    },
+    {
+      "src": "/privacy",
+      "dest": "/privacy.html"
+    },
+    {
+      "src": "/cookies/",
+      "status": 308,
+      "headers": {
+        "Location": "/cookies"
+      }
+    },
+    {
+      "src": "/cookies",
+      "dest": "/cookies.html"
+    },
+    {
+      "src": "/terms/",
+      "status": 308,
+      "headers": {
+        "Location": "/terms"
+      }
+    },
+    {
+      "src": "/terms",
+      "dest": "/terms.html"
+    },
+    {
+      "src": "/prenota/",
+      "status": 308,
+      "headers": {
+        "Location": "/prenota"
+      }
+    },
+    {
+      "src": "/prenota",
+      "dest": "/prenota.html"
+    },
+    {
+      "src": "/blog/lead-scoring-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/lead-scoring-b2b"
+      }
+    },
+    {
+      "src": "/blog/lead-scoring-b2b",
+      "dest": "/blog/lead-scoring-b2b.html"
+    },
+    {
+      "src": "/blog/whatsapp-business-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/whatsapp-business-b2b"
+      }
+    },
+    {
+      "src": "/blog/whatsapp-business-b2b",
+      "dest": "/blog/whatsapp-business-b2b.html"
+    },
+    {
+      "src": "/blog/appointment-setting-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/appointment-setting-b2b"
+      }
+    },
+    {
+      "src": "/blog/appointment-setting-b2b",
+      "dest": "/blog/appointment-setting-b2b.html"
+    },
+    {
+      "src": "/blog/automatizzare-assistenza-clienti-ai/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/automatizzare-assistenza-clienti-ai"
+      }
+    },
+    {
+      "src": "/blog/automatizzare-assistenza-clienti-ai",
+      "dest": "/blog/automatizzare-assistenza-clienti-ai.html"
+    },
+    {
+      "src": "/blog/integrare-crm-fatturazione-automatica/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/integrare-crm-fatturazione-automatica"
+      }
+    },
+    {
+      "src": "/blog/integrare-crm-fatturazione-automatica",
+      "dest": "/blog/integrare-crm-fatturazione-automatica.html"
+    },
+    {
+      "src": "/blog/linkedin-outreach-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/linkedin-outreach-b2b"
+      }
+    },
+    {
+      "src": "/blog/linkedin-outreach-b2b",
+      "dest": "/blog/linkedin-outreach-b2b.html"
+    },
+    {
+      "src": "/blog/trovare-clienti-esteri-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/trovare-clienti-esteri-b2b"
+      }
+    },
+    {
+      "src": "/blog/trovare-clienti-esteri-b2b",
+      "dest": "/blog/trovare-clienti-esteri-b2b.html"
+    },
+    {
+      "src": "/blog/software-su-misura-pmi/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/software-su-misura-pmi"
+      }
+    },
+    {
+      "src": "/blog/software-su-misura-pmi",
+      "dest": "/blog/software-su-misura-pmi.html"
+    },
+    {
+      "src": "/blog/segreteria-telefonica-ai-studi-professionali/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/segreteria-telefonica-ai-studi-professionali"
+      }
+    },
+    {
+      "src": "/blog/segreteria-telefonica-ai-studi-professionali",
+      "dest": "/blog/segreteria-telefonica-ai-studi-professionali.html"
+    },
+    {
+      "src": "/blog/agente-vocale-ai-qualificare-lead/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/agente-vocale-ai-qualificare-lead"
+      }
+    },
+    {
+      "src": "/blog/agente-vocale-ai-qualificare-lead",
+      "dest": "/blog/agente-vocale-ai-qualificare-lead.html"
+    },
+    {
+      "src": "/blog/ai-processi-vendita-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/ai-processi-vendita-b2b"
+      }
+    },
+    {
+      "src": "/blog/ai-processi-vendita-b2b",
+      "dest": "/blog/ai-processi-vendita-b2b.html"
+    },
+    {
+      "src": "/blog/centralino-ai-per-aziende/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/centralino-ai-per-aziende"
+      }
+    },
+    {
+      "src": "/blog/centralino-ai-per-aziende",
+      "dest": "/blog/centralino-ai-per-aziende.html"
+    },
+    {
+      "src": "/blog/cold-email-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/cold-email-b2b"
+      }
+    },
+    {
+      "src": "/blog/cold-email-b2b",
+      "dest": "/blog/cold-email-b2b.html"
+    },
+    {
+      "src": "/blog/tanti-contatti-pochi-appuntamenti/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/tanti-contatti-pochi-appuntamenti"
+      }
+    },
+    {
+      "src": "/blog/tanti-contatti-pochi-appuntamenti",
+      "dest": "/blog/tanti-contatti-pochi-appuntamenti.html"
+    },
+    {
+      "src": "/blog/case-holistic-unity/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/case-holistic-unity"
+      }
+    },
+    {
+      "src": "/blog/case-holistic-unity",
+      "dest": "/blog/case-holistic-unity.html"
+    },
+    {
+      "src": "/blog/caso-studio-abeec/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/caso-studio-abeec"
+      }
+    },
+    {
+      "src": "/blog/caso-studio-abeec",
+      "dest": "/blog/caso-studio-abeec.html"
+    },
+    {
+      "src": "/blog/caso-studio-reebok/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/caso-studio-reebok"
+      }
+    },
+    {
+      "src": "/blog/caso-studio-reebok",
+      "dest": "/blog/caso-studio-reebok.html"
+    },
+    {
+      "src": "/blog/caso-studio-profood/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/caso-studio-profood"
+      }
+    },
+    {
+      "src": "/blog/caso-studio-profood",
+      "dest": "/blog/caso-studio-profood.html"
+    },
+    {
+      "src": "/blog/lead-generation-cos-e/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/lead-generation-cos-e"
+      }
+    },
+    {
+      "src": "/blog/lead-generation-cos-e",
+      "dest": "/blog/lead-generation-cos-e.html"
+    },
+    {
+      "src": "/blog/agenzia-lead-generation-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/agenzia-lead-generation-b2b"
+      }
+    },
+    {
+      "src": "/blog/agenzia-lead-generation-b2b",
+      "dest": "/blog/agenzia-lead-generation-b2b.html"
+    },
+    {
+      "src": "/blog/outbound-vs-inbound-marketing/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/outbound-vs-inbound-marketing"
+      }
+    },
+    {
+      "src": "/blog/outbound-vs-inbound-marketing",
+      "dest": "/blog/outbound-vs-inbound-marketing.html"
+    },
+    {
+      "src": "/blog/come-automatizzare-business-con-ai/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/come-automatizzare-business-con-ai"
+      }
+    },
+    {
+      "src": "/blog/come-automatizzare-business-con-ai",
+      "dest": "/blog/come-automatizzare-business-con-ai.html"
+    },
+    {
+      "src": "/blog/agenti-vocali-ai-per-aziende/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/agenti-vocali-ai-per-aziende"
+      }
+    },
+    {
+      "src": "/blog/agenti-vocali-ai-per-aziende",
+      "dest": "/blog/agenti-vocali-ai-per-aziende.html"
+    },
+    {
+      "src": "/blog/make-com-vs-zapier-confronto/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/make-com-vs-zapier-confronto"
+      }
+    },
+    {
+      "src": "/blog/make-com-vs-zapier-confronto",
+      "dest": "/blog/make-com-vs-zapier-confronto.html"
+    },
+    {
+      "src": "/en/blog/what-is-lead-generation/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/what-is-lead-generation"
+      }
+    },
+    {
+      "src": "/en/blog/what-is-lead-generation",
+      "dest": "/en/blog/what-is-lead-generation.html"
+    },
+    {
+      "src": "/en/blog/b2b-lead-generation-agency/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/b2b-lead-generation-agency"
+      }
+    },
+    {
+      "src": "/en/blog/b2b-lead-generation-agency",
+      "dest": "/en/blog/b2b-lead-generation-agency.html"
+    },
+    {
+      "src": "/en/blog/outbound-vs-inbound-marketing/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/outbound-vs-inbound-marketing"
+      }
+    },
+    {
+      "src": "/en/blog/outbound-vs-inbound-marketing",
+      "dest": "/en/blog/outbound-vs-inbound-marketing.html"
+    },
+    {
+      "src": "/blog/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog"
+      }
+    },
+    {
+      "src": "/blog",
+      "dest": "/blog.html"
+    },
+    {
+      "src": "/en/blog/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog"
+      }
+    },
+    {
+      "src": "/en/blog",
+      "dest": "/en/blog.html"
+    },
+    {
+      "src": "/services/outbound-sales/",
+      "status": 308,
+      "headers": {
+        "Location": "/services/outbound-sales"
+      }
+    },
+    {
+      "src": "/services/outbound-sales",
+      "dest": "/services/outbound-sales.html"
+    },
+    {
+      "src": "/services/lead-generation-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/services/lead-generation-b2b"
+      }
+    },
+    {
+      "src": "/services/lead-generation-b2b",
+      "dest": "/services/lead-generation-b2b.html"
+    },
+    {
+      "src": "/en/",
+      "status": 308,
+      "headers": {
+        "Location": "/en"
+      }
+    },
+    {
+      "src": "/en",
+      "dest": "/en.html"
+    },
+    {
+      "src": "/casi-studio/reliance-medical-amazon/",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/reliance-medical-amazon"
+      }
+    },
+    {
+      "src": "/casi-studio/reliance-medical-amazon",
+      "dest": "/casi-studio/reliance-medical-amazon.html"
+    },
+    {
+      "src": "/casi-studio/safe-industrial-amazon/",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/safe-industrial-amazon"
+      }
+    },
+    {
+      "src": "/casi-studio/safe-industrial-amazon",
+      "dest": "/casi-studio/safe-industrial-amazon.html"
+    },
+    {
+      "src": "/casi-studio/powerplay-brands-marketplace/",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/powerplay-brands-marketplace"
+      }
+    },
+    {
+      "src": "/casi-studio/powerplay-brands-marketplace",
+      "dest": "/casi-studio/powerplay-brands-marketplace.html"
+    },
+    {
+      "src": "/amazon/",
+      "status": 308,
+      "headers": {
+        "Location": "/amazon"
+      }
+    },
+    {
+      "src": "/amazon",
+      "dest": "/amazon.html"
+    },
+    {
+      "src": "/casi-studio/rms-international-amazon/",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/rms-international-amazon"
+      }
+    },
+    {
+      "src": "/casi-studio/rms-international-amazon",
+      "dest": "/casi-studio/rms-international-amazon.html"
+    },
+    {
+      "src": "/en/case-studies/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/case-studies"
+      }
+    },
+    {
+      "src": "/en/case-studies",
+      "dest": "/en/case-studies.html"
+    },
+    {
+      "src": "/en/how-we-work/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/how-we-work"
+      }
+    },
+    {
+      "src": "/en/how-we-work",
+      "dest": "/en/how-we-work.html"
+    },
+    {
+      "src": "/en/amazon/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/amazon"
+      }
+    },
+    {
+      "src": "/en/amazon",
+      "dest": "/en/amazon.html"
+    },
+    {
+      "src": "/en/privacy/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/privacy"
+      }
+    },
+    {
+      "src": "/en/privacy",
+      "dest": "/en/privacy.html"
+    },
+    {
+      "src": "/en/cookies/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/cookies"
+      }
+    },
+    {
+      "src": "/en/cookies",
+      "dest": "/en/cookies.html"
+    },
+    {
+      "src": "/en/terms/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/terms"
+      }
+    },
+    {
+      "src": "/en/terms",
+      "dest": "/en/terms.html"
+    },
+    {
+      "src": "/en/book-a-call/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/book-a-call"
+      }
+    },
+    {
+      "src": "/en/book-a-call",
+      "dest": "/en/book-a-call.html"
+    },
+    {
+      "src": "/en/services/ai-voice-agents/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/services/ai-voice-agents"
+      }
+    },
+    {
+      "src": "/en/services/ai-voice-agents",
+      "dest": "/en/services/ai-voice-agents.html"
+    },
+    {
+      "src": "/en/services/ai-automation/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/services/ai-automation"
+      }
+    },
+    {
+      "src": "/en/services/ai-automation",
+      "dest": "/en/services/ai-automation.html"
+    },
+    {
+      "src": "/en/services/make-automation/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/services/make-automation"
+      }
+    },
+    {
+      "src": "/en/services/make-automation",
+      "dest": "/en/services/make-automation.html"
+    },
+    {
+      "src": "/en/services/custom-software/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/services/custom-software"
+      }
+    },
+    {
+      "src": "/en/services/custom-software",
+      "dest": "/en/services/custom-software.html"
+    },
+    {
+      "src": "/en/services/outbound-sales/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/services/outbound-sales"
+      }
+    },
+    {
+      "src": "/en/services/outbound-sales",
+      "dest": "/en/services/outbound-sales.html"
+    },
+    {
+      "src": "/en/services/b2b-lead-generation/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/services/b2b-lead-generation"
+      }
+    },
+    {
+      "src": "/en/services/b2b-lead-generation",
+      "dest": "/en/services/b2b-lead-generation.html"
+    },
+    {
+      "src": "/en/blog/b2b-lead-scoring/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/b2b-lead-scoring"
+      }
+    },
+    {
+      "src": "/en/blog/b2b-lead-scoring",
+      "dest": "/en/blog/b2b-lead-scoring.html"
+    },
+    {
+      "src": "/en/blog/whatsapp-business-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/whatsapp-business-b2b"
+      }
+    },
+    {
+      "src": "/en/blog/whatsapp-business-b2b",
+      "dest": "/en/blog/whatsapp-business-b2b.html"
+    },
+    {
+      "src": "/en/blog/b2b-appointment-setting/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/b2b-appointment-setting"
+      }
+    },
+    {
+      "src": "/en/blog/b2b-appointment-setting",
+      "dest": "/en/blog/b2b-appointment-setting.html"
+    },
+    {
+      "src": "/en/blog/ai-customer-service-automation/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/ai-customer-service-automation"
+      }
+    },
+    {
+      "src": "/en/blog/ai-customer-service-automation",
+      "dest": "/en/blog/ai-customer-service-automation.html"
+    },
+    {
+      "src": "/en/blog/crm-and-automated-invoicing/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/crm-and-automated-invoicing"
+      }
+    },
+    {
+      "src": "/en/blog/crm-and-automated-invoicing",
+      "dest": "/en/blog/crm-and-automated-invoicing.html"
+    },
+    {
+      "src": "/en/blog/linkedin-outreach-b2b/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/linkedin-outreach-b2b"
+      }
+    },
+    {
+      "src": "/en/blog/linkedin-outreach-b2b",
+      "dest": "/en/blog/linkedin-outreach-b2b.html"
+    },
+    {
+      "src": "/en/blog/find-international-b2b-customers/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/find-international-b2b-customers"
+      }
+    },
+    {
+      "src": "/en/blog/find-international-b2b-customers",
+      "dest": "/en/blog/find-international-b2b-customers.html"
+    },
+    {
+      "src": "/en/blog/custom-software-for-smes/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/custom-software-for-smes"
+      }
+    },
+    {
+      "src": "/en/blog/custom-software-for-smes",
+      "dest": "/en/blog/custom-software-for-smes.html"
+    },
+    {
+      "src": "/en/blog/ai-receptionist-for-professional-practices/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/ai-receptionist-for-professional-practices"
+      }
+    },
+    {
+      "src": "/en/blog/ai-receptionist-for-professional-practices",
+      "dest": "/en/blog/ai-receptionist-for-professional-practices.html"
+    },
+    {
+      "src": "/en/blog/ai-voice-agents-for-lead-qualification/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/ai-voice-agents-for-lead-qualification"
+      }
+    },
+    {
+      "src": "/en/blog/ai-voice-agents-for-lead-qualification",
+      "dest": "/en/blog/ai-voice-agents-for-lead-qualification.html"
+    },
+    {
+      "src": "/en/blog/ai-in-b2b-sales-processes/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/ai-in-b2b-sales-processes"
+      }
+    },
+    {
+      "src": "/en/blog/ai-in-b2b-sales-processes",
+      "dest": "/en/blog/ai-in-b2b-sales-processes.html"
+    },
+    {
+      "src": "/en/blog/ai-phone-systems-for-businesses/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/ai-phone-systems-for-businesses"
+      }
+    },
+    {
+      "src": "/en/blog/ai-phone-systems-for-businesses",
+      "dest": "/en/blog/ai-phone-systems-for-businesses.html"
+    },
+    {
+      "src": "/en/blog/b2b-cold-email/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/b2b-cold-email"
+      }
+    },
+    {
+      "src": "/en/blog/b2b-cold-email",
+      "dest": "/en/blog/b2b-cold-email.html"
+    },
+    {
+      "src": "/en/blog/turn-b2b-leads-into-meetings/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/turn-b2b-leads-into-meetings"
+      }
+    },
+    {
+      "src": "/en/blog/turn-b2b-leads-into-meetings",
+      "dest": "/en/blog/turn-b2b-leads-into-meetings.html"
+    },
+    {
+      "src": "/en/blog/holistic-unity-case-study/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/holistic-unity-case-study"
+      }
+    },
+    {
+      "src": "/en/blog/holistic-unity-case-study",
+      "dest": "/en/blog/holistic-unity-case-study.html"
+    },
+    {
+      "src": "/en/blog/abeec-case-study/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/abeec-case-study"
+      }
+    },
+    {
+      "src": "/en/blog/abeec-case-study",
+      "dest": "/en/blog/abeec-case-study.html"
+    },
+    {
+      "src": "/en/blog/powerplay-brands-case-study/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/powerplay-brands-case-study"
+      }
+    },
+    {
+      "src": "/en/blog/powerplay-brands-case-study",
+      "dest": "/en/blog/powerplay-brands-case-study.html"
+    },
+    {
+      "src": "/en/blog/profood-case-study/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/profood-case-study"
+      }
+    },
+    {
+      "src": "/en/blog/profood-case-study",
+      "dest": "/en/blog/profood-case-study.html"
+    },
+    {
+      "src": "/en/blog/automate-your-business-with-ai/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/automate-your-business-with-ai"
+      }
+    },
+    {
+      "src": "/en/blog/automate-your-business-with-ai",
+      "dest": "/en/blog/automate-your-business-with-ai.html"
+    },
+    {
+      "src": "/en/blog/ai-voice-agents-for-businesses/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/ai-voice-agents-for-businesses"
+      }
+    },
+    {
+      "src": "/en/blog/ai-voice-agents-for-businesses",
+      "dest": "/en/blog/ai-voice-agents-for-businesses.html"
+    },
+    {
+      "src": "/en/blog/make-vs-zapier/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/make-vs-zapier"
+      }
+    },
+    {
+      "src": "/en/blog/make-vs-zapier",
+      "dest": "/en/blog/make-vs-zapier.html"
+    },
+    {
+      "src": "/en/case-studies/reliance-medical/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/case-studies/reliance-medical"
+      }
+    },
+    {
+      "src": "/en/case-studies/reliance-medical",
+      "dest": "/en/case-studies/reliance-medical.html"
+    },
+    {
+      "src": "/en/case-studies/isolcore/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/case-studies/isolcore"
+      }
+    },
+    {
+      "src": "/en/case-studies/isolcore",
+      "dest": "/en/case-studies/isolcore.html"
+    },
+    {
+      "src": "/en/case-studies/profood/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/case-studies/profood"
+      }
+    },
+    {
+      "src": "/en/case-studies/profood",
+      "dest": "/en/case-studies/profood.html"
+    },
+    {
+      "src": "/en/case-studies/brands-cosmos/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/case-studies/brands-cosmos"
+      }
+    },
+    {
+      "src": "/en/case-studies/brands-cosmos",
+      "dest": "/en/case-studies/brands-cosmos.html"
+    },
+    {
+      "src": "/en/case-studies/reliance-medical-amazon/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/case-studies/reliance-medical-amazon"
+      }
+    },
+    {
+      "src": "/en/case-studies/reliance-medical-amazon",
+      "dest": "/en/case-studies/reliance-medical-amazon.html"
+    },
+    {
+      "src": "/en/case-studies/safe-industrial-amazon/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/case-studies/safe-industrial-amazon"
+      }
+    },
+    {
+      "src": "/en/case-studies/safe-industrial-amazon",
+      "dest": "/en/case-studies/safe-industrial-amazon.html"
+    },
+    {
+      "src": "/en/case-studies/powerplay-brands-marketplace/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/case-studies/powerplay-brands-marketplace"
+      }
+    },
+    {
+      "src": "/en/case-studies/powerplay-brands-marketplace",
+      "dest": "/en/case-studies/powerplay-brands-marketplace.html"
+    },
+    {
+      "src": "/en/case-studies/rms-international-amazon/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/case-studies/rms-international-amazon"
+      }
+    },
+    {
+      "src": "/en/case-studies/rms-international-amazon",
+      "dest": "/en/case-studies/rms-international-amazon.html"
+    },
+    {
+      "src": "/casi-studio/brand-giocattoli-amazon/?",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/rms-international-amazon"
+      }
+    },
+    {
+      "src": "/come-collaboriamo/?",
+      "status": 308,
+      "headers": {
+        "Location": "/collaborazione"
+      }
+    },
+    {
+      "src": "/programma/?",
+      "status": 308,
+      "headers": {
+        "Location": "/collaborazione"
+      }
+    },
+    {
+      "src": "/risultati/?",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio"
+      }
+    },
+    {
+      "src": "/case-studies/?",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio"
+      }
+    },
+    {
+      "src": "/contatti/?",
+      "status": 308,
+      "headers": {
+        "Location": "/#contatti"
+      }
+    },
+    {
+      "src": "/privacy-policy/?",
+      "status": 308,
+      "headers": {
+        "Location": "/privacy"
+      }
+    },
+    {
+      "src": "/cookie-policy/?",
+      "status": 308,
+      "headers": {
+        "Location": "/cookies"
+      }
+    },
+    {
+      "src": "/marketplace/?",
+      "status": 308,
+      "headers": {
+        "Location": "/amazon"
+      }
+    },
+    {
+      "src": "/marketplaces/?",
+      "status": 308,
+      "headers": {
+        "Location": "/amazon"
+      }
+    },
+    {
+      "src": "/services/amazon/?",
+      "status": 308,
+      "headers": {
+        "Location": "/amazon"
+      }
+    },
+    {
+      "src": "/services/marketplace/?",
+      "status": 308,
+      "headers": {
+        "Location": "/amazon"
+      }
+    },
+    {
+      "src": "/blog/amazon-success-story-how-safe-industrial-grew-sales-by-84-with-stormx-digital/?",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/safe-industrial-amazon"
+      }
+    },
+    {
+      "src": "/blog/come-vendere-prodotti-per-industrie-su-amazon-caso-studio-safe-industrial-amazon-uk/?",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/safe-industrial-amazon"
+      }
+    },
+    {
+      "src": "/blog/how-reliance-medical-boosted-sales-and-dominated-amazon-with-stormx-digital-agency/?",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/reliance-medical-amazon"
+      }
+    },
+    {
+      "src": "/blog/how-generic-toys-uk-boosted-sales-from-0-to-overe-40k-a-month-with-stormx-digital-agency/?",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/rms-international-amazon"
+      }
+    },
+    {
+      "src": "/((?:en/)?[^.]+)\\.html",
+      "status": 308,
+      "headers": {
+        "Location": "/$1"
+      }
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/404.html"
+    }
+  ]
+}
