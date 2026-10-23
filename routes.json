@@ -1178,6 +1178,62 @@
       }
     },
     {
+      "src": "/it/?",
+      "status": 308,
+      "headers": {
+        "Location": "/"
+      }
+    },
+    {
+      "src": "/termsandconditions/?",
+      "status": 308,
+      "headers": {
+        "Location": "/terms"
+      }
+    },
+    {
+      "src": "/privacyandcookiepolicies/?",
+      "status": 308,
+      "headers": {
+        "Location": "/privacy"
+      }
+    },
+    {
+      "src": "/en/what-is-lead-generation/?",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/what-is-lead-generation"
+      }
+    },
+    {
+      "src": "/outbound-vs-inbound-marketing/?",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/outbound-vs-inbound-marketing"
+      }
+    },
+    {
+      "src": "/blog/caso-studio-isolcore-outreach-multicanale/?",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/isolcore"
+      }
+    },
+    {
+      "src": "/it/blog/come-reliance-medical-ha-generato-4-5m-di-pipeline-evitando-di-assumere-6-export-manager-grazie-all-ai-e-strategia-digitale/?",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/reliance-medical"
+      }
+    },
+    {
+      "src": "/it/blog/how-reliance-medical-boosted-sales-and-dominated-amazon-with-stormx-digital-agency/?",
+      "status": 308,
+      "headers": {
+        "Location": "/casi-studio/reliance-medical-amazon"
+      }
+    },
+    {
       "src": "/((?:en/)?[^.]+)\\.html",
       "status": 308,
       "headers": {
