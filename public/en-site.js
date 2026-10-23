@@ -18,7 +18,18 @@
     if(preference!=='yes'||location.hostname==='localhost'||location.hostname==='127.0.0.1')return;
     fetch('/api/events',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({consent:true,page:location.pathname,event,target}),keepalive:true,credentials:'same-origin'}).catch(()=>{});
   };
-  function countPage(){if(preference==='yes'&&!pageCounted){window.stormxTrack('page_view');pageCounted=true;}}
+  function sourceCategory(value){
+    let host;try{host=new URL(value).hostname.toLowerCase();}catch{return 'unknown';}
+    const match=domain=>host===domain||host.endsWith('.'+domain);
+    if(match(location.hostname)||match('stormxdigital.com')||match('stormx-digital-home.genialtrout3.chatgpt.site'))return 'internal';
+    if(match('chatgpt.com')||match('chat.openai.com'))return 'chatgpt';
+    if(match('claude.ai'))return 'claude';
+    if(match('gemini.google.com'))return 'gemini';
+    if(match('bing.com'))return 'bing';
+    if(/(^|\.)google\.(com|it|co\.uk|de|fr|es|ca|com\.au)$/.test(host))return 'google';
+    return 'other';
+  }
+  function countPage(){if(preference==='yes'&&!pageCounted){window.stormxTrack('page_view');const source=sourceCategory(document.referrer);if(source!=='internal')window.stormxTrack('referral',source);pageCounted=true;}}
   const panel=document.createElement('section');panel.className='consent-panel';panel.hidden=true;panel.setAttribute('aria-label',"Statistics preferences");
   panel.innerHTML="<h2>Can we measure what works?</h2><p>With your consent we count pages, clicks and video reproductions, without creating individual profiles. The site and module also work by choosing only the necessary resources. <a href=\"/en/cookies\">How statistics work</a>.</p><div class=\"consent-actions\"><button type=\"button\" data-choice=\"no\">Only necessary</button><button type=\"button\" data-choice=\"yes\">Accepts statistics</button></div>";
   if(document.documentElement.lang==='en')panel.innerHTML="<h2>May we measure what works?</h2><p>With your consent we count pages, clicks and video views, without building individual profiles. The site and contact form work with necessary resources only. <a href=\"/en/cookies\">Read about statistics</a>.</p><div class=\"consent-actions\"><button type=\"button\" data-choice=\"no\">Necessary only</button><button type=\"button\" data-choice=\"yes\">Accept statistics</button></div>";
