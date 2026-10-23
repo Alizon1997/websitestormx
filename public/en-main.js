@@ -67,7 +67,11 @@ function setStage(index, focusTab = false) {
   document.querySelector('#journey-description').textContent = stage.description;
   document.querySelector('#journey-result').textContent = stage.result;
   document.querySelector('#journey-counter').textContent = `${String(currentStage + 1).padStart(2, '0')} / 05`;
-  document.querySelectorAll('[data-art]').forEach((art, i) => { art.hidden = i !== currentStage; });
+  document.querySelectorAll('.journey-image [data-art]').forEach(art => {
+    const active = Number(art.dataset.art) === currentStage;
+    art.hidden = !active;
+    if (active) art.querySelector('img').loading = 'eager';
+  });
   document.querySelector('#journey-prev').disabled = currentStage === 0;
   document.querySelector('#journey-next').disabled = currentStage === journeyStages.length - 1;
   if (focusTab) stageTabs[currentStage].focus();
