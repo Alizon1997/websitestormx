@@ -53,13 +53,7 @@ form.addEventListener('submit', async event => {
 });
 
 // A guided, illustrative view of the complete commercial process.
-const journeyStages = [
-  { kicker:'01 / Ricerca e strategia', title:'Prima di contattare, capiamo chi conta.', description:'Partiamo dalla tua offerta. Selezioniamo le aziende in linea con il tuo mercato e individuiamo le persone con cui ha senso parlare.', result:'Una lista ragionata di aziende e decisori da raggiungere.' },
-  { kicker:'02 / Primo contatto', title:'Quattro canali. Un’unica conversazione.', description:'Email, LinkedIn, WhatsApp e telefono lavorano insieme. Scegliamo il canale e il momento in base alla persona, al contesto e alle risposte, mantenendo un unico percorso commerciale.', result:'Conversazioni con persone che comprendono perché le stai contattando.' },
-  { kicker:'03 / Qualifica commerciale', title:'L’interesse diventa un’opportunità concreta.', description:'Approfondiamo esigenze, priorità e tempi. Organizziamo e seguiamo le call per capire se la tua soluzione è adatta e quale debba essere il prossimo passo.', result:'Un’opportunità qualificata, con esigenze e prossime azioni chiare.' },
-  { kicker:'04 / Proposta e trattativa', title:'La proposta parte da ciò che abbiamo capito.', description:'Costruiamo la proposta insieme al tuo team. Seguiamo il confronto, i dubbi e i follow-up, mantenendo viva la trattativa fino alla decisione.', result:'Una trattativa presidiata, con proposta, responsabilità e condizioni condivise.' },
-  { kicker:'05 / Chiusura e continuità', title:'Il punto di arrivo? Un nuovo inizio.', description:'Ti affianchiamo nella negoziazione e nella chiusura. Aggiorniamo il CRM e condividiamo accordi e prossimi passi, così il passaggio da prospect a cliente è chiaro per tutti.', result:'Un accordo definito e un passaggio ordinato al tuo team.' }
-];
+const journeyStages = [{"kicker": "01 / Ricerca e strategia", "title": "Cerchiamo i clienti giusti.", "description": "Aziende in linea con la tua offerta.", "result": "Una lista di aziende e decisori."}, {"kicker": "02 / Primo contatto", "title": "Apriamo la conversazione.", "description": "Email, LinkedIn, WhatsApp e telefono. Con un messaggio pertinente.", "result": "Risposte da persone interessate."}, {"kicker": "03 / Qualifica commerciale", "title": "Capiamo chi è interessato.", "description": "Verifichiamo esigenze, priorità e tempi.", "result": "Opportunità qualificate."}, {"kicker": "04 / Proposta e trattativa", "title": "Seguiamo la trattativa.", "description": "Proposte e follow-up, insieme al tuo team.", "result": "Un prossimo passo chiaro."}, {"kicker": "05 / Chiusura e continuità", "title": "Ti affianchiamo fino alla firma.", "description": "Negoziazione, accordi e passaggio al tuo team.", "result": "Accordi e responsabilità condivisi."}];
 let currentStage = 0;
 const stageTabs = [...document.querySelectorAll('[data-stage]')];
 const journeyPanel = document.querySelector('#journey-panel');

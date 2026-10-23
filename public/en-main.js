@@ -53,13 +53,7 @@ form.addEventListener('submit', async event => {
 });
 
 // A guided, illustrative view of the complete commercial process.
-const journeyStages = [
-  { kicker:"01 / Research and strategy", title:"Before contacting, we understand who matters.", description:"We start with your offer. We select companies that fit your market and identify the right people to speak to.", result:"A carefully selected list of companies and decision-makers to contact." },
-  { kicker:"02 / First contact", title:"Four channels. One conversation.", description:"Email, LinkedIn, WhatsApp and phone work together. We choose the channel and moment based on the person, context and responses, maintaining a single business path.", result:"Conversations with people who understand why you are contacting them." },
-  { kicker:"03 / Commercial Qualification", title:"Interest becomes a concrete opportunity.", description:"We deepen needs, priorities and times. We organize and follow the call to see if your solution is suitable and what should be the next step.", result:"A qualified opportunity, with needs and upcoming clear actions." },
-  { kicker:"04 / Proposal and negotiation", title:"The proposal starts from what we have understood.", description:"We build the proposal together with your team. We follow the comparison, doubts and follow-ups, keeping the negotiation alive until the decision.", result:"A pre-chaired negotiation, with proposal, responsibility and shared conditions." },
-  { kicker:"05 / Closure and continuity", title:'Il punto di arrivo? Un nuovo inizio.', description:"We support you in trading and closing. We update CRM and share agreements and next steps, so the transition from prospect to customer is clear to everyone.", result:"A defined agreement and an orderly passage to your team." }
-];
+const journeyStages = [];
 let currentStage = 0;
 const stageTabs = [...document.querySelectorAll('[data-stage]')];
 const journeyPanel = document.querySelector('#journey-panel');
