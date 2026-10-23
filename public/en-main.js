@@ -53,7 +53,7 @@ form.addEventListener('submit', async event => {
 });
 
 // A guided, illustrative view of the complete commercial process.
-const journeyStages = [];
+const journeyStages = [{"kicker": "01 / Research and strategy", "title": "We find the right customers.", "description": "We identify companies that fit your offer and the people who make decisions.", "result": "A list of companies and decision-makers."}, {"kicker": "02 / First contact", "title": "We start the conversation.", "description": "We connect email, LinkedIn, WhatsApp and phone. We adapt messages and next steps to the replies we receive.", "result": "Replies from interested people."}, {"kicker": "03 / Sales qualification", "title": "We qualify the opportunity.", "description": "We explore needs, priorities and timing. We follow meetings to assess whether your solution is a fit.", "result": "Qualified opportunities."}, {"kicker": "04 / Proposal and negotiation", "title": "We manage the negotiation.", "description": "We prepare the proposal with you and handle questions, objections and follow-ups through to a decision.", "result": "A clear next step."}, {"kicker": "05 / Closing and continuity", "title": "We support you through to signature.", "description": "We support negotiation and closing. We update the CRM and share agreements and next steps.", "result": "Agreed terms and responsibilities."}];
 let currentStage = 0;
 const stageTabs = [...document.querySelectorAll('[data-stage]')];
 const journeyPanel = document.querySelector('#journey-panel');
