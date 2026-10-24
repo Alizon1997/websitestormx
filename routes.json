@@ -1132,6 +1132,50 @@
       "dest": "/en/blog/amazon-listing-audit-first-aid-kits.html"
     },
     {
+      "src": "/blog/amazon-visite-poche-vendite/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/amazon-visite-poche-vendite"
+      }
+    },
+    {
+      "src": "/blog/amazon-visite-poche-vendite",
+      "dest": "/blog/amazon-visite-poche-vendite.html"
+    },
+    {
+      "src": "/en/blog/amazon-traffic-low-sales/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/amazon-traffic-low-sales"
+      }
+    },
+    {
+      "src": "/en/blog/amazon-traffic-low-sales",
+      "dest": "/en/blog/amazon-traffic-low-sales.html"
+    },
+    {
+      "src": "/blog/appuntamenti-b2b-reparto-commerciale-esterno/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/appuntamenti-b2b-reparto-commerciale-esterno"
+      }
+    },
+    {
+      "src": "/blog/appuntamenti-b2b-reparto-commerciale-esterno",
+      "dest": "/blog/appuntamenti-b2b-reparto-commerciale-esterno.html"
+    },
+    {
+      "src": "/en/blog/b2b-appointments-outsourced-sales-team/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/b2b-appointments-outsourced-sales-team"
+      }
+    },
+    {
+      "src": "/en/blog/b2b-appointments-outsourced-sales-team",
+      "dest": "/en/blog/b2b-appointments-outsourced-sales-team.html"
+    },
+    {
       "src": "/casi-studio/brand-giocattoli-amazon/?",
       "status": 308,
       "headers": {
