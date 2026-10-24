@@ -1066,6 +1066,72 @@
       "dest": "/en/case-studies/rms-international-amazon.html"
     },
     {
+      "src": "/amazon/espansione-europa/",
+      "status": 308,
+      "headers": {
+        "Location": "/amazon/espansione-europa"
+      }
+    },
+    {
+      "src": "/amazon/espansione-europa",
+      "dest": "/amazon/espansione-europa.html"
+    },
+    {
+      "src": "/en/amazon/european-expansion/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/amazon/european-expansion"
+      }
+    },
+    {
+      "src": "/en/amazon/european-expansion",
+      "dest": "/en/amazon/european-expansion.html"
+    },
+    {
+      "src": "/services/sviluppo-commerciale-internazionale/",
+      "status": 308,
+      "headers": {
+        "Location": "/services/sviluppo-commerciale-internazionale"
+      }
+    },
+    {
+      "src": "/services/sviluppo-commerciale-internazionale",
+      "dest": "/services/sviluppo-commerciale-internazionale.html"
+    },
+    {
+      "src": "/en/services/international-sales-development/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/services/international-sales-development"
+      }
+    },
+    {
+      "src": "/en/services/international-sales-development",
+      "dest": "/en/services/international-sales-development.html"
+    },
+    {
+      "src": "/blog/audit-listing-amazon-kit-pronto-soccorso/",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/audit-listing-amazon-kit-pronto-soccorso"
+      }
+    },
+    {
+      "src": "/blog/audit-listing-amazon-kit-pronto-soccorso",
+      "dest": "/blog/audit-listing-amazon-kit-pronto-soccorso.html"
+    },
+    {
+      "src": "/en/blog/amazon-listing-audit-first-aid-kits/",
+      "status": 308,
+      "headers": {
+        "Location": "/en/blog/amazon-listing-audit-first-aid-kits"
+      }
+    },
+    {
+      "src": "/en/blog/amazon-listing-audit-first-aid-kits",
+      "dest": "/en/blog/amazon-listing-audit-first-aid-kits.html"
+    },
+    {
       "src": "/casi-studio/brand-giocattoli-amazon/?",
       "status": 308,
       "headers": {
