@@ -1,6 +1,6 @@
 import { createHash, createHmac } from 'node:crypto';
 import { isIP } from 'node:net';
-const backend='https://stormx-digital-home.genialtrout3.chatgpt.site';
+const backend='https://stormx-digital-home.marcello981.chatgpt.site';
 export default async function handler(req,res){
  res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');
  const error=(status)=>{res.statusCode=status;res.setHeader('Content-Type','application/json');res.end(JSON.stringify({ok:false}));};

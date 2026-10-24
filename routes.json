@@ -26,7 +26,7 @@
       "src": "/richieste/?",
       "status": 302,
       "headers": {
-        "Location": "https://stormx-digital-home.genialtrout3.chatgpt.site/richieste",
+        "Location": "https://stormx-digital-home.marcello981.chatgpt.site/richieste",
         "Cache-Control": "no-store"
       }
     },
@@ -34,7 +34,7 @@
       "src": "/statistiche/?",
       "status": 302,
       "headers": {
-        "Location": "https://stormx-digital-home.genialtrout3.chatgpt.site/statistiche",
+        "Location": "https://stormx-digital-home.marcello981.chatgpt.site/statistiche",
         "Cache-Control": "no-store"
       }
     },
