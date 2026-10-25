@@ -1,23 +1,18 @@
 'use strict';
 const menuButton=document.querySelector('.menu-toggle');
 const nav=document.querySelector('#navigation');
-function setMenu(open){menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close menu':'Open menu');nav.classList.toggle('is-open',open);}
+function setMenu(open){menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Chiudi il menu':'Apri il menu');nav.classList.toggle('is-open',open);}
 menuButton.addEventListener('click',()=>setMenu(menuButton.getAttribute('aria-expanded')!=='true'));
 nav.addEventListener('click',event=>{if(event.target.closest('a'))setMenu(false);});
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menuButton.getAttribute('aria-expanded')==='true'){setMenu(false);menuButton.focus();}});
 document.addEventListener('click',event=>{if(!event.target.closest('.header-inner'))setMenu(false);});
 window.matchMedia('(min-width:1181px)').addEventListener('change',event=>{if(event.matches)setMenu(false);});
 
-const steps=[
- {key:'ricerca',kicker:'01 / Research and strategy',heading:'We select businesses\nworth starting a conversation with.',copy:'We start with your offer and target markets. We identify businesses that fit your product and the people who make the decisions.',output:'A researched list of businesses and decision-makers.',nodes:['Your market','Businesses that fit','The right people'],caption:'Every contact starts with a clear reason.'},
- {key:'contatto',kicker:'02 / Contact and conversation',heading:'We start conversations\nwith the right people.',copy:'We use email, LinkedIn and phone with messages relevant to each business. We use WhatsApp where appropriate. We handle replies and the first conversation with potential customers.',output:'Replies and conversations to develop, with the context behind them.',nodes:['A relevant message','The first reply','An open conversation'],caption:'The channel changes. The context stays.'},
- {key:'qualifica',kicker:'03 / Listening and qualification',heading:'We establish whether there is\na real opportunity.',copy:'We explore needs, decision-makers and priorities. We prepare the sales conversation and share the information your team needs to decide the next step.',output:'Qualified opportunities and calls with a clear purpose.',nodes:['The customer’s need','The sales conversation','The next step'],caption:'Understand the interest before preparing a proposal.'},
- {key:'trattativa',kicker:'04 / Proposal and follow-up',heading:'We prepare the proposal.\nWe follow the conversation.',copy:'We develop the proposal with your business and handle questions, follow-up and negotiations. Pricing, technical details and terms are agreed with your designated contact.',output:'Proposals followed up, replies recorded and next actions shared.',nodes:['The value proposition','Questions and discussion','An opportunity followed through'],caption:'The conversation continues after the first meeting.'},
- {key:'chiusura',kicker:'05 / Decision and agreement',heading:'We support\nthe commercial decision.',copy:'We follow the steps towards an agreement within the agreed scope. Your team makes the final decisions on pricing and terms; we coordinate the sales work and next steps.',output:'A process followed through to the decision and the next steps.',nodes:['Agreed terms','The customer’s decision','The next steps'],caption:'Every opportunity has its own timing and outcome.'}
-];
+const steps=[{"key": "ricerca", "kicker": "01 / Ricerca e strategia", "heading": "Selezioniamo le aziende\na cui ha senso parlare.", "copy": "Definiamo clienti e mercati. Selezioniamo aziende e decisori in linea con la tua offerta.", "output": "Lista aziende e decisori, con priorità.", "nodes": ["", "", ""], "caption": "Ogni fase ha un prossimo passo chiaro."}, {"key": "contatto", "kicker": "02 / Contatto e conversazione", "heading": "Apriamo conversazioni\ncon le persone giuste.", "copy": "Contattiamo le persone giuste e gestiamo le risposte sui canali concordati.", "output": "Conversazioni aperte, con il loro contesto.", "nodes": ["", "", ""], "caption": "Ogni fase ha un prossimo passo chiaro."}, {"key": "qualifica", "kicker": "03 / Ascolto e qualifica", "heading": "Capiamo se c’è\nun’opportunità concreta.", "copy": "Verifichiamo interesse, esigenze e interlocutori. Prepariamo il prossimo confronto.", "output": "Opportunità qualificate e prossime azioni.", "nodes": ["", "", ""], "caption": "Ogni fase ha un prossimo passo chiaro."}, {"key": "trattativa", "kicker": "04 / Proposta e follow-up", "heading": "Prepariamo la proposta.\nSeguiamo il confronto.", "copy": "Prepariamo la proposta con te. Seguiamo domande, trattativa e follow-up.", "output": "Proposte seguite e risposte condivise.", "nodes": ["", "", ""], "caption": "Ogni fase ha un prossimo passo chiaro."}, {"key": "chiusura", "kicker": "05 / Decisione e accordo", "heading": "Accompagniamo\nla decisione commerciale.", "copy": "Coordiniamo i passaggi verso l’accordo. Prezzi e condizioni finali restano alla tua azienda.", "output": "Decisione e prossimi passi condivisi.", "nodes": ["", "", ""], "caption": "Ogni fase ha un prossimo passo chiaro."}];
 const tabs=[...document.querySelectorAll('[role="tab"]')];
 function selectStep(index,focus=false){
  const step=steps[index];
+ document.querySelectorAll('[data-method-scene]').forEach((scene,i)=>{scene.hidden=i!==index;});
  tabs.forEach((t,i)=>{t.setAttribute('aria-selected',String(i===index));t.tabIndex=i===index?0:-1;});
  document.querySelector('#method-kicker').textContent=step.kicker;
  const heading=document.querySelector('#method-heading');heading.replaceChildren();
@@ -66,12 +61,12 @@ document.querySelectorAll('[data-contact-from-video]').forEach(link=>link.addEve
 videos.forEach(video=>video.addEventListener('play',()=>videos.forEach(other=>{if(other!==video)other.pause();})));
 
 // WhatsApp links open a draft; the visitor chooses whether to send it.
-const whatsappMessage='Hello, I would like to discuss how Storm X could help our business find new customers.';
+const whatsappMessage='Ciao, vorrei capire come Storm X può aiutare la mia azienda a trovare nuovi clienti.';
 const whatsappNumber=String(window.STORMX_CONTACT?.whatsappNumber||'').replace(/\D/g,'');
 const whatsappLinks=[...document.querySelectorAll('.whatsapp-link')];
 whatsappLinks.forEach(link=>{
  if(whatsappNumber)link.href='https://wa.me/'+whatsappNumber+'?text='+encodeURIComponent(whatsappMessage);
- else {link.removeAttribute('target');link.addEventListener('click',event=>{event.preventDefault();document.querySelector('#contact').scrollIntoView({behavior:'smooth'});});}
+ else {link.removeAttribute('target');link.addEventListener('click',event=>{event.preventDefault();document.querySelector('#parliamone').scrollIntoView({behavior:'smooth'});});}
 });
 
 const localPreview=window.STORMX_CONTACT?.mode==='local-preview';
@@ -107,17 +102,17 @@ async function refreshCaptcha(){
   const image=captcha.querySelector('.captcha-image');
   const audio=captcha.querySelector('audio');
   button.disabled=true;contactForm.elements.captcha_token.value='';captchaAnswer.value='';
-  image.hidden=true;audio.hidden=true;audio.pause();captchaStatus.textContent='Loading the code…';
+  image.hidden=true;audio.hidden=true;audio.pause();captchaStatus.textContent='Caricamento del codice…';
   try{
-   const response=await fetch('/api/captcha?purpose=contact&lang=en',{credentials:'same-origin'});
+   const response=await fetch('/api/captcha?purpose=contact',{credentials:'same-origin'});
    const data=await response.json();
    if(!response.ok||!data.ok||!data.token||!data.image||!data.audio)throw new Error();
    // Challenge media must remain on the same origin.
    const imageURL=new URL(data.image,location.origin),audioURL=new URL(data.audio,location.origin);
    if(imageURL.origin!==location.origin||audioURL.origin!==location.origin)throw new Error();
    contactForm.elements.captcha_token.value=data.token;image.src=imageURL.href;image.hidden=false;audio.src=audioURL.href;
-   captchaStatus.textContent='Code ready. It expires in 5 minutes.';
-  }catch{captchaStatus.textContent='Code unavailable. Select “Change code” or message us on WhatsApp.';}
+   captchaStatus.textContent='Codice pronto. Scade dopo 5 minuti.';
+  }catch{captchaStatus.textContent='Codice non disponibile. Premi “Cambia codice” oppure scrivici su WhatsApp.';}
   finally{button.disabled=false;}
  })();
  try{await captchaTask;}finally{captchaTask=null;}
@@ -132,12 +127,12 @@ if(!localPreview){
   const audio=captcha.querySelector('audio');
   if(!audio.getAttribute('src'))return;
   audio.hidden=false;
-  try{await audio.play();}catch{captchaStatus.textContent='Use the audio player to listen to the code.';}
+  try{await audio.play();}catch{captchaStatus.textContent='Usa il lettore audio per ascoltare il codice.';}
  });
  document.querySelector('.preview-note').hidden=true;
- document.querySelector('#contact-success>.micro').textContent='Request received';
- document.querySelector('#contact-success>p:not(.micro)').textContent='Thank you. Your request has been received.';
- document.querySelector('.success-next').textContent='Marcello will read your message and contact you to arrange a first conversation.';
+ document.querySelector('#contact-success>.micro').textContent='Richiesta registrata';
+ document.querySelector('#contact-success>p:not(.micro)').textContent='Grazie, la tua richiesta è stata registrata correttamente.';
+ document.querySelector('.success-next').textContent='Marcello leggerà il tuo messaggio e ti ricontatterà per conoscerti e concordare il primo confronto.';
 }
 let formStarted=false,submissionId=crypto.randomUUID(),attemptSignature='';
 contactForm.elements.submission_id.value=submissionId;
@@ -151,33 +146,33 @@ contactForm.addEventListener('submit',async event=>{
  const data=new FormData(contactForm);
  for(const key of ['name','email','company','message'])data.set(key,String(data.get(key)||'').trim());
  if(!data.get('name')||!data.get('company')){contactForm.querySelector('input').focus();return;}
- if(!data.get('message'))data.set('message','Request for a free first conversation from the home page. The visitor did not add a message.');
+ if(!data.get('message'))data.set('message','Richiesta di primo confronto gratuito dal modulo homepage. Il visitatore non ha aggiunto un messaggio.');
  const signature=JSON.stringify(['name','email','company','message'].map(key=>data.get(key)));
  if(attemptSignature&&attemptSignature!==signature)submissionId=crypto.randomUUID();
  attemptSignature=signature;data.set('submission_id',submissionId);
  const button=contactForm.querySelector('[type="submit"]');
  const label=button.querySelector('.submit-label');
  const error=document.querySelector('#form-error');
- contactForm.dataset.pending='true';contactForm.setAttribute('aria-busy','true');button.disabled=true;label.textContent='Sending…';error.hidden=true;
+ contactForm.dataset.pending='true';contactForm.setAttribute('aria-busy','true');button.disabled=true;label.textContent='Invio in corso…';error.hidden=true;
  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),20000);
  try{
-  const response=await fetch(contactForm.action,{method:'POST',body:data,headers:{Accept:'application/json','X-StormX-Language':'en'},signal:controller.signal,credentials:'same-origin'});
+  const response=await fetch(contactForm.action,{method:'POST',body:data,headers:{Accept:'application/json'},signal:controller.signal,credentials:'same-origin'});
   const result=await response.json();
   if(!response.ok||!result.ok||!result.id||(localPreview&&result.mode!=='local-preview')){
    if(result.captcha){await refreshCaptcha();const problem=new Error('captcha');throw problem;}
    throw new Error('submission');
   }
-  const reference=document.querySelector('#request-reference');reference.textContent='Reference: '+String(result.id).slice(0,8).toUpperCase();reference.hidden=false;
+  const reference=document.querySelector('#request-reference');reference.textContent='Riferimento: '+String(result.id).slice(0,8).toUpperCase();reference.hidden=false;
   contactForm.hidden=true;successPanel.hidden=false;successPanel.focus({preventScroll:true});
   successPanel.scrollIntoView({behavior:'smooth',block:'center'});
   track(localPreview?'preview_form_received':'form_received');
  }catch(problem){
   const text=error.querySelector('.error-text');
-  text.textContent=problem.message==='captcha'?'The code has expired or is incorrect. Enter the new code, or ':'The request could not be completed. Your details are still in the form. Try again or ';
+  text.textContent=problem.message==='captcha'?'Il codice è scaduto o non è corretto. Inserisci il nuovo codice, oppure ':'Non è stato possibile completare la richiesta. I tuoi dati sono ancora nel modulo. Riprova oppure ';
   error.hidden=false;
   if(problem.message==='captcha')captchaAnswer.focus();else error.focus({preventScroll:true});
   track('form_error');
- }finally{clearTimeout(timeout);button.disabled=false;contactForm.dataset.pending='false';contactForm.removeAttribute('aria-busy');label.textContent='Request a first conversation';}
+ }finally{clearTimeout(timeout);button.disabled=false;contactForm.dataset.pending='false';contactForm.removeAttribute('aria-busy');label.textContent='Richiedi un primo confronto';}
 });
 document.querySelector('#form-reset').addEventListener('click',()=>{
  successPanel.hidden=true;contactForm.hidden=false;contactForm.reset();formStarted=false;submissionId=crypto.randomUUID();attemptSignature='';contactForm.elements.submission_id.value=submissionId;
@@ -191,10 +186,12 @@ if('IntersectionObserver' in window){
  const previewObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)visibleVideoPreviews.add(entry.target);else visibleVideoPreviews.delete(entry.target);});updateFloating();},{threshold:0});
  document.querySelectorAll('.founder-film,.client-voice,.method-film').forEach(node=>previewObserver.observe(node));
  new IntersectionObserver(entries=>{heroVisible=entries[0].isIntersecting;updateFloating();},{threshold:0}).observe(document.querySelector('.hero-actions'));
- new IntersectionObserver(entries=>{contactVisible=entries[0].isIntersecting;updateFloating();},{threshold:0}).observe(document.querySelector('#contact'));
+ new IntersectionObserver(entries=>{contactVisible=entries[0].isIntersecting;updateFloating();},{threshold:0}).observe(document.querySelector('#parliamone'));
 }else floating.classList.add('is-visible');
 new MutationObserver(updateFloating).observe(menuButton,{attributes:true,attributeFilter:['aria-expanded']});
 
 // Preserve links from existing pages and search results.
-const legacyAnchors={'#contact':'#contact','#core':'#method','#protocollo':'#method','#workflow':'#method','#conversazioni':'#method','#about':'#team'};
+const legacyAnchors={'#contatti':'#parliamone','#core':'#metodo','#protocollo':'#metodo','#workflow':'#metodo','#conversazioni':'#metodo','#about':'#team'};
 if(legacyAnchors[location.hash]){const target=legacyAnchors[location.hash];history.replaceState(null,'',location.pathname+location.search+target);document.querySelector(target)?.scrollIntoView();}
+
+(()=>{const aliases={"#contact": "#parliamone", "#sectors": "#settori", "#results": "#risultati", "#services": "#servizi", "#method": "#metodo", "#collaboration": "#collaborazione", "#founder": "#fondatore"};const id=aliases[location.hash];if(id){history.replaceState(null,'',location.pathname+location.search+id);document.querySelector(id)?.scrollIntoView();}})();

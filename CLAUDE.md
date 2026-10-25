@@ -1,71 +1,12 @@
 # Current production architecture — 25 October 2026
 
-The public website is now English-only. The deployed source is `public/`, with 53 canonical pages. Do not regenerate or deploy the old Italian/bilingual root HTML snapshots below.
+Italian is the primary language at `/`; English is the alternate at `/en`. There are 106 canonical pages, with 27 blog articles and 8 case studies per language. `public/` is the deployed static source; `routes.json` holds Vercel Build Output routing.
 
-- Keep `public/`, `routes.json` and `public/sitemap.xml` aligned when adding a page.
-- Historical Italian and `/en` URLs redirect permanently to English canonical URLs. Keep these redirects to preserve existing links.
-- All public copy, page titles, descriptions, interface labels and new articles must be natural English. Existing authentic client/founder videos are explicitly labelled as Italian audio.
-- Retain the approved cream/ink/orange design, Bodoni display headings and Inter interface/body typography.
-- Keep B2B services and Amazon services distinct. Show documented case results with the relevant timeframe. Pipeline is not revenue; illustrative rankings are not evidence of real placement.
-- Run `npm run build`. It generates `.vercel/output` and the four secure API functions. Preserve `api/bridge.mjs` and the existing production environment settings.
-- The frontend posts to the same-origin API. The signed bridge preserves the Sites/Cloudflare database and notifications; do not deploy the Python preview server or a local-preview config.
-- Optional statistics require opt-in. Do not add advertising or third-party tracking scripts without updating the implementation and privacy information appropriately.
-- Keep Google site verification and the existing IndexNow ownership file. Run `node scripts/submit-indexnow.mjs` only after a verified public deployment.
-
-The following notes are historical and describe the pre-migration site. They do not override the current production architecture above.
-
----
-
-# websitestormx — notes for Claude
-
-Production static site for **Storm X Digital** (`www.stormxdigital.com`), deployed on
-Vercel from `main`. Reconstructed from production into plain static HTML — there is **no
-build step**. Work on branch `claude/awesome-fermi-ltopz`, open a PR, merge to deploy.
-
-## Site conventions (important)
-
-- **Routing:** `vercel.json` uses `cleanUrls: true` and **`trailingSlash: false`**, and has
-  **no `rewrites`**. Pages are served **without** a trailing slash (e.g. `/blog/caso-studio-abeec`).
-  → **Always use ABSOLUTE asset paths** (`/blog/<slug>/…`, `/assets/…`) in any sub-page.
-  Same-directory relative paths (`case-study.css`, `assets/…`) break, because the browser
-  resolves them against the parent dir → 404 (unstyled page, broken images). This bit us once.
-- **Blog index** is the flat file **`blog.html`** (served at `/blog`), not `blog/index.html`.
-  Cards are `<article class="case-card">` with `<div class="cover"><img src="assets/images/blog/<slug>.png"></div>`,
-  a `.body` (`.meta`, `.headline`, `.desc`, `.read` → `blog/<slug>/`).
-- **Articles / case studies** live at `blog/<slug>/index.html`. Card covers go in
-  `assets/images/blog/<slug>.(png|jpg)`.
-- **Assets that exist:** logos at `/assets/logo/storm-x-primary.svg` (+ `-stacked`, `-mono`, `-mark`).
-  Social image at **`/assets/images/og-image.png`**. NOTE: root `/og-image.png` and `/logo.png`
-  do **not** exist on this main — use the `/assets/…` paths in `og:image` and JSON-LD.
-- **Global nav:** the homepage header is `.site-header` (logo + `SERVIZI` dropdown + METODO/
-  PILOT 120GG/RISULTATI/ARTICOLI + EN + PRENOTA + mobile hamburger). Its CSS lives in
-  `assets/styles.css` (lines ~154–293); the mobile toggle is an inline `onclick`. **Every
-  article/case-study page must carry this same nav** so the whole site is reachable from inside
-  an article.
-- **Visitor tracking (lemlist):** the lemlist `<script src="https://app.lemlist.com/api/visitors/tracking?k=…&t=…">`
-  must be in **every** page's `<head>` — it's loaded for **all** visitors (B2B company ID),
-  **not** behind cookie consent. Google Analytics + Meta Pixel stay consent-gated in
-  `assets/cookie-consent.js`; lemlist was deliberately moved OUT of that gate. **New pages must
-  include the lemlist tag in `<head>`.**
-
-## Publishing a design-bundle case study as a blog post
-
-Case studies come from Claude Design bundles (e.g. `Abeec Case Study.html`,
-`Brands Cosmos Reebok Case Study.html`). They are self-contained (own `colors_and_type.css`
-+ `case-study.css` + `assets/`). To publish one (done for `caso-studio-abeec`, `caso-studio-reebok`):
-
-1. Create `blog/caso-studio-<x>/` with `index.html`, `colors_and_type.css`, `case-study.css`,
-   and `assets/` (copy from the bundle's `case_studies/<name>/`).
-2. In `index.html`: make **all** CSS/favicon/image paths absolute (`/blog/caso-studio-<x>/…`);
-   add full SEO (`title`, `description`, canonical, OG/Twitter using `/assets/images/og-image.png`,
-   JSON-LD `Article` + `BreadcrumbList` with publisher logo `/assets/logo/storm-x-primary.svg`).
-3. **Replace the bundle's minimal header** with the global site nav (markup copied from the
-   homepage, absolute hrefs: `/`, `/services/<x>`, `/blog`, `/en/`, `/#prenota`; mark
-   `ARTICOLI` as `active`). In the page's `case-study.css`, replace the minimal `.site-header`
-   block with the global nav CSS (ported verbatim from `assets/styles.css`; it uses the same
-   design tokens, so it renders identically). Keep the case study's dark footer.
-4. Add a `case-card` to `blog.html` (top of `.case-grid`) + a cover at
-   `assets/images/blog/caso-studio-<x>.jpg` + a `<url>` in `sitemap.xml`.
-5. Reconcile + publish: this branch can diverge from a reconstructed `main`. Merge `main` with
-   `-X theirs` (keep production as source of truth), then re-apply only the case study, so the
-   PR diff is **only** the new files. Open a PR → squash-merge. Vercel auto-deploys `main`.
+- Keep visible navigation, page-specific IT/EN switches, canonical URLs, reciprocal hreflang and sitemap aligned.
+- Retain Space Grotesk titles, Instrument Serif italic accents, Inter body/UI, and the cream/ink/orange identity.
+- Preserve all articles and case studies. Previous English-only root paths redirect to /en counterparts when they do not overlap Italian canonical paths.
+- Keep B2B and Amazon services distinct. Illustrative rankings are not verified placement; pipeline is not revenue. Preserve timeframes on case results.
+- Run `npm run build`. Preserve `api/bridge.mjs`, existing production environment settings and the signed same-origin backend for contact, booking, CAPTCHA and events.
+- Keep private dashboard redirects, Google verification and IndexNow ownership files. Statistics require opt-in. Never publish a local-preview config, Python preview server or preview noindex metadata.
+- Client and founder videos retain authentic Italian audio. Do not imply English audio.
+- Submit IndexNow only after verifying production. Search Console is deferred at the user's request. Indexing and rankings are determined by search engines.

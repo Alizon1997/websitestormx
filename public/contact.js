@@ -8,7 +8,7 @@ const whatsappNumber=String(window.STORMX_CONTACT?.whatsappNumber||'').replace(/
 const whatsappLinks=[...document.querySelectorAll('.whatsapp-link')];
 whatsappLinks.forEach(link=>{
  if(whatsappNumber)link.href='https://wa.me/'+whatsappNumber+'?text='+encodeURIComponent(whatsappMessage);
- else {link.removeAttribute('target');link.addEventListener('click',event=>{event.preventDefault();document.querySelector('#contact').scrollIntoView({behavior:'smooth'});});}
+ else {link.removeAttribute('target');link.addEventListener('click',event=>{event.preventDefault();document.querySelector('#parliamone').scrollIntoView({behavior:'smooth'});});}
 });
 
 const localPreview=window.STORMX_CONTACT?.mode==='local-preview';
@@ -46,7 +46,7 @@ async function refreshCaptcha(){
   button.disabled=true;contactForm.elements.captcha_token.value='';captchaAnswer.value='';
   image.hidden=true;audio.hidden=true;audio.pause();captchaStatus.textContent=english?'Loading the code…':'Caricamento del codice…';
   try{
-   const response=await fetch('/api/captcha?purpose=contact&lang=en',{credentials:'same-origin'});
+   const response=await fetch('/api/captcha?purpose=contact'+(english?'&lang=en':''),{credentials:'same-origin'});
    const data=await response.json();
    if(!response.ok||!data.ok||!data.token||!data.image||!data.audio)throw new Error();
    // Challenge media must remain on the same origin.
@@ -98,7 +98,7 @@ contactForm.addEventListener('submit',async event=>{
  contactForm.dataset.pending='true';contactForm.setAttribute('aria-busy','true');button.disabled=true;label.textContent=english?'Sending…':'Invio in corso…';error.hidden=true;
  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),20000);
  try{
-  const response=await fetch(contactForm.action,{method:'POST',body:data,headers:{Accept:'application/json','X-StormX-Language':'en'},signal:controller.signal,credentials:'same-origin'});
+  const response=await fetch(contactForm.action,{method:'POST',body:data,headers:{Accept:'application/json','X-StormX-Language':english?'en':'it'},signal:controller.signal,credentials:'same-origin'});
   const result=await response.json();
   if(!response.ok||!result.ok||!result.id||(localPreview&&result.mode!=='local-preview')){
    if(result.captcha){await refreshCaptcha();const problem=new Error('captcha');throw problem;}

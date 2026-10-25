@@ -14,7 +14,7 @@
  const dropdowns=[...document.querySelectorAll('.nav-dropdown')];
  document.addEventListener('click',event=>dropdowns.forEach(d=>{if(!d.contains(event.target)||event.target.closest('a'))d.open=false;}));
  document.addEventListener('keydown',event=>{if(event.key==='Escape')dropdowns.forEach(d=>{if(d.open){d.open=false;d.querySelector('summary').focus();}});});
- if(new URLSearchParams(location.search).get('servizio')==='amazon'&&['/','/en'].includes(location.pathname))location.replace('/amazon'+'#contact');
+ if(new URLSearchParams(location.search).get('servizio')==='amazon'&&['/','/en'].includes(location.pathname))location.replace((english?'/en/amazon':'/amazon')+'#contatti');
  document.querySelectorAll('[data-filter-region]').forEach(region=>{
   const buttons=[...region.querySelectorAll('[data-filter]')],cards=[...region.querySelectorAll('[data-filter-item]')],input=region.querySelector('[data-search-input]');
   let active=location.hash==='#amazon'?'amazon':'all';
@@ -48,7 +48,3 @@
  if(toc&&'IntersectionObserver' in window){const links=[...toc.querySelectorAll('nav a')];const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)links.forEach(link=>link.classList.toggle('is-active',link.hash==='#'+entry.target.id));});},{rootMargin:'-120px 0px -65% 0px',threshold:0});links.forEach(link=>{const heading=document.getElementById(link.hash.slice(1));if(heading)observer.observe(heading);});}
  document.querySelectorAll('video').forEach(v=>{v.preload='none';});
 })();
-
-// Preserve bookmarked section links from the previous Italian site.
-const previousSections={"parliamone": "contact", "contatti": "contact", "settori": "sectors", "risultati": "results", "servizi": "services", "metodo": "method", "collaborazione": "collaboration", "fondatore": "founder", "contenuto": "main", "dettagli": "details", "casi-amazon": "amazon-projects"};
-if(previousSections[location.hash.slice(1)]){const anchor=previousSections[location.hash.slice(1)];history.replaceState(null,"",location.pathname+location.search+"#"+anchor);document.getElementById(anchor)?.scrollIntoView();}

@@ -1,0 +1,96 @@
+/* Editorial drawings for the homepage: native, responsive and local. */
+body[data-visual-home] .home-line-icon{display:block;width:64px;height:64px;color:#c44d1e;flex:none}
+body[data-visual-home] .home-scene{display:block;width:100%;height:auto;overflow:visible}
+body[data-visual-home] .sector-tile{min-height:202px;padding-top:24px;padding-bottom:26px}
+body[data-visual-home] .sector-number{position:absolute;right:14px;top:20px;color:#77766d;font-size:9px}
+body[data-visual-home] .sector-drawing{display:block;height:61px;margin-bottom:12px}
+body[data-visual-home] .sector-drawing .home-line-icon{width:57px;height:57px}
+body[data-visual-home] .sector-tile h3{font-size:16px;line-height:1.4;margin:8px 0;max-width:210px}
+body[data-visual-home] .sector-tile p{font-size:11px;line-height:1.6;max-width:210px}
+body[data-visual-home] .sector-lead{max-width:370px}
+body[data-visual-home] .fit-drawing{display:block;margin-bottom:20px}
+body[data-visual-home] .fit-drawing .home-line-icon{width:47px;height:47px}
+body[data-visual-home] .method-panel{min-height:400px;grid-template-columns:1fr 1.1fr}
+body[data-visual-home] .method-detail{padding-top:38px;padding-bottom:35px}
+body[data-visual-home] .method-detail>p:not(.micro){max-width:365px;line-height:1.85}
+body[data-visual-home] .has-home-scenes{padding:26px 28px 45px;justify-content:center;background:#eeede6}
+body[data-visual-home] .has-home-scenes>.micro{font-size:8px;letter-spacing:.08em;margin:0 0 10px}
+body[data-visual-home] .has-home-scenes .diagram-nodes{display:none!important}
+body[data-visual-home] .method-scenes{width:100%;max-width:540px;margin-inline:auto}
+body[data-visual-home] [data-method-scene][hidden]{display:none!important}
+body[data-visual-home] .has-home-scenes>#graphic-caption{font-size:10px;margin-top:12px;max-width:100%}
+body[data-visual-home] .has-home-scenes .graphic-index{font-size:9px;bottom:17px;right:28px}
+body[data-visual-home] .roles-map{display:grid;grid-template-columns:minmax(0,1fr)64px minmax(0,1fr);margin-top:42px;border-top:2px solid var(--orange);padding-top:26px;row-gap:30px}
+body[data-visual-home] .role-picture{min-width:0;background:#eeede6;padding:25px 27px 24px}
+body[data-visual-home] .role-picture>.micro{color:#9b3d16;font-size:10px}
+body[data-visual-home] .role-picture>.home-scene{max-height:245px;margin:8px auto 11px}
+body[data-visual-home] .role-picture>h3{font-family:var(--sans);font-size:22px;font-weight:500;letter-spacing:-.025em;line-height:1.4}
+body[data-visual-home] .roles-plus{align-self:center;justify-self:center;font:400 46px/1 var(--display);color:#bd4819}
+body[data-visual-home] .shared-picture{grid-column:1/-1;display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:center;border-top:1px solid var(--line);padding-top:24px}
+body[data-visual-home] .shared-picture>div>.micro{font-size:9px;color:#9b3d16;margin-bottom:17px}
+body[data-visual-home] .shared-picture h3{font-family:var(--sans);font-size:28px;font-weight:500;line-height:1.35;letter-spacing:-.025em}
+body[data-visual-home] .shared-picture p:not(.micro){font-size:12px;line-height:1.8;color:var(--muted);max-width:330px;margin-top:17px}
+body[data-visual-home] .shared-picture>.home-scene{max-height:250px}
+body[data-visual-home] .onboarding{margin-top:30px}
+body[data-visual-home] .onboarding li{display:grid;grid-template-columns:48px 22px minmax(0,1fr);gap:12px;align-items:center}
+body[data-visual-home] .onboarding-drawing .home-line-icon{width:42px;height:42px}
+body[data-visual-home] .onboarding li>span:not(.onboarding-drawing){font-family:var(--mono);font-size:12px;font-weight:400;color:#9b3d16;min-width:0}
+body[data-visual-home] .onboarding strong{font-size:13px;line-height:1.5}
+body[data-visual-home] .onboarding li p{font-size:10px;line-height:1.7}
+body[data-visual-home] .technology-strip{align-items:center;padding-top:17px}
+body[data-visual-home] .sales-tools-flow{display:grid;grid-template-columns:minmax(0,1fr)26px minmax(0,1fr)26px minmax(0,1fr);gap:8px;align-items:center;min-width:0}
+body[data-visual-home] .sales-tool{display:flex;align-items:center;flex-direction:column;gap:14px;min-width:0;padding:21px 8px 19px;background:#f0efe8;border-bottom:1px solid #bdbcb2}
+body[data-visual-home] .sales-tool>.home-line-icon{width:47px;height:47px}
+body[data-visual-home] .sales-tool>strong{font-size:12px;font-weight:500;line-height:1.5;text-align:center}
+body[data-visual-home] .tool-connector{font-size:25px;color:#b5461c;justify-self:center;font-weight:400}
+@media(max-width:1000px){
+ body[data-visual-home] .roles-map{grid-template-columns:minmax(0,1fr)44px minmax(0,1fr)}
+ body[data-visual-home] .role-picture{padding:22px 19px}
+ body[data-visual-home] .shared-picture{gap:25px}
+ body[data-visual-home] .shared-picture h3{font-size:24px}
+ body[data-visual-home] .role-picture>h3{font-size:20px}
+ body[data-visual-home] .onboarding ol{gap:20px}
+ body[data-visual-home] .onboarding li{grid-template-columns:38px 19px minmax(0,1fr);gap:8px}
+ body[data-visual-home] .onboarding-drawing .home-line-icon{width:34px;height:34px}
+}
+@media(max-width:760px){
+ body[data-visual-home] .whatsapp-floating{width:46px;height:46px;min-height:46px;padding:0;justify-content:center;gap:0}
+ body[data-visual-home] .whatsapp-floating>span{display:none}
+ body[data-visual-home] .sector-tile{min-height:191px;padding-top:21px}
+ body[data-visual-home] .sector-drawing{height:53px;margin-bottom:12px}
+ body[data-visual-home] .sector-drawing .home-line-icon{width:49px;height:49px}
+ body[data-visual-home] .sector-tile h3{font-size:15px;line-height:1.45}
+ body[data-visual-home] .sector-tile p{font-size:10px}
+ body[data-visual-home] .sector-number{right:7px;top:17px;font-size:8px}
+ body[data-visual-home] .fit-options>a,body[data-visual-home] .fit-options>a+a{padding-left:68px;min-height:128px;display:flex;justify-content:center;flex-direction:column}
+ body[data-visual-home] .fit-drawing{position:absolute;left:0;top:27px;margin:0}
+ body[data-visual-home] .fit-drawing .home-line-icon{width:44px;height:44px}
+ body[data-visual-home] .method-panel{grid-template-columns:1fr;min-height:0}
+ body[data-visual-home] .method-detail{padding-top:28px;padding-bottom:24px}
+ body[data-visual-home] .has-home-scenes{padding:22px 17px 37px;min-height:260px}
+ body[data-visual-home] .method-scenes{max-width:450px}
+ body[data-visual-home] .has-home-scenes>.micro{font-size:7px}
+ body[data-visual-home] .has-home-scenes>#graphic-caption{font-size:9px;line-height:1.8;margin-top:10px}
+ body[data-visual-home] .roles-map{grid-template-columns:1fr;margin-top:27px;padding-top:20px;row-gap:14px}
+ body[data-visual-home] .role-picture{padding:19px 18px}
+ body[data-visual-home] .role-picture>.home-scene{max-height:195px;margin:0 auto 9px}
+ body[data-visual-home] .role-picture>.micro{font-size:9px}
+ body[data-visual-home] .role-picture>h3{font-size:19px}
+ body[data-visual-home] .roles-plus{font-size:34px;line-height:1.3}
+ body[data-visual-home] .shared-picture{grid-column:auto;grid-template-columns:1fr;gap:13px;padding-top:25px;margin-top:13px}
+ body[data-visual-home] .shared-picture h3{font-size:24px}
+ body[data-visual-home] .shared-picture>div>.micro{margin-bottom:12px}
+ body[data-visual-home] .shared-picture p:not(.micro){font-size:11px;line-height:1.8;max-width:310px;margin-top:12px}
+ body[data-visual-home] .shared-picture>.home-scene{max-height:205px}
+ body[data-visual-home] .onboarding{margin-block:22px}
+ body[data-visual-home] .onboarding ol{gap:24px}
+ body[data-visual-home] .onboarding li{grid-template-columns:44px 23px minmax(0,1fr);gap:11px}
+ body[data-visual-home] .onboarding-drawing .home-line-icon{width:39px;height:39px}
+ body[data-visual-home] .onboarding strong{font-size:13px}
+ body[data-visual-home] .onboarding li p{font-size:11px}
+ body[data-visual-home] .sales-tools-flow{gap:5px;grid-template-columns:minmax(0,1fr)18px minmax(0,1fr)18px minmax(0,1fr)}
+ body[data-visual-home] .sales-tool{padding:18px 3px 16px;gap:13px}
+ body[data-visual-home] .sales-tool>.home-line-icon{width:37px;height:37px}
+ body[data-visual-home] .sales-tool>strong{font-size:10px}
+ body[data-visual-home] .tool-connector{font-size:20px}
+}
