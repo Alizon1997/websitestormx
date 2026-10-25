@@ -1,3 +1,21 @@
+# Current production architecture — 25 October 2026
+
+The public website is now English-only. The deployed source is `public/`, with 53 canonical pages. Do not regenerate or deploy the old Italian/bilingual root HTML snapshots below.
+
+- Keep `public/`, `routes.json` and `public/sitemap.xml` aligned when adding a page.
+- Historical Italian and `/en` URLs redirect permanently to English canonical URLs. Keep these redirects to preserve existing links.
+- All public copy, page titles, descriptions, interface labels and new articles must be natural English. Existing authentic client/founder videos are explicitly labelled as Italian audio.
+- Retain the approved cream/ink/orange design, Bodoni display headings and Inter interface/body typography.
+- Keep B2B services and Amazon services distinct. Show documented case results with the relevant timeframe. Pipeline is not revenue; illustrative rankings are not evidence of real placement.
+- Run `npm run build`. It generates `.vercel/output` and the four secure API functions. Preserve `api/bridge.mjs` and the existing production environment settings.
+- The frontend posts to the same-origin API. The signed bridge preserves the Sites/Cloudflare database and notifications; do not deploy the Python preview server or a local-preview config.
+- Optional statistics require opt-in. Do not add advertising or third-party tracking scripts without updating the implementation and privacy information appropriately.
+- Keep Google site verification and the existing IndexNow ownership file. Run `node scripts/submit-indexnow.mjs` only after a verified public deployment.
+
+The following notes are historical and describe the pre-migration site. They do not override the current production architecture above.
+
+---
+
 # websitestormx — notes for Claude
 
 Production static site for **Storm X Digital** (`www.stormxdigital.com`), deployed on

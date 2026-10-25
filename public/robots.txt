@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 Disallow: /richieste
 Disallow: /statistiche
-Disallow: /api/
+
 Sitemap: https://www.stormxdigital.com/sitemap.xml
