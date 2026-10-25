@@ -145,7 +145,10 @@ contactForm.addEventListener('submit',async event=>{
  if(contactForm.dataset.pending==='true'||!contactForm.reportValidity()||contactForm.elements._gotcha.value)return;
  const data=new FormData(contactForm);
  for(const key of ['name','email','company','message'])data.set(key,String(data.get(key)||'').trim());
- if(!data.get('name')||!data.get('company')){contactForm.querySelector('input').focus();return;}
+ if(!data.get('name')||!data.get('company')){
+  const field=contactForm.elements[!data.get('name')?'name':'company'];
+  field.setCustomValidity('Please complete this field.');field.setAttribute('aria-invalid','true');field.focus();field.reportValidity();return;
+ }
  if(!data.get('message'))data.set('message','Request for a free first conversation from the home page. The visitor did not add a message.');
  const signature=JSON.stringify(['name','email','company','message'].map(key=>data.get(key)));
  if(attemptSignature&&attemptSignature!==signature)submissionId=crypto.randomUUID();
