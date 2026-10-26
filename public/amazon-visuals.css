@@ -1,0 +1,85 @@
+/* Explain the work through native drawings, without fabricated account results. */
+.amz-scope-grid{gap:22px!important;margin-top:38px!important}
+.scope-grid .amz-scope-card{padding:22px 24px 27px;border:1px solid var(--line);background:var(--paper);min-width:0}
+.amz-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.amz-card-top>.micro{font-size:11px;color:#a84118}
+.amz-card-tags{font-size:10px;color:var(--muted);line-height:1.6;text-align:right}
+.amz-card-art{background:#eeede6;margin:20px -8px 22px;padding:4px 0}
+.amz-drawing{display:block;width:100%;height:auto;max-height:176px}
+.scope-grid .amz-scope-card h3{font-size:21px;line-height:1.35;margin-bottom:13px}
+.scope-grid .amz-scope-card p{font-size:13px;line-height:1.85;max-width:34ch;margin:0}
+.amazon-start .amz-launch-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid #cac9bf;margin-bottom:18px;padding:0;counter-reset:none}
+.amz-launch-map>li{position:relative;display:block!important;border:0!important;margin:0;padding:25px!important;min-width:0;background:var(--paper)}
+.amz-launch-map>li:not(:nth-child(3n)){border-right:1px solid #cac9bf!important}
+.amz-launch-map>li:nth-child(n+4){border-top:1px solid #cac9bf!important}
+.amz-launch-map>li::before,.amz-launch-map>li::after{display:none!important}
+.amz-launch-map .amz-step-no{font-family:var(--mono);font-size:11px;line-height:1.5;width:auto;height:auto;border:0;background:none;color:#a84118;display:block}
+.amz-step-art{max-width:185px;margin:0 auto 10px}
+.amz-launch-map>li>strong{font-family:var(--sans);font-size:17px;font-weight:500;line-height:1.5;display:block;margin-top:6px}
+.amz-launch-map>li>p{font-size:12px;line-height:1.8;color:var(--muted);max-width:32ch;margin-top:8px}
+.amz-timing-note{font-size:12px;line-height:1.8;color:var(--muted);max-width:84ch;margin:0 0 24px}
+.amz-roles{margin-top:38px;padding-top:25px;border-top:1px solid #cac9bf}
+.amz-roles>.micro{font-size:10px;color:#a84118;margin-bottom:24px}
+.amz-roles-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.amz-roles-grid>div{border-left:2px solid #c34c1e;padding-left:20px}
+.amz-roles-grid strong{font-size:18px;font-weight:500}
+.amz-roles-grid p{font-size:13px;line-height:1.85;max-width:48ch;color:var(--muted);margin-top:10px}
+.amz-ongoing{padding-top:78px;padding-bottom:76px}
+.amz-section-heading .eyebrow{font-size:10px;margin-bottom:24px}
+.amz-section-heading h2{font-size:clamp(36px,4vw,57px);line-height:1.13;letter-spacing:-.04em}
+.amz-section-heading h2 em{color:var(--orange)}
+.amz-section-heading>.section-intro{font-size:15px;line-height:1.9;color:var(--muted);max-width:65ch;margin-top:22px}
+.amz-ongoing-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:70px;margin-top:40px}
+.amz-board{padding:30px 35px;background:#eeede6;border:1px solid var(--line)}
+.amz-board-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.amz-board-heading>.micro{font-size:9px;color:var(--muted)}
+.amz-board-heading>span:last-child{font-size:25px;color:#a84118}
+.amz-board>h3{font-family:var(--sans);font-size:24px;font-weight:500;letter-spacing:-.025em;margin-bottom:24px}
+.amz-board-row{display:flex;align-items:center;gap:15px;padding:18px 0;border-top:1px solid #cac9bf}
+.amz-board-dot{display:block;width:8px;height:8px;background:#c34c1e;border-radius:50%;flex-shrink:0}
+.amz-board-row>div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.amz-board-row strong{font-size:14px;font-weight:500;line-height:1.5}
+.amz-board-row>div>span{font-size:12px;line-height:1.65;color:var(--muted)}
+.amz-board-check{margin-left:auto;font-size:25px;color:#a84118}
+.amz-board figcaption{font-size:10px;line-height:1.8;color:var(--muted);margin-top:22px;padding-top:18px;border-top:1px solid #cac9bf}
+.amz-cycle{list-style:none;padding:0;margin:0}
+.amz-cycle>li{display:flex;gap:20px;padding:22px 0;border-top:1px solid var(--line)}
+.amz-cycle>li>span{font-family:var(--mono);font-size:11px;color:#a84118;padding-top:6px}
+.amz-cycle h3{font-family:var(--sans);font-size:21px;font-weight:500;letter-spacing:-.02em;line-height:1.5;margin-bottom:9px}
+.amz-cycle p{font-size:14px;line-height:1.85;color:var(--muted);max-width:45ch}
+.amz-output{padding:20px 23px;margin-top:8px;background:#eeede6;border-left:2px solid #c34c1e}
+.amz-output>.micro{font-size:9px;color:#a84118}
+.amz-output>p{font-size:15px;line-height:1.8;margin-top:9px}
+@media(max-width:1000px){.amz-scope-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.amz-ongoing-grid{gap:35px}.amz-board{padding:25px}.amz-launch-map>li{padding:21px!important}}
+@media(max-width:760px){
+ .amz-scope-grid{grid-template-columns:1fr!important;gap:18px!important;margin-top:30px!important}
+ .scope-grid .amz-scope-card{padding:21px 23px 24px}
+ .amz-card-art{margin:17px -6px 20px}
+ .amz-drawing{max-height:162px}
+ .scope-grid .amz-scope-card h3{font-size:21px}
+ .scope-grid .amz-scope-card p{font-size:14px;max-width:none}
+ .amz-card-tags{font-size:10px}
+ .amazon-start .amz-launch-map{grid-template-columns:1fr 1fr}
+ .amz-launch-map>li{padding:18px 15px!important}
+ .amz-launch-map>li:not(:nth-child(3n)){border-right:0!important}
+ .amz-launch-map>li:nth-child(odd){border-right:1px solid #cac9bf!important}
+ .amz-launch-map>li:nth-child(n+3){border-top:1px solid #cac9bf!important}
+ .amz-step-art{margin-top:8px;margin-bottom:7px}
+ .amz-launch-map>li>strong{font-size:15px}
+ .amz-launch-map>li>p{font-size:12px;line-height:1.75}
+ .amz-timing-note{font-size:12px}
+ .amz-roles-grid{grid-template-columns:1fr;gap:24px}
+ .amz-roles-grid p{font-size:14px;max-width:none}
+ .amz-ongoing{padding-top:48px;padding-bottom:48px}
+ .amz-section-heading>.section-intro{font-size:14px}
+ .amz-ongoing-grid{grid-template-columns:1fr;gap:28px;margin-top:29px}
+ .amz-board{padding:23px}
+ .amz-board>h3{font-size:23px}
+ .amz-board-row{gap:12px}
+ .amz-board-row strong{font-size:14px}
+ .amz-board-row>div>span{font-size:12px}
+ .amz-board figcaption{font-size:11px}
+ .amz-cycle>li{gap:16px}
+ .amz-cycle h3{font-size:20px}
+ .amz-cycle p{font-size:14px}
+}
