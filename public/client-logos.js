@@ -1,0 +1,31 @@
+'use strict';
+(() => {
+ const section=document.getElementById('clienti');if(!section)return;
+ const view=section.querySelector('.client-logo-carousel,.logo-window');
+ const track=section.querySelector('.client-logo-track,.logo-track');
+ const group=track?.querySelector('.client-logos,.logo-group');if(!view||!track||!group)return;
+ const en=document.documentElement.lang==='en';
+ const reduce=matchMedia('(prefers-reduced-motion: reduce)'),coarse=matchMedia('(pointer:coarse)');
+ view.tabIndex=0;view.setAttribute('role','region');view.setAttribute('aria-label',en?'Client logos. Scroll horizontally to explore.':'Loghi clienti. Scorri orizzontalmente per esplorarli.');
+ let copy=track.querySelector('[aria-hidden="true"]');
+ if(!copy){copy=group.cloneNode(true);copy.setAttribute('aria-hidden','true');track.append(copy);}
+ copy.dataset.logoCopy='';copy.querySelectorAll('img').forEach(i=>i.alt='');
+ const controls=document.createElement('div');controls.className='client-logo-controls';
+ const make=(label,text)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label',label);b.textContent=text;controls.append(b);return b;};
+ const prev=make(en?'Previous logos':'Loghi precedenti','←'),next=make(en?'Next logos':'Loghi successivi','→'),pause=make(en?'Pause automatic scrolling':'Metti in pausa lo scorrimento','');
+ view.parentElement.append(controls);
+ let paused=reduce.matches||coarse.matches,hovered=false,focused=false,inView=false,previous=0,frame=0;
+ const update=()=>{pause.textContent=paused?(en?'Play':'Riprendi'):(en?'Pause':'Pausa');pause.setAttribute('aria-pressed',String(paused));pause.setAttribute('aria-label',paused?(en?'Resume automatic scrolling':'Riprendi lo scorrimento'):(en?'Pause automatic scrolling':'Metti in pausa lo scorrimento'));pause.disabled=reduce.matches;};
+ const stop=()=>{paused=true;update();};
+ const move=(direction)=>{stop();const width=group.getBoundingClientRect().width;if(direction<0&&view.scrollLeft<2&&!reduce.matches)view.scrollLeft=width;view.scrollBy({left:direction*Math.max(180,view.clientWidth*.65),behavior:reduce.matches?'instant':'smooth'});};
+ prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));pause.addEventListener('click',()=>{paused=!paused;update();});
+ view.addEventListener('pointerenter',()=>hovered=true);view.addEventListener('pointerleave',()=>hovered=false);
+ view.addEventListener('focusin',()=>focused=true);view.addEventListener('focusout',()=>focused=false);
+ view.addEventListener('pointerdown',stop,{passive:true});view.addEventListener('wheel',stop,{passive:true});
+ view.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key))stop();});
+ reduce.addEventListener('change',()=>{if(reduce.matches)paused=true;view.scrollLeft=0;update();});
+ const tick=(time)=>{const delta=previous?Math.min(time-previous,50):0;previous=time;if(inView&&!document.hidden&&!paused&&!hovered&&!focused&&!reduce.matches){const width=group.getBoundingClientRect().width;if(width>0)view.scrollLeft=(view.scrollLeft+delta*.028)%width;}frame=requestAnimationFrame(tick);};
+ if('IntersectionObserver' in window)new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;},{rootMargin:'100px'}).observe(view);else inView=true;
+ addEventListener('pagehide',()=>cancelAnimationFrame(frame),{once:true});addEventListener('pageshow',event=>{if(event.persisted){previous=0;frame=requestAnimationFrame(tick);}});
+ update();frame=requestAnimationFrame(tick);
+})();

@@ -1,0 +1,22 @@
+/* Shared across the Sites and production homepages. */
+#clienti{min-width:0}
+#clienti .client-logo-carousel,#clienti .logo-window{overflow-x:auto;overflow-y:hidden;mask-image:none;min-width:0;width:100%;scrollbar-width:thin;scrollbar-color:#c2bfb2 transparent;overscroll-behavior-x:contain;touch-action:pan-x pan-y}
+#clienti .client-logo-carousel:focus-visible,#clienti .logo-window:focus-visible{outline:2px solid #ec602d;outline-offset:5px}
+#clienti .client-logo-track,#clienti .logo-track{display:flex!important;width:max-content!important;animation:none!important;transform:none!important}
+#clienti .client-logos,#clienti .logo-group,#clienti .logo-track.is-static .logo-group{display:flex!important;flex-wrap:nowrap!important;align-items:center;justify-content:flex-start;gap:48px;width:max-content!important;margin:0!important;padding:24px 24px 22px!important;list-style:none}
+#clienti .logo-item,#clienti .logo-track.is-static .logo-item{flex:0 0 145px;width:145px;height:48px;padding:0}
+#clienti .logo-item:after{display:none}
+#clienti .client-logos img,#clienti .client-logos img:nth-child(n),#clienti .logo-item img{display:block;flex:0 0 145px;width:145px;max-width:none;height:44px;object-fit:contain;object-position:center;opacity:.85}
+#clienti img[src$="powerplay-brands.png"],#clienti .logo-item-powerplay img{filter:brightness(0);mix-blend-mode:normal}
+#clienti .motion-toggle{display:none}
+.client-strip{align-items:flex-start}
+.client-strip>.micro{padding-top:30px}
+.client-logo-frame{min-width:0;flex:1;width:100%}
+.client-logo-controls{display:flex;justify-content:flex-end;align-items:center;gap:8px;padding:8px 0 0}
+.client-logo-controls[hidden]{display:none!important}
+.client-logo-controls button{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:36px;padding:0 10px;border:1px solid #c9c6ba;background:transparent;color:inherit;font:inherit;font-size:12px;cursor:pointer;border-radius:0}
+.client-logo-controls button:hover{border-color:#222}
+.client-logo-controls button:focus-visible{outline:2px solid #ec602d;outline-offset:3px}
+.client-logo-controls button[disabled]{opacity:.45;cursor:default}
+@media(max-width:600px){#clienti .client-logos,#clienti .logo-group,#clienti .logo-track.is-static .logo-group{gap:32px;padding:20px 16px!important}#clienti .client-logos img,#clienti .client-logos img:nth-child(n),#clienti .logo-item,#clienti .logo-track.is-static .logo-item,#clienti .logo-item img{flex-basis:128px;width:128px;height:36px}.client-strip>.micro{padding-top:0}.client-logo-controls{padding-top:12px}.logo-wall{padding-block:22px}}
+@media(prefers-reduced-motion:reduce){#clienti .logo-track [data-logo-copy],#clienti .logo-track.is-static [data-logo-copy],#clienti .client-logo-track [data-logo-copy]{display:none!important}}
