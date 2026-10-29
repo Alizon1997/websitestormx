@@ -78,3 +78,11 @@ body[data-visual-home] .onboarding li p{font-size:12px;line-height:1.75}
  .breadcrumbs>span:last-child{min-width:0;flex-shrink:1;overflow:hidden;text-overflow:ellipsis}
  .insight-meta time{font-size:10px}
 }
+
+/* Complete client portfolio: keep every logo visible at each breakpoint. */
+.client-strip{align-items:flex-start}
+.client-strip>.micro{padding-top:15px}
+.client-strip .client-logos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));align-items:center;justify-items:center;gap:26px 28px;width:100%}
+.client-strip .client-logos img,.client-strip .client-logos img:nth-child(n){display:block;width:100%;max-width:145px;height:44px;object-fit:contain;object-position:center;opacity:.85}
+@media(max-width:900px){.client-strip .client-logos{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}}
+@media(max-width:600px){.client-strip>.micro{padding-top:0}.client-strip .client-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 24px}.client-strip .client-logos img,.client-strip .client-logos img:nth-child(n){height:35px;max-width:135px}}
