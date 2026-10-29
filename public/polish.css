@@ -86,3 +86,5 @@ body[data-visual-home] .onboarding li p{font-size:12px;line-height:1.75}
 .client-strip .client-logos img,.client-strip .client-logos img:nth-child(n){display:block;width:100%;max-width:145px;height:44px;object-fit:contain;object-position:center;opacity:.85}
 @media(max-width:900px){.client-strip .client-logos{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}}
 @media(max-width:600px){.client-strip>.micro{padding-top:0}.client-strip .client-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 24px}.client-strip .client-logos img,.client-strip .client-logos img:nth-child(n){height:35px;max-width:135px}}
+
+.client-strip .client-logos img[alt="Powerplay Brands LTD"]{filter:brightness(0);mix-blend-mode:normal}
