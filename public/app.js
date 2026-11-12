@@ -78,7 +78,7 @@ function track(name,details={}){
  const map={
   'contact:header':['cta_click','nav-call'],'contact:hero':['cta_click','home-call'],
   'contact:method':['cta_click','page-call'],'contact:video':['cta_click','page-call'],'contact:founder':['cta_click','founder-call'],'contact:need':['cta_click','page-form'],
-  'case:hero':['case_open','reliance-medical'],'form_start':['form_start','contact'],
+  'case:hero':['case_open','isolcore'],'form_start':['form_start','contact'],
   'form_error':['form_error','contact'],'form_received':['form_success','contact']
  };
  const entry=name==='whatsapp_click'?['cta_click','whatsapp-'+details.placement]:map[name];

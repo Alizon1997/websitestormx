@@ -14,7 +14,7 @@
   const query=new URLSearchParams(location.search);
   for(const field of ['utm_source','utm_medium','utm_campaign']){
    const value=query.get(field);
-   if(value&&/^[a-z0-9][a-z0-9_-]{0,79}$/i.test(value))page.searchParams.set(field,value);
+   if(validCampaignValue(field,value))page.searchParams.set(field,value);
   }
   let referrer='';
   try{referrer=new URL(document.referrer).origin;}catch{}
@@ -68,18 +68,26 @@
   return 'other';
  }
  const attributionKey='stormx.landing.v1';
+ function validCampaignValue(field,value){
+  return Boolean(value&&(/^[a-z0-9][a-z0-9_-]{0,79}$/i.test(value)||(field==='utm_source'&&value==='chatgpt.com')));
+ }
+ function entrySource(){
+  const source=sourceCategory(document.referrer);
+  const chatgptLink=new URLSearchParams(location.search).get('utm_source')==='chatgpt.com';
+  return chatgptLink&&(source==='unknown'||source==='other')?'chatgpt':source;
+ }
  const campaignFields=['utm_source','utm_medium','utm_campaign'];
  function rememberLanding(){
   try{
    if(preference!=='yes'){sessionStorage.removeItem(attributionKey);return;}
    if(sessionStorage.getItem(attributionKey))return;
-   const referrer=sourceCategory(document.referrer);
+   const referrer=entrySource();
    if(referrer==='internal')return;
    const query=new URLSearchParams(location.search);
    const landing={landing_path:location.pathname,referral_channel:referrer};
    for(const field of campaignFields){
     const value=query.get(field);
-    if(value&&/^[a-z0-9][a-z0-9_-]{0,79}$/i.test(value))landing[field]=value;
+    if(validCampaignValue(field,value))landing[field]=value;
    }
    if(query.has('gclid')||query.has('msclkid')||/^(cpc|ppc|paid|paidsearch|paidsocial)$/i.test(landing.utm_medium||''))landing.referral_channel='paid';
    sessionStorage.setItem(attributionKey,JSON.stringify(landing));
@@ -97,7 +105,7 @@
  function countPage(){rememberLanding();
   if(preference!=='yes'||pageCounted)return;
   pageCounted=true;window.stormxTrack('page_view');
-  const source=sourceCategory(document.referrer);
+  const source=entrySource();
   if(source!=='internal')window.stormxTrack('referral',source);
  }
  const panel=document.createElement('section');panel.className='consent-panel';panel.setAttribute('aria-label',english?'Statistics preferences':'Preferenze statistiche');panel.hidden=Boolean(preference);
