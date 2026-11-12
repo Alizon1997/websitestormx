@@ -30,6 +30,9 @@ document.querySelectorAll('[data-track]').forEach(link=>link.addEventListener('c
 whatsappLinks.forEach(link=>link.addEventListener('click',()=>{if(whatsappNumber)track('whatsapp_click',{placement:link.dataset.placement});}));
 
 const contactForm=document.querySelector('#contact-form');
+if(amazon&&new URLSearchParams(location.search).get('progetto')==='listing'&&!contactForm.elements.message.value){
+ contactForm.elements.message.value=english?'ASIN or product link:\nAmazon marketplace:\nWhat would you like to improve?':'ASIN o link del prodotto:\nMarketplace Amazon:\nCosa vorresti migliorare?';
+}
 const successPanel=document.querySelector('#contact-success');
 const captcha=document.querySelector('.captcha-widget');
 const captchaAnswer=contactForm.elements.captcha_answer;
@@ -92,7 +95,7 @@ contactForm.addEventListener('submit',async event=>{
   field.setCustomValidity(english?'Please complete this field.':'Compila questo campo.');field.setAttribute('aria-invalid','true');field.focus();field.reportValidity();return;
  }
  if(!data.get('message'))data.set('message',english?'Request for a first conversation. The visitor did not add a message.':'Richiesta di primo confronto gratuito. Il visitatore non ha aggiunto un messaggio.');
- const signature=JSON.stringify(['name','email','company','message'].map(key=>data.get(key)));
+ const signature=JSON.stringify(['name','email','company','message','reported_source'].map(key=>data.get(key)));
  if(attemptSignature&&attemptSignature!==signature)submissionId=crypto.randomUUID();
  attemptSignature=signature;data.set('submission_id',submissionId);
  const button=contactForm.querySelector('[type="submit"]');

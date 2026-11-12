@@ -88,6 +88,7 @@ document.querySelectorAll('[data-track]').forEach(link=>link.addEventListener('c
 whatsappLinks.forEach(link=>link.addEventListener('click',()=>{if(whatsappNumber)track('whatsapp_click',{placement:link.dataset.placement});}));
 
 const contactForm=document.querySelector('#contact-form');
+if(new URLSearchParams(location.search).get('progetto')==='b2b'&&!contactForm.elements.message.value)contactForm.elements.message.value='Prodotto:\nMercati target:\nObiettivo commerciale:';
 const successPanel=document.querySelector('#contact-success');
 const captcha=document.querySelector('.captcha-widget');
 const captchaAnswer=contactForm.elements.captcha_answer;
@@ -150,7 +151,7 @@ contactForm.addEventListener('submit',async event=>{
   field.setCustomValidity('Compila questo campo.');field.setAttribute('aria-invalid','true');field.focus();field.reportValidity();return;
  }
  if(!data.get('message'))data.set('message','Richiesta di primo confronto gratuito dal modulo homepage. Il visitatore non ha aggiunto un messaggio.');
- const signature=JSON.stringify(['name','email','company','message'].map(key=>data.get(key)));
+ const signature=JSON.stringify(['name','email','company','message','reported_source'].map(key=>data.get(key)));
  if(attemptSignature&&attemptSignature!==signature)submissionId=crypto.randomUUID();
  attemptSignature=signature;data.set('submission_id',submissionId);
  const button=contactForm.querySelector('[type="submit"]');

@@ -3014,6 +3014,22 @@
       "dest": "/en/sitemap.html"
     },
     {
+      "src": "/blog/checklist\\-amazon\\-europa",
+      "dest": "/blog/checklist-amazon-europa.html"
+    },
+    {
+      "src": "/en/blog/amazon\\-europe\\-launch\\-checklist",
+      "dest": "/en/blog/amazon-europe-launch-checklist.html"
+    },
+    {
+      "src": "/blog/trovare\\-distributori\\-medicali\\-estero",
+      "dest": "/blog/trovare-distributori-medicali-estero.html"
+    },
+    {
+      "src": "/en/blog/find\\-medical\\-distributors\\-abroad",
+      "dest": "/en/blog/find-medical-distributors-abroad.html"
+    },
+    {
       "src": "/",
       "dest": "/index.html"
     },

@@ -60,3 +60,5 @@ h1,h2{font-weight:500;letter-spacing:-.045em}.hero h1{font-size:clamp(48px,5vw,7
 /* Native English labels for the caption in the shared artwork. */
 html[lang="en"] .hero-image{position:relative}html[lang="en"] .hero-image::after{content:"";position:absolute;inset:86% 0 0;background:#eeede6}.hero-image-steps{position:absolute;z-index:1;inset:auto 6% 7%;display:flex;justify-content:space-around;gap:10px;font-size:11px;color:#141413}
 .primary-nav .language-switch{font-size:11px;border-left:1px solid var(--line);padding-left:15px;font-weight:600}
+
+form select[name="reported_source"]{display:block;width:100%;margin-top:.35rem;padding:.65rem .75rem;font:inherit;color:inherit;background:transparent;border:1px solid #9a978c;border-radius:0}
