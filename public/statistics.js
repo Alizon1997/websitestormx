@@ -11,7 +11,23 @@
   if(event==='cta_click'&&(target.startsWith('whatsapp-')||target==='founder-call'))target='page-call';
   fetch('/api/events',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({consent:true,page:location.pathname,event,target}),keepalive:true,credentials:'same-origin'}).catch(()=>{});
  };
- function countPage(){if(preference==='yes'&&!pageCounted){window.stormxTrack('page_view');pageCounted=true;}}
+ function sourceCategory(referrer){
+  let host;try{host=new URL(referrer).hostname.toLowerCase();}catch{return 'unknown';}
+  const match=domain=>host===domain||host.endsWith('.'+domain);
+  if(match(location.hostname)||match('stormxdigital.com')||match('stormx-digital-home.marcello981.chatgpt.site')||match('stormx-digital-home.genialtrout3.chatgpt.site'))return 'internal';
+  if(match('chatgpt.com')||match('chat.openai.com'))return 'chatgpt';
+  if(match('claude.ai'))return 'claude';
+  if(match('gemini.google.com'))return 'gemini';
+  if(match('bing.com'))return 'bing';
+  if(/(^|\.)google\.(com|it|co\.uk|de|fr|es|ca|com\.au)$/.test(host))return 'google';
+  return 'other';
+ }
+ function countPage(){
+  if(preference!=='yes'||pageCounted)return;
+  pageCounted=true;window.stormxTrack('page_view');
+  const source=sourceCategory(document.referrer);
+  if(source!=='internal')window.stormxTrack('referral',source);
+ }
  const panel=document.createElement('section');panel.className='consent-panel';panel.setAttribute('aria-label',english?'Statistics preferences':'Preferenze statistiche');panel.hidden=Boolean(preference);
  panel.innerHTML=english?'<h2>May we measure what works?</h2><p>With your consent, we count page views, clicks and video plays without building individual profiles. The form and WhatsApp work with necessary resources only. <a href="/en/cookies">How statistics work</a>.</p><div class="consent-actions"><button type="button" data-choice="no">Necessary only</button><button type="button" data-choice="yes">Accept statistics</button></div>':'<h2>Possiamo misurare cosa funziona?</h2><p>Con il tuo consenso contiamo pagine, clic e riproduzioni video, senza creare profili individuali. Modulo e WhatsApp funzionano anche scegliendo solo le risorse necessarie. <a href="https://www.stormxdigital.com/cookies">Come funzionano le statistiche</a>.</p><div class="consent-actions"><button type="button" data-choice="no">Solo necessarie</button><button type="button" data-choice="yes">Accetta statistiche</button></div>';
  document.body.append(panel);
